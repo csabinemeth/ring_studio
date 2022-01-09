@@ -5,16 +5,25 @@
 <div class="sidebar">
 <div class="logo"> </div>
  <button type="button" id="navButton" @click="navHome" class="btn btn-primary"><i class="fas fa-home"></i><label class="navText"> Home </label></button><br/>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle"  @click="navProjectList" type="button" id="projectsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <i class="fas fa-list"></i> <label class="navText"> Projektek </label>
-  </button>
-  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" @click="navProject" >P-22-03_projekt</a>
-    <a class="dropdown-item" id="dropdownItem" @click="navProject"  >P-22-03_projekt</a>
-    <a class="dropdown-item" id="dropdownItem" @click="navProject"  >P-22-03_projekt</a>
-  </div>
-</div>
+<button
+                class="btn btn-primary"
+                id="navCollapse"
+                type="button"
+                @click="navProjectList"
+                data-toggle="collapse"
+                data-target="#collapseExampleHome"
+                aria-expanded="false"
+                aria-controls="collapseExampleHome"
+              >
+                <i class="fas fa-list"></i> Projektek
+              </button>
+              <div class="collapse" id="collapseExampleHome">
+                <div class="card card-body" id="expandContainerHome">
+                  <button class="projectnav" @click="navProject">P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject">P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject">P-22-03_Projekt</button>
+                </div>
+                </div><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navPartners" ><i class="fas fa-user"></i> <label class="navText"> Ügyfelek </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navSuppliers" ><i class="fas fa-truck"></i> <label class="navText"> Beszállítók </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navFavourites" ><i class="fas fa-heart"></i> <label class="navText"> Kedvencek</label></button><br/>
@@ -101,6 +110,46 @@ methods: {
   background-color: #2a2b2d;
 }
 
+#navCollapse{
+  background-color: #2a2b2d;
+  position:relative;
+  top:4vh;
+    border:0;
+}
+
+#collapseExampleHome{
+  background-color: #2a2b2d;
+  position: relative;
+  top: 5vh;
+  border:0;
+}
+
+.projectnav{
+  background-color: #2a2b2d;
+  color: white;
+  border:0;
+
+}
+
+.projectnav:focus{
+  border:none;
+  outline:none;
+}
+
+.projectnav:hover{
+  cursor: pointer;
+}
+
+#collapsedLinks{
+  color: white;
+  position: relative;
+ 
+}
+
+#expandContainerHome{
+  background-color: #2a2b2d;
+}
+
 #modeChanger{
   background-color: #2a2b2d;
   border: 0;
@@ -143,9 +192,9 @@ methods: {
 
 .logo{
   background-image: url("logo.png");
-  width: 12vw;
-  height: 5vh;
-  background-repeat: no-repeat;
+  width: 10vw;
+  height: 8vh;
+  background-size: cover;
   position: relative;
   left: 0.5vw;
   top: 2vh;
