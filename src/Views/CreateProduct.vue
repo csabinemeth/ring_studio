@@ -1,5 +1,5 @@
 <template>
-  <div class="createBackground">
+  <div class="createBackgroundTermek">
     <h5 class="createTitle">Új termék</h5>
     <div class="formStuff">
       <div class="formLine">
@@ -205,23 +205,25 @@ export default {
 
   methods: {
     create() {
-      this.$router.push("/project");
+      this.$router.push("/favourites");
     },
 
     back() {
-      this.$router.push("/projectList");
+      this.$router.push("/project");
     },
   },
 };
 </script>
 
 <style>
-.createBackground {
+.createBackgroundTermek {
   height: 100vh;
   width: 90vw;
   background-color: #1e1f21;
   overflow: scroll;
   color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .telText {

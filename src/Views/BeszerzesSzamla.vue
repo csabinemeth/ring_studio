@@ -58,11 +58,11 @@ export default {
 
   methods: {
     create() {
-      this.$router.push("/project");
+      this.$router.push("/beszerzes");
     },
 
     back() {
-      this.$router.push("/projectList");
+      this.$router.push("/beszerzes");
     },
   },
 };

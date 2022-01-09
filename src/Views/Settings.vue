@@ -63,6 +63,71 @@
   
   </tbody>
 </table>
+
+
+  <table class="table table-dark" id="settingsTable">
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Cégedatok</b> </td>
+    </tr>
+    <tr >
+      <td>
+       <div class="logo"></div><br/>
+      -Cég neve <br/><br/>
+      -Cég címe <br/><br/>
+      -Email <br/><br/>
+      -Telefon <br/><br/>
+      -Weboldal 
+     </td>
+      
+    </tr>
+  
+  
+  </tbody>
+</table>
+
+ <table class="table table-dark" id="settingsTable">
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Felhasználó</b> </td>
+      <td></td>
+    </tr>
+    <tr >
+      <td>
+          <div class="formLineProfile">
+        <text>Név:</text>
+        <input
+          class="form-control"
+          id="inputBoxProfile"
+          placeholder="Horváth Julianna"
+        />
+      </div>    <div class="formLineProfile">
+        <text>E-mail:</text>
+        <input
+          class="form-control"
+          id="inputBoxProfile"
+          placeholder="horvath.juli@gmail.com"
+        />
+      </div>    <div class="formLineProfile">
+        <text>Jelszó:</text>
+        <input
+          class="form-control"
+          id="inputBoxProfile"
+          placeholder="**********"
+        />
+      </div>
+     </td>
+     <td>  <div class="profile"></div></td>
+      
+    </tr>
+  
+  
+  </tbody>
+</table>
       </div>
 </template>
 
@@ -91,6 +156,19 @@ export default {
   overflow-x: hidden;
 }
 
+#inputBoxProfile{
+  width: 15vw;
+  position: absolute;
+  left: 5vw;
+  height: 5vh;
+
+}
+
+.formLineProfile{
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .settingsTitle{
       position: relative;
     left: 2vw;
@@ -103,6 +181,16 @@ export default {
     color: white;
     position: relative;
     left: 2vw;
+}
+
+.profile{
+    background-image: url("../assets/avatar1.jpg");
+  width: 10vw;
+  height: 18vh;
+  background-size: cover;
+  position: relative;
+  left: 0vw;
+  top: 0vh;
 }
 
 

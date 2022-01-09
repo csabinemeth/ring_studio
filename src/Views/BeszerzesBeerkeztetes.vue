@@ -14,45 +14,17 @@
       <text class="dateTextBeerkeztetes">2021.12.23 csütörtök</text>
     </div>
     <div class="buttonLine">
-      <button
-        type="button"
-        id="projectButton"
-        class="btn btn-primary"
-        @click="navDashboard"
-      >
-        Dashboard
-      </button>
-      <button
-        type="button"
-        id="projectButton"
-        @click="navAdatlap"
-        class="btn btn-primary"
-      >
-        Projektadatlap
-      </button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Költségvetés
-      </button>
-     <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat">Ajánlat</button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Beszerzés
-      </button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Eladás
-      </button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Pénzügy
-      </button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Szekciók
-      </button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Katalógus
-      </button>
-      <button type="button" id="projectButton" class="btn btn-primary">
-        Dokumentumok
-      </button>
-    </div>
+  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap">Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes">Költségvetés</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat">Ajánlat</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes">Beszerzés</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas">Eladás</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Pénzügy</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToDiviziok">Divíziok</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus">Katalógus</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs">Dokumentumok</button>
+</div>
     <div class="dividerProject"></div>
 
     <div class="szures">
@@ -287,15 +259,48 @@ export default {
   path: "/beszerzesBeerkeztetes",
 
   methods: {
-    navDashboard() {
-      this.$router.push("/project");
+     navKoltsegvetes() {
+      this.$router.push('/project_koltsegvetes')
     },
+
     navAdatlap() {
-      this.$router.push("/project_adatlap");
+      this.$router.push('/project_adatlap')
     },
-    navToAjanlat(){
-      this.$router.push("/ajanlat");
-    }
+    
+    navToAjanlat() {
+      this.$router.push('/ajanlat')
+    },
+
+ navToDashboard(){
+      this.$router.push('/project')
+    },
+       navToBeszerzes(){
+      this.$router.push('/beszerzes')
+    },
+
+   navToEladas(){
+      this.$router.push('/eladas')
+    },
+
+   navToPenzugy(){
+      this.$router.push('/penzugy')
+    },
+
+   navToDiviziok(){
+      this.$router.push('/diviziok')
+    },
+
+   navToKatalogus(){
+      this.$router.push('/katalogus')
+    },
+
+   navToDocs(){
+      this.$router.push('/docs')
+    },
+
+
+
+
   },
 };
 </script>

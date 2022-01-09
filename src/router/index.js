@@ -28,6 +28,7 @@ import CreateKiadas from '../Views/CreateKiadas'
 import BeszerzesBeerkeztetes from '../Views/BeszerzesBeerkeztetes'
 import BeszerzesSzamla from '../Views/BeszerzesSzamla'
 import UgyfelSzamla from '../Views/UgyfelSzamla'
+import Katalogus from '../Views/Katalogus'
 
 import { createRouter, createWebHistory } from  'vue-router';
 
@@ -41,7 +42,7 @@ import { createRouter, createWebHistory } from  'vue-router';
         {
             path: '/beszerzesBeerkeztetes',
             name: 'BeszerzesBeerkeztetes',
-            component: BeszerzesBeerkeztetes
+            component: BeszerzesBeerkeztetes,
         },
         {
             path: '/beszerzesSzamla',
@@ -72,6 +73,11 @@ import { createRouter, createWebHistory } from  'vue-router';
             path: '/',
             name: 'Home',
             component: Home
+        },
+        {
+            path: '/katalogus',
+            name: 'Katalogus',
+            component: Katalogus
         },
         {
             path: '/diviziok',

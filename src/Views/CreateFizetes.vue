@@ -53,11 +53,11 @@ export default {
 
   methods: {
     create() {
-      this.$router.push("/project");
+      this.$router.push("/penzugy");
     },
 
     back() {
-      this.$router.push("/projectList");
+      this.$router.push("/penzugy");
     },
   },
 };

@@ -9,7 +9,7 @@
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" > Új termék</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navToCreatePRoduct"> Új termék</a>
   </div>
 </div>
  
@@ -125,6 +125,13 @@
 export default {
       name: "Favourites",
       path: "/favourites",
+
+      methods: {
+
+          navToCreatePRoduct() {
+            this.$router.push("/createProduct");
+          }
+      }
 };
 </script>
 

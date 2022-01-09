@@ -19,7 +19,7 @@
     
 </div>
 <h3 class="greetingsText">Üdv, Bori!</h3>
-<div class="tableLine">
+<div class="tableLineHome">
 <table class="table table-dark" id="projectsTable">
   <thead>
   </thead>
@@ -204,7 +204,7 @@ export default {
 
 }
 
-.tableLine{
+.tableLineHome{
     display: flex;
 }
 
