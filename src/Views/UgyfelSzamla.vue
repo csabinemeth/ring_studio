@@ -25,7 +25,7 @@
           <th scope="col">DB szám (kiadott)</th>
           <th scope="col">Egységár</th>
           <th scope="col">Összár</th>
-          >
+          > 
         </tr>
       </thead>
       <tbody>
