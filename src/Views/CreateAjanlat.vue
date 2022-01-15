@@ -1,5 +1,5 @@
 <template>
-<div class="createAjanlatBackGround"> 
+<div class="ujAjanlatBackGround"> 
 <div class="topLine">
 <h5 class="projectTitle">P-22-03_projekt:</h5> <div class="dropdown">
       <button
@@ -46,10 +46,10 @@
         
       </div>
       </div>
- <input class="form-control mr-sm-2" id="searchBarBeszerzes" type="search" placeholder="Search" aria-label="Search">
- <text class="dateTextBeszerzes">2021.12.23 csütörtök</text>
+ <input class="form-control mr-sm-2" id="searchBarujAjanlat" type="search" placeholder="Search" aria-label="Search">
+ <text class="dateTextujAjanlat">2021.12.23 csütörtök</text>
  <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonBeszerzes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButtonujAjanlat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -215,9 +215,22 @@
         <input class="form-control" id="inputBox" placeholder="Ajánlat címe" />
       </div>
 <div class="formLineAjanlat">
-        <text>Kedvezmény:</text>
-        <input class="form-control" id="inputBox" placeholder="Kedvezmény (% / Ft)" />
+        <text>Kedvezmény (%):</text>
+        <input class="form-control" id="inputBox" placeholder="Kedvezmény (%)" />
       </div>
+      <div class="formLineAjanlat">
+        <text>Kedvezmény (Ft):</text>
+        <input class="form-control" id="inputBox" placeholder="Kedvezmény (Ft)" />
+      </div>
+      <div class="formLineAjanlat">
+        <text>Ajánlat érvényessége:</text>
+        <input class="form-control" id="inputBox" placeholder="Ajánlat érvényessége" />
+      </div>
+        <div class="formLineAjanlat">
+        <text>Megjegyzés:</text>
+        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+      </div>
+      
 
     <table class="table table-dark" id="koltsegTable">
       <thead>
@@ -300,16 +313,19 @@
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
         </tr>
+        <tr>
+          <th></th>
+          <th>Összesítő:</th>
+          <td></td>
+          <td></td>
+          <td>381 150 Ft</td>
+          <td>431 175Ft</td>
+          <td></td>
+          <td></td>
+        </tr>
       </tbody>
     </table>
 
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
 
     
   </div>
@@ -390,12 +406,12 @@ export default {
   text-decoration: underline;
 }
 
-#plusButtonBeszerzes{
-  background-color: #2a2b2d;
+#plusButtonujAjanlat{
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;
-  left: 41.5vw;
+  left: 40vw;
 }
 
 
@@ -414,10 +430,10 @@ export default {
   border: 0;
 }
 
-#searchBarBeszerzes{
+#searchBarujAjanlat{
     width: 10vw;
     position: relative;
-    left: 41vw;
+    left: 39.5vw;
     top: 2vh;
     height: 4vh;
     background-color: #1e1f21;
@@ -434,11 +450,11 @@ export default {
   text-decoration: underline;
 }
 
-.dateTextBeszerzes{
+.dateTextujAjanlat{
     color: white;
     position: relative;
     top: 2vh;
-    left: 41vw;
+    left: 39.5vw;
     color:#68686a;
 }
 
@@ -476,27 +492,22 @@ export default {
   left: 1vw;
 }
 
-.projectBackGround{
-     height: 100vh;
-  width: 90vw;
-  background-color: #1e1f21;
-  overflow: hidden;
-}
 
 #csoportositasCreateAjanlat {
   background-color: #2a2b2d;
   border: 0;
   position: relative;
-  left: 29vw;
+  left: 28vw;
   margin-left: 5px;
   font-size: 15px;
 }
 
-.createAjanlatBackGround {
+.ujAjanlatBackGround {
   height: 100vh;
   width: 90vw;
   background-color: #1e1f21;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 </style>

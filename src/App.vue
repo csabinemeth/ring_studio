@@ -1,6 +1,8 @@
 <template>
- 
+
+
 <div class="allDiv">
+
 
 <div class="sidebar">
 <div class="logo"> </div>
@@ -117,12 +119,16 @@ methods: {
     border:0;
 }
 
+
+
+
 #collapseExampleHome{
   background-color: #2a2b2d;
   position: relative;
   top: 5vh;
   border:0;
 }
+
 
 .projectnav{
   background-color: #2a2b2d;
