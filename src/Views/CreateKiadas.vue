@@ -1,6 +1,26 @@
 <template>
   <div class="createBackground">
-    <h5 class="createTitle">Új kiadás</h5>
+    <div class="topLine">
+      <h5 class="projectTitle">
+        P-22-03_projekt:<text class="dashboard">Új kiadás</text>
+      </h5>
+      <input
+        class="form-control mr-sm-2"
+        id="searchBarBeszerzesSz"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <text class="dateTextBeszerzesSz">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonBeszerzesSz" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
+</div>
     <div class="formStuff">
       <div class="formLine">
         <text>Számla száma:</text>
@@ -19,7 +39,17 @@
         <text>Rendelés szám:</text>
         <input class="form-control" id="inputBox" placeholder="Rendelés száma" />
       </div>
-     
+      
+     <div class="formLine">
+        <text>Szállító:</text>
+        <input class="form-control" id="inputBox" placeholder="Szállító" />
+      </div>
+
+<div class="formLine">
+        <text>Leírás:</text>
+        <input class="form-control" id="inputBox" placeholder="Leírás" />
+      </div>
+
       <div class="formLine">
         <text>Megjegyzés:</text>
         <input class="form-control" id="inputBox" placeholder="Megjegyzés" />

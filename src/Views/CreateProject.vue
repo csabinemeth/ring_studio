@@ -1,71 +1,117 @@
 <template>
-  <div class="createBackground">
-    <h5 class="createTitle">Új projekt</h5>
+  <div class="createBackgroundProject">
+     <div class="topLine">
+      <h5 class="projectTitle">
+        P-22-03_projekt:<text class="dashboard"> Új projekt</text>
+      </h5>
+      <input
+        class="form-control mr-sm-2"
+        id="searchBarKoltseg"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <text class="dateTextKoltseg">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonProject" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
+    </div>
     <div class="formStuff">
       <div class="formLine">
         <text>Ügyfél:</text>
         <input class="form-control" id="inputBox" placeholder="Ügyfél" />
       </div>
+      
       <div class="formLine">
         <text>Projekt kód:</text>
-        <input class="form-control" id="inputBox" placeholder="Ügyfél" />
+        <input class="form-control" id="inputBox" placeholder="Projekt kód" />
       </div>
       <div class="formLine">
         <text>Projekt név:</text>
-        <input class="form-control" id="inputBox" placeholder="Ügyfél" />
+        <input class="form-control" id="inputBox" placeholder="Projekt név" />
+      </div>
+       <div class="formLine">
+        <text>Számlázási cím: irányítószám:</text>
+        <input class="form-control" id="inputBox" placeholder="Számlázási cím: irányítószám" />
+      </div>
+       <div class="formLine">
+        <text>Település:</text>
+        <input class="form-control" id="inputBox" placeholder="Település" />
       </div>
       <div class="formLine">
-        <text class="addressText">Számlázási cím:</text> 
-        <input class="form-control" id="inputBoxSmall" placeholder="Város" />
-        <input class="form-control" id="inputBoxSmall" placeholder="utca" />
-        <input class="form-control" id="inputBoxSmall" placeholder="házszám" />
-        <input
-          class="form-control"
-          id="inputBoxSmall"
-          placeholder="Irányítószám"
-        />
+        <text>Utca:</text>
+        <input class="form-control" id="inputBox" placeholder="Utca" />
       </div>
+      <div class="formLine">
+        <text>Házszám:</text>
+        <input class="form-control" id="inputBox" placeholder="Házszám" />
+      </div>
+       <div class="formLine">
+        <text>Adószám:</text>
+        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+      </div>
+      
+     
       <div class="formLine">
         <text>Email:</text>
         <input class="form-control" id="inputBox" placeholder="Email" />
       </div>
+       <div class="formLine">
+        <text>Telefon 1:</text>
+        <input class="form-control" id="inputBox" placeholder="Telefon 1" />
+      </div>
       <div class="formLine">
-        <text class="telText">Telefon1:</text>
-        <input class="form-control" id="inputBoxSmall" placeholder="Telefon1" />
-        <text class="telText">Telefon2:</text>
-        <input class="form-control" id="inputBoxSmall" placeholder="Telefon2" />
-        <text class="telText">Telefon3:</text>
-        <input class="form-control" id="inputBoxSmall" placeholder="Telefon3" />
+        <text>Telefon 2:</text>
+        <input class="form-control" id="inputBox" placeholder="Telefon 2" />
+      </div>
+      <div class="formLine">
+        <text>Telefon 3:</text>
+        <input class="form-control" id="inputBox" placeholder="Telefon 3" />
       </div>
       <div class="formLine">
         <text>ÁFA:</text>
         <input class="form-control" id="inputBox" placeholder="ÁFA" />
       </div>
       <div class="formLine">
-        <text class="addressText">Szállítási cím:&emsp;</text> 
-        <input class="form-control" id="inputBoxSmall" placeholder="Város" />
-     
-        <input class="form-control" id="inputBoxSmall" placeholder="utca" />
- 
-        <input class="form-control" id="inputBoxSmall" placeholder="házszám" />
-      
-        <input
-          class="form-control"
-          id="inputBoxSmall"
-          placeholder="Irányítószám"
-        />
+        <text>Szállítási cím: irányítószám:</text>
+        <input class="form-control" id="inputBox" placeholder="Számlázási cím: irányítószám" />
+      </div>
+       <div class="formLine">
+        <text>Település:</text>
+        <input class="form-control" id="inputBox" placeholder="Település" />
       </div>
       <div class="formLine">
-        <text class="telText">Telefon1:</text>
-        <input class="form-control" id="inputBoxSmall" placeholder="Telefon" />
-        <text class="telText">Telefon2:</text>
-        <input class="form-control" id="inputBoxSmall" placeholder="Telefon" />
-        <text class="telText">Telefon3:</text>
-        <input class="form-control" id="inputBoxSmall" placeholder="Telefon" />
+        <text>Utca:</text>
+        <input class="form-control" id="inputBox" placeholder="Utca" />
+      </div>
+      <div class="formLine">
+        <text>Házszám:</text>
+        <input class="form-control" id="inputBox" placeholder="Házszám" />
+      </div>
+       <div class="formLine">
+        <text>Telefon 1:</text>
+        <input class="form-control" id="inputBox" placeholder="Telefon 1" />
+      </div>
+      <div class="formLine">
+        <text>Telefon 2:</text>
+        <input class="form-control" id="inputBox" placeholder="Telefon 2" />
+      </div>
+      <div class="formLine">
+        <text>Telefon 3:</text>
+        <input class="form-control" id="inputBox" placeholder="Telefon 3" />
       </div>
       <div class="formLine">
         <text>Költségkeret:</text>
         <input class="form-control" id="inputBox" placeholder="Költségkeret" />
+      </div>
+       <div class="formLine">
+        <text>Kapcsolattartó:</text>
+        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
       </div>
       <div class="formLine">
         <text>Megjegyzés:</text>
@@ -109,12 +155,13 @@ export default {
 </script>
 
 <style>
-.createBackground {
+.createBackgroundProject {
   height: 100vh;
   width: 90vw;
   background-color: #1e1f21;
-  overflow: hidden;
+  overflow-x: hidden;
   color: white;
+  overflow-y: scroll;
 }
 
 .telText{

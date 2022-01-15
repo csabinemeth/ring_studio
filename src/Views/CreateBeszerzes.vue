@@ -1,5 +1,5 @@
 <template>
-<div class="projectBackGround"> 
+<div class="beszerzesBackGround"> 
 <div class="topLine">
 <h5 class="projectTitle">P-22-03_projekt:</h5> <div class="dropdown">
       <button
@@ -227,7 +227,21 @@
       <text class="aktivSzuroText">Beszálító</text>
       <text class="deleteActive">Szűrők törlése</text>
     </div>
-
+    <br/>
+    <div class="formStuff">
+ <div class="formLine">
+        <text class="beszerzesText">Beszerzési cím:</text>
+        <input class="form-control" id="inputBox" placeholder="Beszerzési cím" />
+      </div>
+       <div class="formLine">
+        <text class="beszerzesText">Határidő:</text>
+        <input class="form-control" id="inputBox" placeholder="Határidő" />
+      </div>
+       <div class="formLine">
+        <text class="beszerzesText">Megjegyzés:</text>
+        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+      </div>
+      </div>
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
@@ -329,17 +343,22 @@
            <td>1000 Ft</td>
           <td>100 000 Ft </td>
         </tr>
+        <tr>
+        <td></td>
+         <th>Összesítő:</th>
+          <td></td>
+           <td></td>
+            <td></td>
+             <td></td>
+              <td></td>
+               <td></td>
+                <td>500 000 Ft</td>
+        </tr>
+
       </tbody>
     </table>
 
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
-
+   
     
   </div>
 
@@ -419,12 +438,16 @@ export default {
   text-decoration: underline;
 }
 
+.beszerzesText{
+  color: white;
+}
+
 #plusButtonBeszerzes{
-  background-color: #2a2b2d;
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;
-  left: 39.5vw;
+  left: 38.5vw;
 }
 
 
@@ -446,7 +469,7 @@ export default {
 #searchBarBeszerzes{
     width: 10vw;
     position: relative;
-    left: 39vw;
+    left: 38vw;
     top: 2vh;
     height: 4vh;
     background-color: #1e1f21;
@@ -467,7 +490,7 @@ export default {
     color: white;
     position: relative;
     top: 2vh;
-    left: 39vw;
+    left: 38vw;
     color:#68686a;
 }
 
@@ -509,6 +532,15 @@ export default {
   left: 24.5vw;
   margin-left: 5px;
   font-size: 15px;
+}
+
+.beszerzesBackGround{
+  overflow-y: scroll;
+  overflow-x: hidden;
+   height: 100vh;
+  width: 90vw;
+  background-color: #1e1f21;
+
 }
 
 </style>

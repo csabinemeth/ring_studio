@@ -48,6 +48,14 @@
       </div>
  <input class="form-control mr-sm-2" id="searchBarTK" type="search" placeholder="Search" aria-label="Search">
  <text class="dateTextTK">2021.12.23 csütörtök</text>
+ <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonTK" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
 </div>
 
 <div class="buttonLine">
@@ -384,6 +392,7 @@ export default {
 #tableInput{
   width: 5vw;
   height: 4vh;
+  background-color: #1e1f21;
 }
 
 .dividerProject{
@@ -404,7 +413,7 @@ export default {
 #searchBarTK{
     width: 10vw;
     position: relative;
-    left: 41vw;
+    left: 37.5vw;
     top: 2vh;
     height: 4vh;
     background-color: #1e1f21;
@@ -425,7 +434,7 @@ export default {
     color: white;
     position: relative;
     top: 2vh;
-    left: 41vw;
+    left: 37.5vw;
     color:#68686a;
 }
 
@@ -484,6 +493,14 @@ export default {
   width: 90vw;
   background-color: #1e1f21;
   overflow: hidden;
+}
+
+
+#plusButtonTK{
+    position: relative;
+  left: 38vw;
+  top: 1vh;
+  background-Color: #9fc321;
 }
 
 </style>

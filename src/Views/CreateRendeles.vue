@@ -1,5 +1,5 @@
 <template>
-<div class="createAjanlatBackGround"> 
+<div class="createRendelesBackGround"> 
 <div class="topLine">
 <h5 class="projectTitle">P-22-03_projekt:</h5> <div class="dropdown">
       <button
@@ -48,6 +48,14 @@
       </div>
  <input class="form-control mr-sm-2" id="searchBarRendeles" type="search" placeholder="Search" aria-label="Search">
  <text class="dateTextRendeles">2021.12.23 csütörtök</text>
+ <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonUjRendeles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
 </div>
 
 <div class="buttonLine">
@@ -205,11 +213,19 @@
     </div>
 <div class="formLineAjanlat">
         <text>Előleg:</text>
-        <input class="form-control" id="inputBox" placeholder="Előleg (% / Ft)" />
+        <input class="form-control" id="inputBox" placeholder="Előleg" />
+      </div>
+      <div class="formLineAjanlat">
+        <text>% / Ft:</text>
+        <input class="form-control" id="inputBox" placeholder="% / Ft" />
       </div>
 <div class="formLineAjanlat">
         <text>Kedvezmény:</text>
-        <input class="form-control" id="inputBox" placeholder="Kedvezmény (% / Ft)" />
+        <input class="form-control" id="inputBox" placeholder="Kedvezmény" />
+      </div>
+      <div class="formLineAjanlat">
+        <text>Megjegyzés:</text>
+        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
       </div>
 
     <table class="table table-dark" id="koltsegTable">
@@ -228,6 +244,7 @@
           <th scope="col">Eladási ár</th>
           <th scope="col">Árrés</th>
                     <th scope="col">Státusz</th>
+                     <th scope="col">Rendelés szám</th>
           
         </tr>
       </thead>
@@ -247,6 +264,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td>123456789</td>
         </tr>
          <tr>
           <th><input
@@ -262,6 +280,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td>123456789</td>
         </tr>
          <tr>
           <th><input
@@ -277,6 +296,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td>123456789</td>
         </tr>
          <tr>
           <th><input
@@ -292,17 +312,23 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td>123456789</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>Összesítő:</td>
+          <td></td>
+          <td></td>
+          <td>304 940 Ft</td>
+          <td>344 940 Ft</td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
       </tbody>
     </table>
 
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
+    
 
     
   </div>
@@ -405,7 +431,7 @@ export default {
 #searchBarRendeles{
     width: 10vw;
     position: relative;
-    left: 43vw;
+    left: 39vw;
     top: 2vh;
     height: 4vh;
     background-color: #1e1f21;
@@ -426,7 +452,7 @@ export default {
     color: white;
     position: relative;
     top: 2vh;
-    left: 43vw;
+    left: 39vw;
     color:#68686a;
 }
 
@@ -438,6 +464,22 @@ export default {
   left: 2vw;
   top: 8vh;
   position: relative;
+}
+
+.createRendelesBackGround{
+   height: 100vh;
+  width: 90vw;
+  background-color: #1e1f21;
+  overflow-x:hidden;
+  overflow-y: scroll;
+}
+
+#plusButtonUjRendeles{
+  background-color: #9ec520;
+  border: 0;
+  top: 1vh;
+  position: relative;
+  left: 39.5vw;
 }
 
 #createBeszerzesListDropdown {
@@ -478,13 +520,6 @@ export default {
   left: 29vw;
   margin-left: 5px;
   font-size: 15px;
-}
-
-.createAjanlatBackGround {
-  height: 100vh;
-  width: 90vw;
-  background-color: #1e1f21;
-  overflow: hidden;
 }
 
 </style>

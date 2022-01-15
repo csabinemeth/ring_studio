@@ -12,6 +12,14 @@
         aria-label="Search"
       />
       <text class="dateTextBeerkeztetes">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonBeszBe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
     </div>
     <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
@@ -325,6 +333,14 @@ export default {
   background-color: #2a2b2d;
 }
 
+#createButtonTK{
+    position: relative;
+  top: 8vh;
+  margin-right: 10px;
+  background-color: #9ec520;
+  border: 0;
+}
+
 .icons {
   color: white;
   position: relative;
@@ -470,7 +486,7 @@ export default {
 #searchBeerkeztetes {
   width: 10vw;
   position: relative;
-  left: 39vw;
+  left: 35.5vw;
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
@@ -480,7 +496,7 @@ export default {
   color: white;
   position: relative;
   top: 2vh;
-  left: 39vw;
+  left: 35.5vw;
   color: #68686a;
 }
 
@@ -502,4 +518,12 @@ export default {
   background-color: #1e1f21;
   overflow: hidden;
 }
+
+ #plusButtonBeszBe{
+     background-color: #9ec520;
+  border: 0;
+  top: 1vh;
+  position: relative;
+  left: 36vw;
+ }
 </style>

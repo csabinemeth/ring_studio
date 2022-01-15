@@ -12,6 +12,14 @@
         aria-label="Search"
       />
       <text class="dateTextKoltseg">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonProject" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
     </div>
   <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
@@ -188,6 +196,8 @@
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
+                  <th scope="col">Tag</th>
+
           <th scope="col">Termékkód</th>
           <th scope="col">Termék</th>
           <th scope="col">Kép</th>
@@ -200,6 +210,7 @@
       </thead>
       <tbody>
         <tr>
+        <td>Tag</td>
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td><div class="productImage"></div></td>
@@ -209,6 +220,7 @@
           <td>Megrendelve</td>
         </tr>
         <tr>
+           <td>Tag</td>
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td><div class="productImage"></div></td>
@@ -218,6 +230,7 @@
           <td>Megrendelve</td>
         </tr>
         <tr>
+           <td>Tag</td>
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td><div class="productImage"></div></td>
@@ -229,13 +242,7 @@
       </tbody>
     </table>
 
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
+   
 
     <table class="table table-dark" id="overallTable">
       <thead>
@@ -470,7 +477,7 @@ export default {
 #searchBarKoltseg {
   width: 10vw;
   position: relative;
-  left: 45vw;
+  left: 41.5vw;
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
@@ -480,7 +487,7 @@ export default {
   color: white;
   position: relative;
   top: 2vh;
-  left: 45vw;
+  left: 41.5vw;
   color: #68686a;
 }
 

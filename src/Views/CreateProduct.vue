@@ -1,6 +1,26 @@
 <template>
   <div class="createBackgroundTermek">
-    <h5 class="createTitle">Új termék</h5>
+  <div class="topLine">
+      <h5 class="projectTitle">
+        P-22-03_projekt:<text class="dashboard">Új termék</text>
+      </h5>
+      <input
+        class="form-control mr-sm-2"
+        id="searchBarProject"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <text class="dateTextProject">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonProject" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
+    </div>
     <div class="formStuff">
       <div class="formLine">
         <text>Státusz:</text>
@@ -172,6 +192,7 @@
           class="form-control"
           id="textArea"
           aria-label="With textarea"
+          placeholder="Kommentek"
         ></textarea>
       </div>
       <div class="formLine">
@@ -188,7 +209,7 @@
       </button>
       <button
         type="button"
-        id="createButton"
+        id="cancelButton"
         @click="back"
         class="btn btn-danger"
       >
@@ -226,6 +247,18 @@ export default {
   overflow-x: hidden;
 }
 
+#cancelButton{
+    position: relative;
+  top: 8vh;
+  margin-right: 10px;
+  background-color: red;
+  border: 0;
+}
+
+#textArea{
+  background-color: #1e1f21;
+}
+
 .telText {
   margin-right: 18px;
 }
@@ -234,6 +267,8 @@ export default {
   position: relative;
   top: 8vh;
   margin-right: 10px;
+  background-color: #9ec520;
+  border: 0;
 }
 
 .formStuff {
@@ -276,6 +311,11 @@ export default {
   margin-left: 10px;
   position: absolute;
   left: 25vw;
+  background-color: #1e1f21;
+}
+
+#fileUpload.button{
+  background-color: #1e1f21;
 }
 
 #textArea {
@@ -292,5 +332,6 @@ export default {
   margin-left: 10px;
   position: absolute;
   left: 25vw;
+  background-color: #1e1f21;
 }
 </style>

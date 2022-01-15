@@ -12,6 +12,14 @@
         aria-label="Search"
       />
       <text class="dateTextProject">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonProject" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
     </div>
     <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
@@ -58,7 +66,7 @@
       <table id="projectFirstTable" class="table table-dark">
         <thead>
           <tr>
-            <th>Projektinfo <i class="fas fa-check" id="tableIcons"></i><i class="fas fa-arrow-right" id="tableIcons"></i><i class="far fa-trash-alt" id="tableIcons"></i></th>
+            <th>Projektinfo </th>
           </tr>
         </thead>
         <tbody>
@@ -85,7 +93,7 @@
       <table id="projectSecondTable" class="table table-dark">
         <thead>
           <tr>
-            <th>Ellenőrizendő <i class="fas fa-check" id="tableIcons"></i><i class="fas fa-arrow-right" id="tableIcons"></i><i class="far fa-trash-alt" id="tableIcons"></i></th>
+            <th>Ellenőrizendő </th>
           </tr>
         </thead>
         <tbody>
@@ -99,8 +107,8 @@
                 data-target="#collapseExample"
                 aria-expanded="false"
                 aria-controls="collapseExample"
-              >
-                Termék 
+              > 
+                Termék <i class="fas fa-sort-down"></i>
               </button>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body" id="expandContainer">
@@ -143,7 +151,7 @@
                 aria-expanded="false"
                 aria-controls="collapseExample2"
               >
-                Ajánlat
+                Ajánlat <i class="fas fa-sort-down"></i>
               </button>
               <div class="collapse" id="collapseExample2">
                 <div class="card card-body" id="expandContainer">
@@ -184,7 +192,7 @@
                 aria-expanded="false"
                 aria-controls="collapseExample3"
               >
-                Beszerzés
+                Beszerzés <i class="fas fa-sort-down"></i>
               </button>
               <div class="collapse" id="collapseExample3">
                 <div class="card card-body" id="expandContainer">
@@ -225,7 +233,7 @@
                 aria-expanded="false"
                 aria-controls="collapseExample4"
               >
-                Rendelés
+                Rendelés <i class="fas fa-sort-down"></i>
               </button>
               <div class="collapse" id="collapseExample4">
                 <div class="card card-body" id="expandContainer">
@@ -347,6 +355,13 @@ export default {
   position: relative;
   top: 20vh;
   display: flex;
+}
+
+@media (max-width: 1300px){
+  .projectBackGround1{
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 }
 
 .verticalDivider {
@@ -490,6 +505,13 @@ export default {
   bottom: 5vh;
 }
 
+#plusButtonProject{
+  position: relative;
+  left: 42vw;
+  top: 1vh;
+  background-Color: #9fc321;
+}
+
 .bar4 {
   height: 25vh;
   width: 5vw;
@@ -573,7 +595,7 @@ export default {
 #searchBarProject {
   width: 10vw;
   position: relative;
-  left: 45.5vw;
+  left: 41.5vw;
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
@@ -583,7 +605,7 @@ export default {
   color: white;
   position: relative;
   top: 2vh;
-  left: 45.5vw;
+  left: 41.5vw;
   color: #68686a;
 }
 

@@ -18,12 +18,11 @@
 
     
 </div>
-<h3 class="greetingsText">Üdv, Bori!</h3>
+<h3 class="greetingsText">Szia, Bori!</h3>
 <div class="tableLineHome">
 <table class="table table-dark" id="projectsTable">
   <thead>
-  </thead>
-   <thead>
+    <th>Projektjeim</th>
   </thead>
   <tbody>
     <tr class="projectRow">
@@ -44,8 +43,7 @@
 
 <table class="table table-dark" id="projectsTable">
   <thead>
-  </thead>
-     <thead>
+  <th>Feladatok</th>
   </thead>
   <tbody>
     <tr class="projectRow">
@@ -115,7 +113,7 @@ export default {
 }
 
 #plusButton{
-  background-color: #2a2b2d;
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;

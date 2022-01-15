@@ -1,6 +1,26 @@
 <template>
   <div class="createBackground">
-    <h5 class="createTitle">Új beszerzés számla</h5>
+    <div class="topLine">
+      <h5 class="projectTitle">
+        P-22-03_projekt:<text class="dashboard">Új termék</text>
+      </h5>
+      <input
+        class="form-control mr-sm-2"
+        id="searchBarBeszerzesSz"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <text class="dateTextBeszerzesSz">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonBeszerzesSz" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
+</div>
     <div class="formStuff">
       <div class="formLine">
         <text>Beszállító:</text>
@@ -104,6 +124,35 @@ export default {
   height: 28px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#searchBarBeszerzesSz {
+  width: 10vw;
+  position: relative;
+  left: 43.5vw;
+  top: 2vh;
+  height: 4vh;
+  background-color: #1e1f21;
+}
+
+
+
+#plusButtonBeszerzesSz{
+  background-color: #9ec520;
+  border: 0;
+  top: 1vh;
+  position: relative;
+  left: 44vw;
+}
+
+
+
+.dateTextBeszerzesSz {
+  color: white;
+  position: relative;
+  top: 2vh;
+  left: 43.5vw;
+  color: #68686a;
 }
 
 .createTitle {

@@ -4,6 +4,14 @@
 <h5 class="projectTitle">P-22-03_projekt:<text class="dashboard">Dokumentumok</text></h5>
  <input class="form-control mr-sm-2" id="searchBarDocs" type="search" placeholder="Search" aria-label="Search">
  <text class="dateTextDocs">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonDocs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
 </div>
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
@@ -24,6 +32,8 @@
         <tr>
           <th scope="col">Dokumentum címe</th>
           <th scope="col">Dátum</th>
+          <th scope="col">Típus</th>
+          <th scope="col">Feltöltő</th>
           <th scope="col"></th>
           >
         </tr>
@@ -32,36 +42,50 @@
         <tr>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
-          <td>Szerződés.doc</td>
-          <td>2021.01.01</td>
+          <td>Teszt dokumentum.doc</td>
+          <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
-          <td>Teszt ajánlat.pdf</td>
-          <td>2020.01.01</td>
+          <td>Teszt dokumentum.doc</td>
+          <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
-          <td>Teszt ajánlat.pdf</td>
-          <td>2020.01.01</td>
+         <td>Teszt dokumentum.doc</td>
+          <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
-          <td>Teszt ajánlat.pdf</td>
-          <td>2020.01.01</td>
+          <td>Teszt dokumentum.doc</td>
+          <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
-          <td>Teszt ajánlat.pdf</td>
-          <td>2020.01.01</td>
+         <td>Teszt dokumentum.doc</td>
+          <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
-          <td>Teszt ajánlat.pdf</td>
-          <td>2020.01.01</td>
+          <td>Teszt dokumentum.doc</td>
+          <td>2022.01.01</td>
+          <td>Típus 1</td>
+          <td>Horváth Gyula</td>
           <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
       </tbody>
@@ -134,7 +158,7 @@ export default {
 #searchBarDocs {
   width: 10vw;
   position: relative;
-  left: 43vw;
+  left: 39vw;
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
@@ -144,7 +168,7 @@ export default {
   color: white;
   position: relative;
   top: 2vh;
-  left: 43vw;
+  left: 39vw;
   color: #68686a;
 }
 
@@ -155,6 +179,14 @@ export default {
     text-decoration: none;
     top: 2vh;
     
+}
+
+#plusButtonDocs{
+  background-color: #9ec520;
+  border: 0;
+  top: 1vh;
+  position: relative;
+  left: 39.5vw;
 }
 
 .dashboard{
