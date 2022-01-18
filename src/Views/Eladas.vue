@@ -128,7 +128,7 @@
     <div class="aktivSzurok">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">Ügyfél 1</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 
     <table class="table table-dark" id="koltsegTable">
@@ -149,7 +149,7 @@
           <th scope="col" class="rendelesTH">Számlázott összeg</th>
           <th scope="col" class="rendelesTH">Fizetett összeg</th>
           <th scope="col" class="rendelesTH">Kiadott</th>
-          <th scope="col" class="rendelesTH">Figyelmeztetés</th>
+          <th scope="col" class="rendelesTH"></th>
           >
         </tr>
       </thead>
@@ -170,7 +170,7 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>Kiadott</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
             <tr>
         <th><input
@@ -188,7 +188,7 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>Kiadott</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
         
           <tr>
@@ -207,7 +207,7 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>Kiadott</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
             <tr>
         <th><input
@@ -225,18 +225,24 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>Kiadott</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
+        </tr>
+             <tr>
+        <th>
+        </th>
+          <th>Összesítő:</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>304 940 Ft</td>
+          <td>304 940 Ft</td>
+          <td>304 940 Ft</td>
+          <td></td>
+          <td></td>
         </tr>
       </tbody>
     </table>
-
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
 
     
   </div>
@@ -322,7 +328,7 @@ export default {
 }
 
 #plusButtonEladas{
-  background-color: #2a2b2d;
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;

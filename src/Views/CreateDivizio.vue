@@ -1,13 +1,33 @@
 <template>
   <div class="createBackground">
-    <h5 class="createTitle">Új divízio</h5>
+   <div class="topLine">
+      <h5 class="projectTitle">
+        P-22-03_projekt:<text class="dashboard"> Új divizió</text>
+      </h5>
+      <input
+        class="form-control mr-sm-2"
+        id="searchBarUjDivizio"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <text class="dateTextUjDivizio">2021.12.23 csütörtök</text>
+      <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonUjDivizio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+  </div>
+</div>
+    </div>
     <div class="formStuff">
       <div class="formLine">
-        <text>Lista neve:</text>
+        <text>Divizió neve:</text>
         <input class="form-control" id="inputBox" placeholder="Lista neve" />
       </div>
       <div class="formLine">
-        <text>Lista leírása:</text>
+        <text>Divizió leírása:</text>
         <input class="form-control" id="inputBox" placeholder="Lista leírása" />
       </div>
          <div class="formLine">
@@ -17,6 +37,10 @@
           <option>Szám</option>
           <option>Szöveg</option>
         </select>
+      </div>
+      <div class="formLine">
+        <text>Értékek:</text>
+        <input class="form-control" id="inputBox" placeholder="Értékek" />
       </div>
      
       
@@ -132,5 +156,35 @@ export default {
   margin-left: 10px;
   position: absolute;
   left: 25vw;
+}
+
+
+#searchBarUjDivizio {
+  width: 10vw;
+  position: relative;
+  left: 43.5vw;
+  top: 2vh;
+  height: 4vh;
+  background-color: #1e1f21;
+}
+
+
+
+#plusButtonUjDivizio{
+  background-color: #9ec520;
+  border: 0;
+  top: 1vh;
+  position: relative;
+  left: 44vw;
+}
+
+
+
+.dateTextUjDivizio {
+  color: white;
+  position: relative;
+  top: 2vh;
+  left: 43.5vw;
+  color: #68686a;
 }
 </style>

@@ -186,7 +186,7 @@
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasCreateAjanlat"
+          id="csoportositasCAjanlat"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -210,27 +210,15 @@
       <text class="aktivSzuroText">Divízió</text>
       <text class="deleteActive">Szűrők törlése</text>
     </div>
-<div class="formLineAjanlat">
-        <text>Ajánlat címe:</text>
-        <input class="form-control" id="inputBox" placeholder="Ajánlat címe" />
-      </div>
-<div class="formLineAjanlat">
-        <text>Kedvezmény (%):</text>
-        <input class="form-control" id="inputBox" placeholder="Kedvezmény (%)" />
-      </div>
-      <div class="formLineAjanlat">
-        <text>Kedvezmény (Ft):</text>
-        <input class="form-control" id="inputBox" placeholder="Kedvezmény (Ft)" />
-      </div>
-      <div class="formLineAjanlat">
-        <text>Ajánlat érvényessége:</text>
-        <input class="form-control" id="inputBox" placeholder="Ajánlat érvényessége" />
-      </div>
-        <div class="formLineAjanlat">
-        <text>Megjegyzés:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
-      </div>
-      
+    <div class="formLines">
+        <input class="form-control" id="inputBox1" placeholder="Ajánlat címe" />
+        <input class="form-control" id="inputBox1" placeholder="Kedvezmény (%)" />
+        <input class="form-control" id="inputBox1" placeholder="Kedvezmény (Ft)" />
+        <input class="form-control" id="inputBox1" placeholder="Ajánlat érvényessége" />
+        <input class="form-control" id="inputBox1" placeholder="Ajánlat száma" />
+        <input class="form-control" id="inputBox1" placeholder="Megjegyzés" />
+</div>
+<br/>
 
     <table class="table table-dark" id="koltsegTable">
       <thead>
@@ -248,6 +236,7 @@
           <th scope="col">Eladási ár</th>
           <th scope="col">Árrés</th>
                     <th scope="col">Státusz</th>
+                    <th></th>
           >
         </tr>
       </thead>
@@ -267,6 +256,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
         </tr>
          <tr>
           <th><input
@@ -282,6 +272,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
         </tr>
          <tr>
           <th><input
@@ -297,6 +288,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
         </tr>
          <tr>
           <th><input
@@ -312,6 +304,7 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
         </tr>
         <tr>
           <th></th>
@@ -319,13 +312,29 @@
           <td></td>
           <td></td>
           <td>381 150 Ft</td>
-          <td>431 175Ft</td>
-          <td></td>
+          <td>431 175 Ft</td>
+          <td>40 000 Ft</td>
           <td></td>
         </tr>
       </tbody>
     </table>
 
+<button
+        type="button"
+        id="createButtonAjanlat"
+        @click="create"
+        class="btn btn-success"
+      >
+        Mentés
+      </button>
+      <button
+        type="button"
+        id="createButtonAjanlat"
+        @click="create"
+        class="btn btn-success"
+      >
+        Nyomtatás
+      </button>
 
     
   </div>
@@ -402,6 +411,21 @@ export default {
     
 }
 
+
+#createButtonAjanlat{
+  position: relative;
+  top: 8vh;
+  left: 2vw;
+  margin-right: 10px;
+  background-color: #9fc321;
+  border: 0;
+}
+
+
+.formLines{
+  display: flex;
+}
+
 .dashboard{
   text-decoration: underline;
 }
@@ -415,6 +439,18 @@ export default {
 }
 
 
+#inputBox1 {
+   width: 175px;
+  height: 28px;
+  margin-left: 12px;
+  position: relative;
+  left: 2vw;
+  top: 10vh;
+  background-color: #1e1f21;
+}
+  
+
+
 .dividerProject{
     width: 84vw;
     position: relative;
@@ -422,6 +458,7 @@ export default {
     height: 1px;
     background-color: #68686e;
     top: 2.5vh;
+    
 }
 
 #projectButton{
@@ -458,15 +495,6 @@ export default {
     color:#68686a;
 }
 
-.formLineAjanlat {
-  display: flex;
-  color: white;
-  margin-top: 17px;
-  margin-bottom: 15px;
-  left: 2vw;
-  top: 8vh;
-  position: relative;
-}
 
 #createBeszerzesListDropdown {
   background-color: #2a2b2d;
@@ -493,11 +521,11 @@ export default {
 }
 
 
-#csoportositasCreateAjanlat {
+#csoportositasCAjanlat {
   background-color: #2a2b2d;
   border: 0;
   position: relative;
-  left: 28vw;
+  left: 27.5vw;
   margin-left: 5px;
   font-size: 15px;
 }

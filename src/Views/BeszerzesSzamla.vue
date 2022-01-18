@@ -2,7 +2,7 @@
   <div class="createBackground">
     <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Új termék</text>
+        P-22-03_projekt:<text class="dashboard">Beszerzés számla</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -129,7 +129,7 @@ export default {
 #searchBarBeszerzesSz {
   width: 10vw;
   position: relative;
-  left: 43.5vw;
+  left: 39vw;
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
@@ -142,7 +142,7 @@ export default {
   border: 0;
   top: 1vh;
   position: relative;
-  left: 44vw;
+  left: 39.5vw;
 }
 
 
@@ -151,7 +151,7 @@ export default {
   color: white;
   position: relative;
   top: 2vh;
-  left: 43.5vw;
+  left: 39vw;
   color: #68686a;
 }
 

@@ -88,7 +88,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Szekció
+          Divizió
         </button>
         <div
           class="dropdown-menu"
@@ -190,13 +190,18 @@
       <text class="aktivSzuroText">BÉ-L101</text>
       <text class="aktivSzuroText">Beszállító 1</text>
       <text class="aktivSzuroText">Szekció 1</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
-                  <th scope="col">Tag</th>
+                  <th scope="col"><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
 
           <th scope="col">Termékkód</th>
           <th scope="col">Termék</th>
@@ -210,7 +215,12 @@
       </thead>
       <tbody>
         <tr>
-        <td>Tag</td>
+        <td><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></td>
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td><div class="productImage"></div></td>
@@ -220,7 +230,12 @@
           <td>Megrendelve</td>
         </tr>
         <tr>
-           <td>Tag</td>
+           <td><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></td>
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td><div class="productImage"></div></td>
@@ -230,7 +245,12 @@
           <td>Megrendelve</td>
         </tr>
         <tr>
-           <td>Tag</td>
+           <td><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></td>
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td><div class="productImage"></div></td>
@@ -408,8 +428,8 @@ export default {
 .deleteActive {
   color: grey;
   font-size: 13px;
-  position: relative;
-  right: 3px;
+  position: absolute;
+  left: 0vw;
 }
 
 #szuroDropdown:focus {

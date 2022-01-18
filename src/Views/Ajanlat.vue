@@ -121,7 +121,7 @@
     <div class="aktivSzurok">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">101</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 
     <table class="table table-dark" id="koltsegTable">

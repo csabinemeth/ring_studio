@@ -209,15 +209,15 @@
     <div class="aktivSzurok">
       <text class="aktivSzuroText">Ügyfél</text>
       <text class="aktivSzuroText">Divízió</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 <div class="formLineAjanlat">
-        <text>Előleg:</text>
-        <input class="form-control" id="inputBox" placeholder="Előleg" />
+        <text>Előleg (Ft):</text>
+        <input class="form-control" id="inputBox" placeholder="Előleg (Ft)" />
       </div>
       <div class="formLineAjanlat">
-        <text>% / Ft:</text>
-        <input class="form-control" id="inputBox" placeholder="% / Ft" />
+        <text>Előleg (%):</text>
+        <input class="form-control" id="inputBox" placeholder="Előleg (%)" />
       </div>
 <div class="formLineAjanlat">
         <text>Kedvezmény:</text>

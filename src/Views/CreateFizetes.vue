@@ -2,18 +2,18 @@
   <div class="createBackground">
      <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Új ügyfél számla</text>
+        P-22-03_projekt:<text class="dashboard">Új fizetés</text>
       </h5>
       <input
         class="form-control mr-sm-2"
-        id="searchBarUgyfelSzamla"
+        id="searchBarUjFizetes"
         type="search"
         placeholder="Search"
         aria-label="Search"
       />
-      <text class="dateTextUgyfelSzamla">2021.12.23 csütörtök</text>
+      <text class="dateTextUjFizetes">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonUgyfelSzamla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButtonUjFizetes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -144,5 +144,34 @@ export default {
   position: absolute;
   left: 25vw;
   background-color: #1e1f21;
+}
+
+#searchBarUjFizetes {
+  width: 10vw;
+  position: relative;
+  left: 43.5vw;
+  top: 2vh;
+  height: 4vh;
+  background-color: #1e1f21;
+}
+
+
+
+#plusButtonUjFizetes{
+  background-color: #9ec520;
+  border: 0;
+  top: 1vh;
+  position: relative;
+  left: 44vw;
+}
+
+
+
+.dateTextUjFizetes {
+  color: white;
+  position: relative;
+  top: 2vh;
+  left: 43.5vw;
+  color: #68686a;
 }
 </style>

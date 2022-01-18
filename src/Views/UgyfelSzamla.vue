@@ -21,29 +21,7 @@
   </div>
 </div>
     </div>
-
-     <div class="formLine">
-        <text class="bizonylatText">Vevő:</text>
-        <input class="form-control" id="inputBoxUS" placeholder="Vevő" />
-      </div>
-        <div class="formLine">
-        <text class="bizonylatText">Számlaszám:</text>
-        <input class="form-control" id="inputBoxUS" placeholder="Számlaszám" />
-      </div>
-        <div class="formLine">
-        <text class="bizonylatText">Fizetési határidő:</text>
-        <input class="form-control" id="inputBoxUS" placeholder="Fizetési határidő" />
-      </div>
-         <div class="formLine">
-        <text class="bizonylatText">Előleg számla száma:</text>
-        <input class="form-control" id="inputBoxUS" placeholder="Előleg számla száma" />
-      </div>
-         <div class="formLine">
-        <text class="bizonylatText">Kedvezmény:</text>
-        <input class="form-control" id="inputBoxUS" placeholder="Kedvezmény" />
-      </div>
-
-       <div class="szuresUgyfelSzamla">
+    <div class="szures">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
         <button
@@ -54,7 +32,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Termékkód
+          Termékkategória
         </button>
         <div
           class="dropdown-menu"
@@ -75,7 +53,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Terméknév
+          Státusz
         </button>
         <div
           class="dropdown-menu"
@@ -96,7 +74,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          DB szám(kiadott)
+          Szállító
         </button>
         <div
           class="dropdown-menu"
@@ -117,7 +95,28 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Egységár
+          Szállítólevél
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés A</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés B</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés C</a>
+        </div>
+      </div>
+  <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Rendelés szám
         </button>
         <div
           class="dropdown-menu"
@@ -133,34 +132,41 @@
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="szuroDropdown"
+          id="csoportositasUgyfelSzamla"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Összár
+          Csoportosítás
         </button>
         <div
           class="dropdown-menu"
           id="openedDrowdown"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
-          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
-          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
         </div>
       </div>
-   
+    </div>
+
+<div class="aktivSzurok">
       
+      <text class="aktivSzuroText">Típus 1</text>
+      <text class="aktivSzuroText">Feltöltő 1</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 
-   <div class="aktivSzurokUgyfelSzamla">
-      <text class="aktivSzuroText">BÉ-L101</text>
-      <text class="aktivSzuroText">Beszállító 1</text>
-      <text class="aktivSzuroText">Szekció 1</text>
-      <text class="deleteActive">Szűrők törlése</text>
-    </div>
+     <div class="formLines">
+        <input class="form-control" id="inputBox1" placeholder="Vevő" />
+        <input class="form-control" id="inputBox1" placeholder="Számlaszám" />
+        <input class="form-control" id="inputBox1" placeholder="Fizetési határidő" />
+        <input class="form-control" id="inputBox1" placeholder="Előleg számlaszáma" />
+        <input class="form-control" id="inputBox1" placeholder="Kedvezmény" />
+</div>
 
+    
     <table class="table table-dark" id="ugyfelSzamlaTable">
       <thead>
         <tr>
@@ -199,8 +205,36 @@
           <td></td>
           <td></td>
           <td></td>
-          <th>Összesítő</th>
+          <th>Összesítő:</th>
           <td>510 000 Ft</td>
+        </tr>
+          <tr>
+        <td></td>
+        </tr>
+            <tr>
+          <th>Előleg:</th>
+          <td></td>
+          <td></td>
+            <td></td>
+          <td>-170 000 Ft</td>
+  
+        </tr>
+      
+        <tr>
+           <th>Kedvezmény:</th>
+           <td></td>
+           <td></td>
+             <td></td>
+          <td>-50 000 Ft</td>
+        
+        </tr>
+        <tr>
+           <th>Fizetendő összeg:</th>
+           <td></td>
+           <td></td>
+             <td></td>
+          <th>290 000 Ft</th>
+      
         </tr>
       </tbody>
     </table>
@@ -209,18 +243,7 @@
       <thead>
       </thead>
       <tbody>
-        <tr>
-          <th>Előleg:</th>
-          <td>170 000 Ft</td>
-        </tr>
-        <tr>
-           <th>Kedvezmény:</th>
-          <td>50 000 Ft</td>
-        </tr>
-        <tr>
-           <th>Fizetendő összeg:</th>
-          <th>290 000 Ft</th>
-        </tr>
+    
       </tbody>
     </table>
 
@@ -313,6 +336,7 @@ export default {
   margin-left: 10px;
   position: absolute;
   left: 15vw;
+  background-color: #1e1f21;
   top: 2.5vh;
 }
 
@@ -321,6 +345,15 @@ export default {
     position:relative;
     top: 3vh;
     left: 2vw;
+}
+
+#csoportositasUgyfelSzamla{
+  background-color: #2a2b2d;
+  border: 0;
+  position: absolute;
+  left:25vw;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 #ugyfelSzamlaTable {

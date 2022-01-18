@@ -2,7 +2,7 @@
   <div class="projectBackGround">
     <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Beszerzés Beékeztetés</text>
+        P-22-03_projekt: <text class="dashboard">Beszerzés Beérkeztetés</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -13,7 +13,7 @@
       />
       <text class="dateTextBeerkeztetes">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonBeszBe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButtonBSzamla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -197,6 +197,12 @@
         <text class="bizonylatText">Külső bizonylat száma:</text>
         <input class="form-control" id="bizonylatSzam" placeholder="Külső bizonylat száma" />
       </div>
+      <div class="formLineFileBB">
+        <text class="formLineFileBBText">Melléklet:</text>
+        <input type="file" class="form-control" id="fileUpload" />
+      </div>
+
+      <br/>
 
     <table class="table table-dark" id="koltsegTable">
       <thead>
@@ -206,7 +212,6 @@
           <th scope="col">Szállító cikkszám</th>
           <th scope="col">DB szám</th>
           <th scope="col">Érkezett db</th>
-          <th scope="col">Melléklet </th>
           >
         </tr>
       </thead>
@@ -217,7 +222,6 @@
           <td>1234567</td>
           <td>100</td>
           <td>100</td>
-          <td>Melléklet <i class="fas fa-download"></i></td>
         </tr>
         <tr>
            <td>BÉ-L101</td>
@@ -225,7 +229,7 @@
           <td>1234567</td>
           <td>100</td>
           <td>100</td>
-          <td>Melléklet <i class="fas fa-download"></i></td>
+          
         </tr>
         <tr>
            <td>BÉ-L101</td>
@@ -233,7 +237,6 @@
           <td>1234567</td>
           <td>100</td>
           <td>100</td>
-          <td>Melléklet <i class="fas fa-download"></i></td>
         </tr>
       </tbody>
     </table>
@@ -361,8 +364,24 @@ export default {
     width: 20vw;
     position: relative;
     top : 2.5vh;
+    background-color: #1e1f21;
     left: 3vw;
 }
+
+.formLineFileBB{
+  position: relative;
+  top: 35px;
+  color: white;
+  right: 11vw;
+}
+
+.formLineFileBBText{
+  position: relative;
+  top: 35px;
+  left: 13vw;
+  color: white;
+}
+
 
 .productImage {
   width: 50px;
@@ -486,7 +505,7 @@ export default {
 #searchBeerkeztetes {
   width: 10vw;
   position: relative;
-  left: 35.5vw;
+  left: 35vw;
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
@@ -496,7 +515,7 @@ export default {
   color: white;
   position: relative;
   top: 2vh;
-  left: 35.5vw;
+  left: 35vw;
   color: #68686a;
 }
 
@@ -519,11 +538,11 @@ export default {
   overflow: hidden;
 }
 
- #plusButtonBeszBe{
-     background-color: #9ec520;
+ #plusButtonBSzamla{
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;
-  left: 36vw;
+  left: 35.5vw;
  }
 </style>

@@ -215,6 +215,14 @@
         <text>Szállítási cím:</text>
         <input class="form-control" id="inputBox" placeholder="Szállítási cím" />
       </div>
+      <div class="formLineAjanlat">
+        <text>Szállítólevél szám:</text>
+        <input class="form-control" id="inputBox" placeholder="Szállítólevél szám" />
+      </div>
+      <div class="formLineAjanlat">
+        <text>Megjegyzés:</text>
+        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+      </div>
 <br/>
     <table class="table table-dark" id="koltsegTable">
       <thead>

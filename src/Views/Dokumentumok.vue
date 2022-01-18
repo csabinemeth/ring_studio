@@ -27,6 +27,123 @@
 </div>
 <div class="dividerProject"></div>
 
+<div class="szures">
+      <text class="szuroText">Szűrés:</text>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Cím
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Dátum
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Típus
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Szekció 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Szekció 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Szekció 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Feltöltő
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés A</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés B</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés C</a>
+        </div>
+      </div>
+ 
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="csoportositasDocs"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Csoportosítás
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+        </div>
+      </div>
+    </div>
+
+<div class="aktivSzurok">
+      
+      <text class="aktivSzuroText">Típus 1</text>
+      <text class="aktivSzuroText">Feltöltő 1</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
+    </div>
+
 <table class="table table-dark" id="docsTable">
       <thead>
         <tr>
@@ -42,51 +159,51 @@
         <tr>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Ajánlat</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Beszerzés megrendelés</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Számla</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
          <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Szállítólevél</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Számla</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
          <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Ajánlat</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
         <tr>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
-          <td>Típus 1</td>
+          <td>Szállítólevél</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
         </tr>
       </tbody>
     </table>
@@ -162,6 +279,15 @@ export default {
   top: 2vh;
   height: 4vh;
   background-color: #1e1f21;
+}
+
+#csoportositasDocs{
+    background-color: #2a2b2d;
+  border: 0;
+  position: absolute;
+  left: 45.5vw;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .dateTextDocs {

@@ -142,7 +142,7 @@
     <div class="aktivSzurok">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">Beszálító</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 
     <table class="table table-dark" id="koltsegTable">
@@ -160,7 +160,7 @@
           <th scope="col">Beszerzés összege</th>
           <th scope="col">Beszerzés státusza</th>
           <th scope="col">Link</th>
-          <th scope="col">Figyelmeztetés</th>
+          <th scope="col"></th>
           >
         </tr>
       </thead>
@@ -178,7 +178,7 @@
           <td>76.235 Ft</td>
           <td>Nyitott</td>
           <td>www.ajanlat.hu</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
          <tr>
          <th><input
@@ -193,7 +193,7 @@
           <td>76.235 Ft</td>
           <td>Nyitott</td>
           <td>www.ajanlat.hu</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
          <tr>
          <th><input
@@ -208,7 +208,7 @@
           <td>76.235 Ft</td>
           <td>Nyitott</td>
           <td>www.ajanlat.hu</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
          <tr>
          <th><input
@@ -223,7 +223,7 @@
           <td>76.235 Ft</td>
           <td>Nyitott</td>
           <td>www.ajanlat.hu</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
         </tr>
          <tr>
          <th><input
@@ -238,19 +238,22 @@
           <td>76.235 Ft</td>
           <td>Nyitott</td>
           <td>www.ajanlat.hu</td>
-          <td>Figyelmeztetés</td>
+          <td><i class="fas fa-exclamation"></i></td>
+        </tr>
+        <tr>
+        <td></td>
+        <th>Összesítő:</th>
+        <td></td>
+        <td></td>
+        <td>381 175 Ft</td>
+        <td></td>
+        <td></td>
+        <td></td>
         </tr>
       </tbody>
     </table>
 
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
-
+    
     
   </div>
 

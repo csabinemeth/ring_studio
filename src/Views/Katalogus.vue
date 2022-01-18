@@ -209,7 +209,7 @@
     <div class="aktivSzurok">
       <text class="aktivSzuroText">Spot</text>
       <text class="aktivSzuroText">101</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
     <br/>
     <table class="table table-dark" id="koltsegTable">
