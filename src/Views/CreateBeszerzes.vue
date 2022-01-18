@@ -225,23 +225,17 @@
     <div class="aktivSzurok">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">Beszálító</text>
-      <text class="deleteActive">Szűrők törlése</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
-    <br/>
-    <div class="formStuff">
- <div class="formLine">
-        <text class="beszerzesText">Beszerzési cím:</text>
-        <input class="form-control" id="inputBox" placeholder="Beszerzési cím" />
-      </div>
-       <div class="formLine">
-        <text class="beszerzesText">Határidő:</text>
-        <input class="form-control" id="inputBox" placeholder="Határidő" />
-      </div>
-       <div class="formLine">
-        <text class="beszerzesText">Megjegyzés:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
-      </div>
-      </div>
+
+   
+  <div class="formLines">
+        <input class="form-control" id="inputBox1" placeholder="Beszerzési cím" />
+        <input class="form-control" id="inputBox1" placeholder="Határidő" />
+        <input class="form-control" id="inputBox1" placeholder="Rendelés szám" />
+        <input class="form-control" id="inputBox1" placeholder="Megjegyzés" />
+</div> 
+<br/>
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
@@ -358,7 +352,22 @@
       </tbody>
     </table>
 
-   
+   <button
+        type="button"
+        id="createButtonAjanlat"
+        @click="create"
+        class="btn btn-success"
+      >
+        Mentés
+      </button>
+      <button
+        type="button"
+        id="createButtonAjanlat"
+        @click="create"
+        class="btn btn-success"
+      >
+        Nyomtatás
+      </button>
     
   </div>
 
