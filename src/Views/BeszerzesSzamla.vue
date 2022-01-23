@@ -153,6 +153,7 @@ export default {
   top: 2vh;
   left: 39vw;
   color: #68686a;
+  
 }
 
 .createTitle {
