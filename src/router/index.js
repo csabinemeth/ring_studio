@@ -29,6 +29,8 @@ import BeszerzesBeerkeztetes from '../Views/BeszerzesBeerkeztetes'
 import BeszerzesSzamla from '../Views/BeszerzesSzamla'
 import UgyfelSzamla from '../Views/UgyfelSzamla'
 import Katalogus from '../Views/Katalogus'
+import Penzugy_beszerzes from '../Views/Penzugy_beszerzes';
+import Penzugy_eladas from '../Views/Penzugy_eladas';
 
 import { createRouter, createWebHistory } from  'vue-router';
 
@@ -123,6 +125,16 @@ import { createRouter, createWebHistory } from  'vue-router';
             path: '/penzugy',
             name: 'Penzugy',
             component: Penzugy
+        },
+        {
+            path: '/penzugy_beszerzes',
+            name: 'Penzugy_beszerzes',
+            component: Penzugy_beszerzes
+        },
+        {
+            path: '/penzugy_eladas',
+            name: 'Penzugy_eladas',
+            component: Penzugy_eladas
         },
         {
             path: '/docs',

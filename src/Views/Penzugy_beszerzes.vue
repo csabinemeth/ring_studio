@@ -52,8 +52,8 @@
 </div>
 <div class="dividerPenzugy"></div>
 <div class="buttonLine">
-  <button type="button" id="projectButtonActive" class="btn btn-primary">Összesítő</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyBeszerzes">Beszerzés</button>
+  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Összesítő</button>
+ <button type="button" id="projectButtonActive" class="btn btn-primary" >Beszerzés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyEladas">Eladás</button>
  </div>
 <div class="szures">
@@ -124,7 +124,7 @@
       </div>
     </div>
 
-    <div class="aktivSzurok">
+     <div class="aktivSzurok">
       <text class="aktivSzuroText">Szállító 1</text>
       <text class="aktivSzuroText">Gipsz Jakab</text>
       <text class="deleteActive"><i class="fas fa-times"></i> Szűrők törlése</text>
@@ -133,74 +133,49 @@
 <table class="table table-dark" id="penzugyTable">
   <thead>
     <tr>
-      <th scope="col"></th>
-      <th scope="col">Költségvetés</th>
+      <th scope="col">Dátum</th>
+      <th scope="col">Bizonylat</th>
+      <th scope="col">Beszállító</th>
       <th scope="col">Beszerzés</th>
-      <th scope="col">Beszerzés fizetve</th>
-      <th scope="col">Eladás</th>
-      <th scope="col">Eladás fizetve</th>
-      <th scope="col">Árrés</th>
+      <th scope="col">Előleg</th>
+      <th scope="col">Számla</th>
+      <th scope="col">Fizetés</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Szállító 1</th>
+      <th>2021.12.06</th>
+      <td>OC2021-18</td>
+      <td>calligaris</td>
+      <td>1 200 000 Ft</td>
       <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
+      <td></td>
+      <td>500 000 Ft</td>
     </tr>
     <tr>
-          <th>Szállító 2</th>
+          <th>2021.12.31</th>
+      <td>OC2021-19</td>
+      <td>calligaris</td>
+      <td></td>
       <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
+      <td>1 200 000 Ft</td>
+      <td>700 000 Ft</td>
     </tr>
     <tr>
-          <th>Szállító 3</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-    <tr>
-          <th>Szállító 4</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-    <tr>
-          <th>Szállító 5</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-     <tr>
-          <th>Összesen:</th>
-      <td>2 500 000 Ft</td>
+          <th></th>
+      <td></td>
+      <th>Összesen:</th>
+      <td>1 200 000 Ft</td>
       <td>1 000 000 Ft</td>
-      <td>1 000 000 Ft</td>
-      <td>1 500 000 Ft</td>
-      <td>1 500 000 Ft</td>
-      <td>500 000 Ft</td>
+      <td>1 200 000 Ft</td>
+      <td>1 200 000 Ft</td>
     </tr>
+    
   </tbody>
 </table>
-
  </div>
+
+ 
 </template>
 
 <script>
@@ -211,8 +186,8 @@ export default {
 
 
 
-      name: "Penzugy",
-      path: "/penzugy",
+      name: "Penzugy_beszerzes",
+      path: "/penzugy_beszerzes",
 
   methods: {
 
@@ -256,11 +231,7 @@ export default {
     },
 
     navToPenzugyEladas(){
-      this.$router.push('/penzugy_eladas')
-    },
-
-    navToPenzugyBeszerzes(){
-      this.$router.push('penzugy_beszerzes')
+        this.$router.push('/penzugy_eladas')
     }
 
 
@@ -275,14 +246,6 @@ export default {
 
 <style>
 
-#penzugyTable{
-  position: relative;
-  top: 10vh;
-  left: 2vw;
-  width: 84vw;
-  background-color: #2a2b2d;
-}
-
 .links{
     color: white;
     position: relative;
@@ -294,14 +257,6 @@ export default {
     color: grey;
     cursor: pointer;
 
-}
-#csoportositasPenzugyOsszes{
- background-color: #2a2b2d;
-  border: 0;
-  position: relative;
-  left: 57vw;
-  margin-left: 5px;
-  font-size: 15px;
 }
 
 #plusButtonPenzugy{

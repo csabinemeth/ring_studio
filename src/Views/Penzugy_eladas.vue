@@ -52,9 +52,9 @@
 </div>
 <div class="dividerPenzugy"></div>
 <div class="buttonLine">
-  <button type="button" id="projectButtonActive" class="btn btn-primary">Összesítő</button>
+  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Összesítő</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyBeszerzes">Beszerzés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyEladas">Eladás</button>
+ <button type="button" id="projectButtonActive" class="btn btn-primary">Eladás</button>
  </div>
 <div class="szures">
       <text class="szuroText">Szűrés:</text>
@@ -133,73 +133,46 @@
 <table class="table table-dark" id="penzugyTable">
   <thead>
     <tr>
-      <th scope="col"></th>
-      <th scope="col">Költségvetés</th>
-      <th scope="col">Beszerzés</th>
-      <th scope="col">Beszerzés fizetve</th>
-      <th scope="col">Eladás</th>
-      <th scope="col">Eladás fizetve</th>
-      <th scope="col">Árrés</th>
+      <th scope="col">Dátum</th>
+      <th scope="col">Bizonylat</th>
+      <th scope="col">Vevő</th>
+      <th scope="col">Megrendelés</th>
+      <th scope="col">Előleg</th>
+      <th scope="col">Számla</th>
+      <th scope="col">Fizetés</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Szállító 1</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-    <tr>
-          <th>Szállító 2</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-    <tr>
-          <th>Szállító 3</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-    <tr>
-          <th>Szállító 4</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-    <tr>
-          <th>Szállító 5</th>
-      <td>500 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>200 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>300 000 Ft</td>
-      <td>100 000 Ft</td>
-    </tr>
-     <tr>
-          <th>Összesen:</th>
-      <td>2 500 000 Ft</td>
-      <td>1 000 000 Ft</td>
-      <td>1 000 000 Ft</td>
-      <td>1 500 000 Ft</td>
+      <th>2021.12.06</th>
+      <td>OC2021-18</td>
+      <td>Gipsz Jakab</td>
       <td>1 500 000 Ft</td>
       <td>500 000 Ft</td>
+      <td></td>
+      <td>500 000 Ft</td>
     </tr>
+    <tr>
+          <th>2021.12.31</th>
+      <td>RING-2021-258</td>
+      <td>Gipsz Jakab</td>
+      <td></td>
+      <td></td>
+      <td>1 500 000 Ft</td>
+      <td>1 000 000 Ft</td>
+    </tr>
+    <tr>
+          <th></th>
+      <td></td>
+      <th>Összesen:</th>
+      <td>1 500 000 Ft</td>
+      <td>500 000 Ft</td>
+      <td>1 500 000 Ft</td>
+      <td>1 500 000 Ft</td>
+    </tr>
+    
   </tbody>
 </table>
-
  </div>
 </template>
 
@@ -211,8 +184,8 @@ export default {
 
 
 
-      name: "Penzugy",
-      path: "/penzugy",
+      name: "Penzugy_eladas",
+      path: "/penzugy_eladas",
 
   methods: {
 
@@ -255,12 +228,8 @@ export default {
       this.$router.push('/docs')
     },
 
-    navToPenzugyEladas(){
-      this.$router.push('/penzugy_eladas')
-    },
-
     navToPenzugyBeszerzes(){
-      this.$router.push('penzugy_beszerzes')
+        this.$router.push('/penzugy_beszerzes')
     }
 
 
@@ -275,14 +244,6 @@ export default {
 
 <style>
 
-#penzugyTable{
-  position: relative;
-  top: 10vh;
-  left: 2vw;
-  width: 84vw;
-  background-color: #2a2b2d;
-}
-
 .links{
     color: white;
     position: relative;
@@ -294,14 +255,6 @@ export default {
     color: grey;
     cursor: pointer;
 
-}
-#csoportositasPenzugyOsszes{
- background-color: #2a2b2d;
-  border: 0;
-  position: relative;
-  left: 57vw;
-  margin-left: 5px;
-  font-size: 15px;
 }
 
 #plusButtonPenzugy{
