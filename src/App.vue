@@ -110,6 +110,7 @@ methods: {
   width: 14vw;
   height: 100vh;
   background-color: #2a2b2d;
+  z-index: 1;
 }
 
 #navCollapse{
@@ -166,6 +167,7 @@ methods: {
 
 .allDiv{
   display: flex;
+  
 }
 
 .dropdown{

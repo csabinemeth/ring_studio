@@ -314,7 +314,7 @@ export default {
 }
 
 #plusButtonAjanlat{
-  background-color: #2a2b2d;
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;
