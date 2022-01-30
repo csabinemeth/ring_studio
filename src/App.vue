@@ -9,7 +9,7 @@
  <button type="button" id="navButton" @click="navHome" class="btn btn-primary"><i class="fas fa-home"></i><label class="navText"> Home </label></button><br/>
 <button
                 class="btn btn-primary"
-                id="navCollapse"
+                id="navButton"
                 type="button"
                 @click="navProjectList"
                 data-toggle="collapse"
@@ -17,7 +17,7 @@
                 aria-expanded="false"
                 aria-controls="collapseExampleHome"
               >
-                <i class="fas fa-list"></i> Projektek
+                <i class="fas fa-list"></i> <label class="navText"> Projektek</label>
               </button>
               <div class="collapse" id="collapseExampleHome">
                 <div class="card card-body" id="expandContainerHome">
@@ -230,7 +230,7 @@ methods: {
   cursor: pointer;
 }
 
-@media(max-width: 900px){
+@media(max-width: 1250px){
 
   .navText{
     display: none;
@@ -238,6 +238,10 @@ methods: {
 
   #navButton{
     left: 3vw;
+  }
+
+  #expandContainerHome{
+    display: none;
   }
 
   #projectsDropdown{
