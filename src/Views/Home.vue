@@ -3,9 +3,9 @@
 <div class="topLine">
  <h5 class="homeTitle">Home</h5> 
  <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
- <text class="dateText">2021.12.23 csütörtök</text>
+ <text class="dateText1">2021.12.23 csütörtök</text>
 <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -112,12 +112,13 @@ export default {
     
 }
 
-#plusButton{
+#plusButton1{
   background-color: #9ec520;
   border: 0;
   top: 1vh;
-  position: relative;
-  left: 57vw;
+  position: absolute;
+  float: right;
+  right: 10px;
 }
 
 .iconCell{
@@ -166,18 +167,19 @@ export default {
 
 #searchBar{
     width: 10vw;
-    position: relative;
-    left: 56vw;
+    position: absolute;
     top: 2vh;
+    right: 200px;
     height: 4vh;
     background-color: #1e1f21;
+
 }
 
-.dateText{
+.dateText1{
     color: white;
-    position: relative;
+     position: absolute;
+     right: 55px;
     top: 2vh;
-    left: 56vw;
     color:#68686a;
 }
 
@@ -248,20 +250,7 @@ export default {
 }
 
 @media(max-width:900px){
-  #searchBar{
-    left: 4vw;
-    width:20vw;    
-  }
 
-  .dateText{
-    left: 5vw;
-    top: 2.5vh;
-  }
-
-  #plusButton{
-    left: 5.5vw;
-    top: 2vh;
-  }
 
   #projectsTable
   {

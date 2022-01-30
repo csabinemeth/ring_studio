@@ -6,14 +6,14 @@
       </h5>
       <input
         class="form-control mr-sm-2"
-        id="searchBeerkeztetes"
+        id="searchBar1"
         type="search"
         placeholder="Search"
         aria-label="Search"
       />
-      <text class="dateTextBeerkeztetes">2021.12.23 csütörtök</text>
+      <text class="dateText1">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonBSzamla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -162,12 +162,12 @@
           <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
           <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
         </div>
-      </div>
-      <div class="dropdown">
+      </div> 
+      <div class="dropdown" id="csoportDiv">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasBeerkez"
+          id="csoportositas1"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -469,13 +469,17 @@ export default {
   color: white;
 }
 
-#csoportositasBeerkez {
+#csoportositas1 {
   background-color: #2a2b2d;
   border: 0;
-  position: relative;
-  left: 23.5vw;
-  margin-left: 5px;
-  font-size: 15px;
+  right: 0;
+  position: absolute;
+
+}
+
+#csoportDiv{
+  position: absolute;
+  right: 35px;
 }
 
 #szuroDropdownItem:hover {
@@ -502,22 +506,6 @@ export default {
   border: 0;
 }
 
-#searchBeerkeztetes {
-  width: 10vw;
-  position: relative;
-  left: 35vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
-
-.dateTextBeerkeztetes {
-  color: white;
-  position: relative;
-  top: 2vh;
-  left: 35vw;
-  color: #68686a;
-}
 
 #projectButton:focus {
   box-shadow: none;
@@ -538,11 +526,23 @@ export default {
   overflow: hidden;
 }
 
- #plusButtonBSzamla{
+#plusButton1{
   background-color: #9ec520;
   border: 0;
   top: 1vh;
-  position: relative;
-  left: 35.5vw;
- }
+  position: absolute;
+  float: right;
+  right: 20px;
+}
+
+ #searchBar1{
+    width: 10vw;
+    position: absolute;
+    top: 2vh;
+    right: 210px;
+    height: 4vh;
+    background-color: #1e1f21;
+
+}
+
 </style>

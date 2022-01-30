@@ -50,7 +50,7 @@
 
     <div class="dividerProject"></div>
 
-    <div class="szures">
+    <div class="szures1">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
         <button
@@ -95,11 +95,11 @@
         </div>
       </div>
     
-      <div class="dropdown">
+      <div class="dropdown" id="csoportDiv">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasAjanlat"
+          id="csoportositas1"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -222,13 +222,6 @@
       </tbody>
     </table>
 
-    <div class="icons">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
 
     
   </div>
@@ -314,12 +307,25 @@ export default {
 }
 
 #plusButtonAjanlat{
-  background-color: #9ec520;
+   background-color: #9ec520;
   border: 0;
   top: 1vh;
-  position: relative;
-  left: 43.5vw;
+  position: absolute;
+  float: right;
+  right: 10px;
 }
+
+
+
+.szures1{
+  
+  color: white;
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+  display: flex;
+}
+
 
 
 .dividerProject{
@@ -339,9 +345,9 @@ export default {
 
 #searchBarAjanlat{
     width: 10vw;
-    position: relative;
-    left: 43vw;
+    position: absolute;
     top: 2vh;
+    right: 200px;
     height: 4vh;
     background-color: #1e1f21;
 }
@@ -358,10 +364,9 @@ export default {
 }
 
 .dateTextAjanlat{
-    color: white;
-    position: relative;
+     position: absolute;
+     right: 55px;
     top: 2vh;
-    left: 43vw;
     color:#68686a;
 }
 
@@ -385,13 +390,23 @@ export default {
   overflow: hidden;
 }
 
-#csoportositasAjanlat {
+#csoportositas1 {
   background-color: #2a2b2d;
   border: 0;
-  position: relative;
-  left: 53.5vw;
-  margin-left: 5px;
-  font-size: 15px;
+  right: 0;
+  position: absolute;
+
+}
+
+#csoportDiv{
+  position: absolute;
+  right: 35px;
+}
+
+@media(max-width: 1200px){
+  .buttonLine{
+  overflow-x: scroll;
+}
 }
 
 </style>

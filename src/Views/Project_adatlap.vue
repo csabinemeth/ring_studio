@@ -1,9 +1,18 @@
 <template>
-<div class="projectBackGround"> 
+<div id="projectBackGround"> 
 <div class="topLine">
 <h5 class="projectTitle">BÉ-L101:P-22-03_projekt:<text class="dashboard">Adatlap</text></h5>
- <input class="form-control mr-sm-2" id="searchBarProjectAdatlap" type="search" placeholder="Search" aria-label="Search">
- <text class="dateTextProjectAdatlap">2021.12.23 csütörtök</text>
+ <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
+ <text class="dateText1">2021.12.23 csütörtök</text>
+ <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-plus"></i>
+  </button>
+  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="dropdownItem" >Új projekt</a>
+
+  </div>
+</div>
 </div>
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
@@ -175,6 +184,7 @@ export default {
     width: 250px;
     float: right;
     left: 20vw;
+    background-color: #1e1f21;
 }
 
 .dashboard{
@@ -226,11 +236,13 @@ export default {
   left: 1vw;
 }
 
-.projectBackGround{
+#projectBackGround{
      height: 100vh;
   width: 90vw;
   background-color: #1e1f21;
-  overflow: hide;
+  overflow-y: scroll;
+   overflow-x: hide;
+
 }
 
 </style>

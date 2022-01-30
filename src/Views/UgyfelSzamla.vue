@@ -6,14 +6,14 @@
       </h5>
       <input
         class="form-control mr-sm-2"
-        id="searchBarUgyfelSzamla"
+        id="searchBar1"
         type="search"
         placeholder="Search"
         aria-label="Search"
       />
-      <text class="dateTextUgyfelSzamla">2021.12.23 csütörtök</text>
+      <text class="dateText1">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonUgyfelSzamla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -128,11 +128,11 @@
           <a class="dropdown-item" id="szuroDropdownItem">Beszerzés C</a>
         </div>
       </div>
-      <div class="dropdown">
+      <div class="dropdown" id="csoportDiv">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasUgyfelSzamla"
+          id="csoportositas1"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"

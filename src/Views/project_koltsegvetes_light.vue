@@ -6,14 +6,14 @@
       </h5>
       <input
         class="form-control mr-sm-2"
-        id="searchBarLight"
+        id="searchBar2"
         type="search"
         placeholder="Search"
         aria-label="Search"
       />
-      <text class="dateTextKoltseg">2021.12.23 csütörtök</text>
+      <text class="dateText1">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonProjectLight" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -163,11 +163,11 @@
           <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
         </div>
       </div>
-      <div class="dropdown">
+      <div class="dropdown" id="csoportDiv">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasLight"
+          id="csoportositas2"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -440,7 +440,7 @@ export default {
 
 .szuroTextLight {
   top: 5.5vh;
-  color: white;
+  color: black;
   position: relative;
 }
 
@@ -464,14 +464,13 @@ export default {
   color: white;
 }
 
-#csoportositasLight {
-  background-color: white;
-  border: 1px solid blick;
-  position: relative;
-  left: 22vw;
-  color:black;
-  margin-left: 5px;
-  font-size: 15px;
+#csoportositas2 {
+  background-color:white;
+  border: 0;
+  right: 0;
+  color: black;
+  border: 1px solid black;
+  position: absolute;
 }
 
 #szuroDropdownItem:hover {

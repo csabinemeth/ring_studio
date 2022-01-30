@@ -6,14 +6,14 @@
       </h5>
       <input
         class="form-control mr-sm-2"
-        id="searchBarBeszerzesSz"
+        id="searchBar1"
         type="search"
         placeholder="Search"
         aria-label="Search"
       />
-      <text class="dateTextBeszerzesSz">2021.12.23 csütörtök</text>
+      <text class="dateText1">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonBeszerzesSz" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -126,35 +126,7 @@ export default {
   margin-right: 10px;
 }
 
-#searchBarBeszerzesSz {
-  width: 10vw;
-  position: relative;
-  left: 39vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
 
-
-
-#plusButtonBeszerzesSz{
-  background-color: #9ec520;
-  border: 0;
-  top: 1vh;
-  position: relative;
-  left: 39.5vw;
-}
-
-
-
-.dateTextBeszerzesSz {
-  color: white;
-  position: relative;
-  top: 2vh;
-  left: 39vw;
-  color: #68686a;
-  
-}
 
 .createTitle {
   position: relative;

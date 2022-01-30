@@ -24,10 +24,10 @@
         
       </div>
       </div>
- <input class="form-control mr-sm-2" id="searchBarBeszerzes" type="search" placeholder="Search" aria-label="Search">
- <text class="dateTextBeszerzes">2021.12.23 csütörtök</text>
+ <input class="form-control mr-sm-2" id="searchBarBeszerzes1" type="search" placeholder="Search" aria-label="Search">
+ <text class="dateTextBeszerzes1">2021.12.23 csütörtök</text>
  <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonBeszerzes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButtonBeszerzes1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
@@ -116,11 +116,11 @@
         </div>
       </div>
     
-      <div class="dropdown">
+      <div class="dropdown" id="csoportDiv">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasBeszerzes"
+          id="csoportositas1"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -335,12 +335,13 @@ export default {
   text-decoration: underline;
 }
 
-#plusButtonBeszerzes{
-  background-color: #9ec520;
+#plusButtonBeszerzes1{
+ background-color: #9ec520;
   border: 0;
   top: 1vh;
-  position: relative;
-  left: 41.5vw;
+  position: absolute;
+  float: right;
+  right: 10px;
 }
 
 
@@ -359,13 +360,14 @@ export default {
   border: 0;
 }
 
-#searchBarBeszerzes{
-    width: 10vw;
-    position: relative;
-    left: 41vw;
+#searchBarBeszerzes1{
+ width: 10vw;
+    position: absolute;
     top: 2vh;
+    right: 200px;
     height: 4vh;
     background-color: #1e1f21;
+
 }
 
 #beszerzesListDropdown {
@@ -379,11 +381,10 @@ export default {
   text-decoration: underline;
 }
 
-.dateTextBeszerzes{
-    color: white;
-    position: relative;
+.dateTextBeszerzes1{
+    position: absolute;
+     right: 55px;
     top: 2vh;
-    left: 41vw;
     color:#68686a;
 }
 
@@ -405,15 +406,6 @@ export default {
   width: 90vw;
   background-color: #1e1f21;
   overflow: hidden;
-}
-
-#csoportositasBeszerzes {
-  background-color: #2a2b2d;
-  border: 0;
-  position: relative;
-  left: 44.5vw;
-  margin-left: 5px;
-  font-size: 15px;
 }
 
 </style>
