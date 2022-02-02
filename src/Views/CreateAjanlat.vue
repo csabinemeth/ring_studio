@@ -330,7 +330,7 @@
       <button
         type="button"
         id="createButtonAjanlat"
-        @click="create"
+        @click="navToAjanlat_print"
         class="btn btn-success"
       >
         Nyomtatás
@@ -392,6 +392,10 @@ export default {
    navToDocs(){
       this.$router.push('/docs')
     },
+
+    navToAjanlat_print(){
+      this.$router.push('/ajanlat_print');
+    }
 
 
 

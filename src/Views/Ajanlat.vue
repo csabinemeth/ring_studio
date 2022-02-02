@@ -31,7 +31,7 @@
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" >Új Ajánlat</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navNewAjanlat" >Új Ajánlat</a>
   </div>
 </div>
 </div>
@@ -249,6 +249,10 @@ export default {
       this.$router.push('/project_adatlap')
     },
     
+    navNewAjanlat(){
+      this.$router.push('/createajanlat')
+    },
+
     navToAjanlat() {
       this.$router.push('/ajanlat')
     },
