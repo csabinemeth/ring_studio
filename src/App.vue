@@ -32,7 +32,7 @@
  <button type="button" id="navButton" class="btn btn-primary" @click="navRiports" ><i class="fas fa-flag"></i> <label class="navText"> Riportok </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navHelp" ><i class="fas fa-question"></i> <label class="navText"> Súgó </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navSettings" ><i class="fas fa-cog"></i> <label class="navText"> Beállítások </label></button>
- <button type="button" id="modeChanger" class="btn btn-primary" ><i class="fas fa-adjust"></i></button>
+ <button type="button" id="modeChanger" class="btn btn-primary" @click="navToHomeLight"><i class="fas fa-adjust"></i></button>
 </div>
 <router-view/>
 </div>
@@ -74,6 +74,11 @@ methods: {
 
    
   },
+
+ navToHomeLight() {
+   this.$router.push("/home_light");
+ },
+
   navRiports() {
     console.log("Riports");
          this.$router.push("/riports");
