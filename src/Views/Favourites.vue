@@ -178,14 +178,7 @@ export default {
     top: 2vh;
 }
  
-#FavouritesSearchBar{
-  width: 10vw;
-    position: relative;
-    left: 49vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #FavouritesListTable{
  position: relative;
@@ -212,11 +205,7 @@ export default {
 }
 
 @media(max-width: 900px){
-  #FavouritesSearchBar{
-    left: 0;
-    width: 100px;
-    top: 25px;
-  }
+  
 
   .FavouritesDateText{
     left: 20px;

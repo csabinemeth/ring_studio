@@ -592,14 +592,6 @@ export default {
   border: 0;
 }
 
-#searchBarProject {
-  width: 10vw;
-  position: relative;
-  left: 41.5vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
 
 .dateTextProject {
   color: white;

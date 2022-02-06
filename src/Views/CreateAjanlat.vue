@@ -472,14 +472,7 @@ export default {
   border: 0;
 }
 
-#searchBarujAjanlat{
-    width: 10vw;
-    position: relative;
-    left: 39.5vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #beszerzesListDropdown {
   background-color: #2a2b2d;

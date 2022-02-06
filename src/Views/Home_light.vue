@@ -162,6 +162,7 @@ export default {
 
 .topLine{
     display: flex;
+    
 }
 
 #searchBar2{

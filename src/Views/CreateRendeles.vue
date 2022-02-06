@@ -211,23 +211,14 @@
       <text class="aktivSzuroText">Divízió</text>
       <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
-<div class="formLineAjanlat">
-        <text>Előleg (Ft):</text>
-        <input class="form-control" id="inputBox" placeholder="Előleg (Ft)" />
-      </div>
-      <div class="formLineAjanlat">
-        <text>Előleg (%):</text>
-        <input class="form-control" id="inputBox" placeholder="Előleg (%)" />
-      </div>
-<div class="formLineAjanlat">
-        <text>Kedvezmény:</text>
-        <input class="form-control" id="inputBox" placeholder="Kedvezmény" />
-      </div>
-      <div class="formLineAjanlat">
-        <text>Megjegyzés:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
-      </div>
-
+   <div class="formLines">
+        <input class="form-control" id="inputBox1" placeholder="Előleg (Ft)" />
+        <input class="form-control" id="inputBox1" placeholder="Előleg (%)" />
+        <input class="form-control" id="inputBox1" placeholder="Kedvezmény" />
+        <input class="form-control" id="inputBox1" placeholder="Rendelésszám" />
+        <input class="form-control" id="inputBox1" placeholder="Megjegyzés" />
+</div>
+<br/>
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
@@ -244,7 +235,6 @@
           <th scope="col">Eladási ár</th>
           <th scope="col">Árrés</th>
                     <th scope="col">Státusz</th>
-                     <th scope="col">Rendelés szám</th>
           
         </tr>
       </thead>
@@ -264,7 +254,6 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
-          <td>123456789</td>
         </tr>
          <tr>
           <th><input
@@ -280,7 +269,6 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
-          <td>123456789</td>
         </tr>
          <tr>
           <th><input
@@ -296,7 +284,6 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
-          <td>123456789</td>
         </tr>
          <tr>
           <th><input
@@ -312,8 +299,11 @@
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
-          <td>123456789</td>
         </tr>
+        <tr class="transparent">
+        <td></td>
+        <td colspan="7"></td> 
+        </tr> 
         <tr>
           <th></th>
           <td>Összesítő:</td>
@@ -321,9 +311,9 @@
           <td></td>
           <td>304 940 Ft</td>
           <td>344 940 Ft</td>
+          <td>40 000 Ft</td>
           <td></td>
-          <td></td>
-          <td></td>
+
         </tr>
       </tbody>
     </table>
@@ -428,14 +418,7 @@ export default {
   border: 0;
 }
 
-#searchBarRendeles{
-    width: 10vw;
-    position: relative;
-    left: 39vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #beszerzesListDropdown {
   background-color: #2a2b2d;

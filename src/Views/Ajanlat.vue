@@ -24,7 +24,7 @@
         
       </div>
       </div>
- <input class="form-control mr-sm-2" id="searchBarAjanlat" type="search" placeholder="Search" aria-label="Search">
+ <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateTextAjanlat">2021.12.23 csütörtök</text>
  <div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButtonAjanlat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -347,14 +347,7 @@ export default {
   border: 0;
 }
 
-#searchBarAjanlat{
-    width: 10vw;
-    position: absolute;
-    top: 2vh;
-    right: 200px;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #ajanlatListDropdown {
   background-color: #2a2b2d;

@@ -10,13 +10,17 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Pénzügy
+        Pénzügy - Beszerzés
       </button>
       <div
         class="dropdown-menu"
         id="openedDrowdownProjectList"
         aria-labelledby="dropdownMenuButton"
       >
+        <a class="dropdown-item" id="dropdownItem" @click="navToPenzugy">Összesítő</a>
+            <a class="dropdown-item" id="dropdownItem" @click="navToPenzugyEladas">Eladás</a>
+
+      <div class="dividerPenzugy1"></div>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-edit"></i> Szerkesztés</a>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-trash-alt"></i> Törlés</a>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-share-square"></i> Elküld/megoszt</a>
@@ -51,11 +55,7 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs">Dokumentumok</button>
 </div>
 <div class="dividerPenzugy"></div>
-<div class="buttonLine">
-  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Összesítő</button>
- <button type="button" id="projectButtonActive" class="btn btn-primary" >Beszerzés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyEladas">Eladás</button>
- </div>
+
 <div class="szures">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
@@ -144,7 +144,7 @@
   </thead>
   <tbody>
     <tr>
-      <th>2021.12.06</th>
+      <td>2021.12.06</td>
       <td>OC2021-18</td>
       <td>calligaris</td>
       <td>1 200 000 Ft</td>
@@ -153,7 +153,7 @@
       <td>500 000 Ft</td>
     </tr>
     <tr>
-          <th>2021.12.31</th>
+          <td>2021.12.31</td>
       <td>OC2021-19</td>
       <td>calligaris</td>
       <td></td>
@@ -161,10 +161,15 @@
       <td>1 200 000 Ft</td>
       <td>700 000 Ft</td>
     </tr>
+    <tr class="transparent">
+      <td></td>
+      <td colspan="6"></td>
+    </tr>
     <tr>
+      <th>Összesen:</th>
           <th></th>
       <td></td>
-      <th>Összesen:</th>
+      
       <td>1 200 000 Ft</td>
       <td>1 000 000 Ft</td>
       <td>1 200 000 Ft</td>
@@ -305,14 +310,6 @@ export default {
 }
 
 
-#searchBarPenzugy{
-    width: 10vw;
-    position: relative;
-    left: 42vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
 
 .dateTextPenzugy{
     color: white;

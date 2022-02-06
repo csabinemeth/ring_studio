@@ -497,14 +497,7 @@ export default {
   border: 0;
 }
 
-#searchBarLight{
-  width: 10vw;
-  position: relative;
-  left: 41.5vw;
-  top: 2vh;
-  height: 4vh;
-  background-color:white;
-}
+
 
 .dateTextKoltseg {
   color: white;

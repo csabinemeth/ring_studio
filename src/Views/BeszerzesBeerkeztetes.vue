@@ -192,7 +192,7 @@
       <text class="aktivSzuroText">Szekció 1</text>
       <text class="deleteActive">Szűrők törlése</text>
     </div>
-
+<div class="formLines">
      <div class="formLine">
         <text class="bizonylatText">Külső bizonylat száma:</text>
         <input class="form-control" id="bizonylatSzam" placeholder="Külső bizonylat száma" />
@@ -201,8 +201,8 @@
         <text class="formLineFileBBText">Melléklet:</text>
         <input type="file" class="form-control" id="fileUpload" />
       </div>
-
-      <br/>
+</div>
+    
 
     <table class="table table-dark" id="koltsegTable">
       <thead>
@@ -344,6 +344,10 @@ export default {
   border: 0;
 }
 
+.formLines{
+  display: flex;
+}
+
 .icons {
   color: white;
   position: relative;
@@ -378,7 +382,7 @@ export default {
 .formLineFileBBText{
   position: relative;
   top: 35px;
-  left: 13vw;
+  left: 18vw;
   color: white;
 }
 
@@ -535,14 +539,6 @@ export default {
   right: 20px;
 }
 
- #searchBar1{
-    width: 10vw;
-    position: absolute;
-    top: 2vh;
-    right: 210px;
-    height: 4vh;
-    background-color: #1e1f21;
-
-}
+ 
 
 </style>

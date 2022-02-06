@@ -10,13 +10,17 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Pénzügy
+        Pénzügy - Eladás
       </button>
       <div
         class="dropdown-menu"
         id="openedDrowdownProjectList"
         aria-labelledby="dropdownMenuButton"
       >
+      <a class="dropdown-item" id="dropdownItem" @click="navToPenzugy">Összesítő</a>
+            <a class="dropdown-item" id="dropdownItem" @click="navToPenzugyBeszerzes">Beszerzés</a>
+
+      <div class="dividerPenzugy1"></div>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-edit"></i> Szerkesztés</a>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-trash-alt"></i> Törlés</a>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-share-square"></i> Elküld/megoszt</a>
@@ -51,11 +55,6 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs">Dokumentumok</button>
 </div>
 <div class="dividerPenzugy"></div>
-<div class="buttonLine">
-  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Összesítő</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyBeszerzes">Beszerzés</button>
- <button type="button" id="projectButtonActive" class="btn btn-primary">Eladás</button>
- </div>
 <div class="szures">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
@@ -161,10 +160,15 @@
       <td>1 500 000 Ft</td>
       <td>1 000 000 Ft</td>
     </tr>
+    <tr class="transparent">
+      <td></td>
+      <td colspan="6"></td>
+    </tr>
     <tr>
+      <th>Összesen:</th>
           <th></th>
       <td></td>
-      <th>Összesen:</th>
+      
       <td>1 500 000 Ft</td>
       <td>500 000 Ft</td>
       <td>1 500 000 Ft</td>
@@ -303,14 +307,7 @@ export default {
 }
 
 
-#searchBarPenzugy{
-    width: 10vw;
-    position: relative;
-    left: 42vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 .dateTextPenzugy{
     color: white;

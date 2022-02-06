@@ -599,15 +599,6 @@ export default {
   border: 0;
 }
 
-#searchBarProjectLight {
-  width: 10vw;
-  position: relative;
-  left: 41.5vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: white;
-  border: 1px solid black;
-}
 
 .dateTextProject {
   color: white;

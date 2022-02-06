@@ -1,8 +1,8 @@
 <template>
   <div class="usBackGround">
-     <div class="topLine">
+    <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Új ügyfél számla</text>
+        P-22-03_projekt:<text class="dashboard"> Új ügyfél számla</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -13,13 +13,24 @@
       />
       <text class="dateText1">2021.12.23 csütörtök</text>
       <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <i class="fas fa-plus"></i>
-  </button>
-  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
-  </div>
-</div>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          id="plusButton1"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-plus"></i>
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="dropdownItem"> Új ügyfél</a>
+        </div>
+      </div>
     </div>
     <div class="szures">
       <text class="szuroText">Szűrés:</text>
@@ -107,7 +118,7 @@
           <a class="dropdown-item" id="szuroDropdownItem">Beszerzés C</a>
         </div>
       </div>
-  <div class="dropdown">
+      <div class="dropdown">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
@@ -151,22 +162,31 @@
       </div>
     </div>
 
-<div class="aktivSzurok">
-      
+    <div class="aktivSzurok">
       <text class="aktivSzuroText">Típus 1</text>
       <text class="aktivSzuroText">Feltöltő 1</text>
-      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
+      <text class="deleteActive"
+        >Szűrők törlése <i class="fas fa-times"></i
+      ></text>
     </div>
 
-     <div class="formLines">
-        <input class="form-control" id="inputBox1" placeholder="Vevő" />
-        <input class="form-control" id="inputBox1" placeholder="Számlaszám" />
-        <input class="form-control" id="inputBox1" placeholder="Fizetési határidő" />
-        <input class="form-control" id="inputBox1" placeholder="Előleg számlaszáma" />
-        <input class="form-control" id="inputBox1" placeholder="Kedvezmény" />
-</div>
+    <div class="formLines">
+      <input class="form-control" id="inputBox1" placeholder="Vevő" />
+      <input class="form-control" id="inputBox1" placeholder="Számlaszám" />
+      <input
+        class="form-control"
+        id="inputBox1"
+        placeholder="Fizetési határidő"
+      />
+      <input
+        class="form-control"
+        id="inputBox1"
+        placeholder="Előleg számlaszáma"
+      />
+      <input class="form-control" id="inputBox1" placeholder="Kedvezmény" />
+      <input class="form-control" id="inputBox1" placeholder="Előleg összege" />
+    </div>
 
-    
     <table class="table table-dark" id="ugyfelSzamlaTable">
       <thead>
         <tr>
@@ -175,7 +195,7 @@
           <th scope="col">DB szám (kiadott)</th>
           <th scope="col">Egységár</th>
           <th scope="col">Összár</th>
-          > 
+          >
         </tr>
       </thead>
       <tbody>
@@ -187,87 +207,76 @@
           <td>170 000 Ft</td>
         </tr>
         <tr>
-           <td>BÉ-L101</td>
+          <td>BÉ-L101</td>
           <td>Spot</td>
           <td>170</td>
           <td>1000 Ft</td>
           <td>170 000 Ft</td>
         </tr>
         <tr>
-           <td>BÉ-L101</td>
+          <td>BÉ-L101</td>
           <td>Spot</td>
           <td>170</td>
           <td>1000 Ft</td>
           <td>170 000 Ft</td>
         </tr>
-           <tr>
-           
+           <tr class="transparent">
+          <td></td>
+           <td colspan="4"></td>
+        </tr>
+        <tr>
+          <th>Összár összesítő:</th>
           <td></td>
           <td></td>
           <td></td>
-          <th>Összesítő:</th>
           <td>510 000 Ft</td>
         </tr>
-          <tr>
-        <td></td>
-        </tr>
-            <tr>
+        <tr>
           <th>Előleg:</th>
           <td></td>
           <td></td>
-            <td></td>
+          <td></td>
           <td>-170 000 Ft</td>
-  
         </tr>
-      
+
         <tr>
-           <th>Kedvezmény:</th>
-           <td></td>
-           <td></td>
-             <td></td>
+          <th>Kedvezmény:</th>
+          <td></td>
+          <td></td>
+          <td></td>
           <td>-50 000 Ft</td>
-        
         </tr>
         <tr>
-           <th>Fizetendő összeg:</th>
-           <td></td>
-           <td></td>
-             <td></td>
+          <th>Fizetendő összeg:</th>
+          <td></td>
+          <td></td>
+          <td></td>
           <th>290 000 Ft</th>
-      
         </tr>
       </tbody>
     </table>
 
-      <table class="table table-dark" id="ugyfelSzamlaTable">
-      <thead>
-      </thead>
-      <tbody>
-    
-      </tbody>
+    <table class="table table-dark" id="ugyfelSzamlaTable">
+      <thead></thead>
+      <tbody></tbody>
     </table>
 
-
-  
-
-     <button
-        type="button"
-        id="createButtonUS"
-        @click="create"
-        class="btn btn-success"
-      >
-        Mentés
-      </button>
-      <button
-        type="button"
-        id="createButtonUS"
-        @click="back"
-        class="btn btn-success"
-      >
-        Nyomtatás
-      </button>
-
-   
+    <button
+      type="button"
+      id="createButtonUS"
+      @click="create"
+      class="btn btn-success"
+    >
+      Mentés
+    </button>
+    <button
+      type="button"
+      id="createButtonUS"
+      @click="back"
+      class="btn btn-success"
+    >
+      Nyomtatás
+    </button>
   </div>
 </template>
 
@@ -283,9 +292,9 @@ export default {
     navAdatlap() {
       this.$router.push("/project_adatlap");
     },
-    navToAjanlat(){
+    navToAjanlat() {
       this.$router.push("/ajanlat");
-    }
+    },
   },
 };
 </script>
@@ -295,40 +304,15 @@ export default {
   display: flex;
 }
 
-#plusButtonUgyfelSzamla{
-  position: relative;
-  left: 39vw;
-  top: 1vh;
-  background-Color: #9fc321;
-}
-
-#searchBarUgyfelSzamla{
-  width: 10vw;
-  position: relative;
-  left: 38.5vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
-
-.dateTextUgyfelSzamla {
-  color: white;
-  position: relative;
-  top: 2vh;
-  left: 38.5vw;
-  color: #68686a;
-}
-
-.aktivSzurokUgyfelSzamla{
+.aktivSzurokUgyfelSzamla {
   height: 20px;
   width: 81.5vw;
   border: 1px solid white;
   position: relative;
   top: 13vh;
   left: 2vw;
-  display: flex; 
+  display: flex;
 }
-
 
 #inputBoxUS {
   width: 250px;
@@ -340,18 +324,18 @@ export default {
   top: 2.5vh;
 }
 
-.bizonylatText{
-    color: white;
-    position:relative;
-    top: 3vh;
-    left: 2vw;
+.bizonylatText {
+  color: white;
+  position: relative;
+  top: 3vh;
+  left: 2vw;
 }
 
-#csoportositasUgyfelSzamla{
+#csoportositasUgyfelSzamla {
   background-color: #2a2b2d;
   border: 0;
   position: absolute;
-  left:25vw;
+  left: 25vw;
   margin-left: 5px;
   font-size: 15px;
 }
@@ -371,10 +355,10 @@ export default {
   left: 2vw;
 }
 
-#createButtonUS{
-    margin-right: 10px;
+#createButtonUS {
+  margin-right: 10px;
   position: relative;
-  top:10vh;
+  top: 10vh;
   left: 2vw;
   background-color: #9fc321;
 }
@@ -387,8 +371,6 @@ export default {
   background-color: #2a2b2d;
 }
 
-
-
 #szuroDropdown {
   background-color: #2a2b2d;
   border: 0;
@@ -397,7 +379,6 @@ export default {
   margin-left: 5px;
   font-size: 15px;
 }
-
 
 .aktivSzuroText {
   color: white;
@@ -422,7 +403,6 @@ export default {
   top: 5.5vh;
   position: relative;
 }
-
 
 .szuresUgyfelSzamla {
   color: white;
@@ -470,14 +450,11 @@ export default {
   text-decoration: underline;
 }
 
-
 #projectButton {
   margin-left: 2px;
   background-color: #1e1f21;
   border: 0;
 }
-
-
 
 #projectButton:focus {
   box-shadow: none;

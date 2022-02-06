@@ -146,14 +146,6 @@ export default {
   background-color: #1e1f21;
 }
 
-#searchBarUjFizetes {
-  width: 10vw;
-  position: relative;
-  left: 43.5vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
 
 
 

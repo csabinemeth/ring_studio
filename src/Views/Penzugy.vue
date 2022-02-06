@@ -10,13 +10,17 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Pénzügy
+        Pénzügy - Összesítő
       </button>
       <div
         class="dropdown-menu"
         id="openedDrowdownProjectList"
         aria-labelledby="dropdownMenuButton"
       >
+            <a class="dropdown-item" id="dropdownItem" @click="navToPenzugyBeszerzes">Beszerzés</a>
+      <a class="dropdown-item" id="dropdownItem" @click="navToPenzugyEladas">Eladás</a>
+
+      <div class="dividerPenzugy1"></div>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-edit"></i> Szerkesztés</a>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-trash-alt"></i> Törlés</a>
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-share-square"></i> Elküld/megoszt</a>
@@ -51,11 +55,7 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs">Dokumentumok</button>
 </div>
 <div class="dividerPenzugy"></div>
-<div class="buttonLine">
-  <button type="button" id="projectButtonActive" class="btn btn-primary">Összesítő</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyBeszerzes">Beszerzés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugyEladas">Eladás</button>
- </div>
+
 <div class="szures">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
@@ -187,6 +187,10 @@
       <td>300 000 Ft</td>
       <td>300 000 Ft</td>
       <td>100 000 Ft</td>
+    </tr>
+    <tr class="transparent">
+      <td></td>
+      <td colspan="6"></td>
     </tr>
      <tr>
           <th>Összesen:</th>
@@ -336,6 +340,17 @@ export default {
 
 }
 
+.dividerPenzugy1{
+    width: 20vw;
+    margin-bottom: 4px;
+    position: relative;
+    left: 8px;
+    height: 1px;
+    background-color: #68686e;
+    
+
+}
+
 #projectButton{
   margin-left: 2px;
   background-color: #1e1f21;
@@ -349,15 +364,6 @@ export default {
   border: 0;
 }
 
-
-#searchBarPenzugy{
-    width: 10vw;
-    position: relative;
-    left: 42vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
 
 .dateTextPenzugy{
     color: white;

@@ -166,14 +166,6 @@ export default {
     top: 2vh;
 }
  
-#SuppliersSearchBar{
-  width: 10vw;
-    position: relative;
-    left: 53.5vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
 
 #supplierListTable{
  position: relative;
@@ -201,11 +193,7 @@ export default {
 
 
 @media(max-width: 900px){
-  #SuppliersSearchBar{
-    left: 20px;
-    width: 100px;
-    top: 12px;
-  }
+ 
 
   .SuppliersDateText{
     left: 30px;

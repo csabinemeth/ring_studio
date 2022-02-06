@@ -1,7 +1,28 @@
 <template>
 <div class="projectBackGround"> 
 <div class="topLine">
-<h5 class="projectTitle">P-22-03_projekt:<text class="dashboard">Dokumentumok</text></h5>
+<h5 class="projectTitle">P-22-03_projekt: <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="docsDropdown"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Dokumentumok
+      </button>
+      <div
+        class="dropdown-menu"
+        id="openedDrowdownProjectList"
+        aria-labelledby="dropdownMenuButton"
+      >
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-edit"></i> Szerkesztés</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-trash-alt"></i> Törlés</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-share-square"></i> Elküld/megoszt</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Nyomtatás</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Termék kiadás</a>
+        
+      </div></h5>
  <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateText1">2021.12.23 csütörtök</text>
       <div class="dropdown1">
@@ -147,6 +168,12 @@
 <table class="table table-dark" id="docsTable">
       <thead>
         <tr>
+           <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
           <th scope="col">Dokumentum címe</th>
           <th scope="col">Dátum</th>
           <th scope="col">Típus</th>
@@ -157,53 +184,69 @@
       </thead>
       <tbody>
         <tr>
-          <td>Teszt dokumentum.doc</td>
-          <td>2022.01.01</td>
-          <td>Ajánlat</td>
-          <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
-        </tr>
-        <tr>
+           <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
           <td>Beszerzés megrendelés</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td> <i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i>&emsp;<i class="far fa-trash-alt"></i></td>
         </tr>
         <tr>
+           <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
           <td>Számla</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i>&emsp;<i class="far fa-trash-alt"></i></td>
         </tr>
         <tr>
+           <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
          <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
           <td>Szállítólevél</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i>&emsp;<i class="far fa-trash-alt"></i></td>
         </tr>
         <tr>
+           <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
           <td>Számla</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i>&emsp;<i class="far fa-trash-alt"></i></td>
         </tr>
         <tr>
-         <td>Teszt dokumentum.doc</td>
-          <td>2022.01.01</td>
-          <td>Ajánlat</td>
-          <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
-        </tr>
-        <tr>
+           <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
           <td>Teszt dokumentum.doc</td>
           <td>2022.01.01</td>
           <td>Szállítólevél</td>
           <td>Horváth Gyula</td>
-          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i></td>
+          <td><i class="fas fa-eye"></i>&emsp;<i class="fas fa-print"></i>&emsp;<i class="fas fa-download"></i>&emsp;<i class="far fa-trash-alt"></i></td>
         </tr>
       </tbody>
     </table>
@@ -271,16 +314,6 @@ export default {
 
 <style>
 
-
-#searchBarDocs {
-  width: 10vw;
-  position: relative;
-  left: 39vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
-
 #csoportositasDocs{
     background-color: #2a2b2d;
   border: 0;
@@ -296,6 +329,18 @@ export default {
   top: 2vh;
   left: 39vw;
   color: #68686a;
+}
+
+#docsDropdown{
+  background-color: #2a2b2d;
+  border: 0;
+  position: relative;
+  bottom: 29px;
+  background-color: #1e1f21;
+  left: -5px;
+  top: -2px;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 .projectTitle{

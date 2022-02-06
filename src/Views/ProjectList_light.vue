@@ -291,15 +291,6 @@ export default {
   display: flex;
 }
 
-#projectsSearchBarLight{
-  width: 10vw;
-    position: relative;
-    left: 51.5vw;
-    top: 8vh;
-    height: 4vh;
-    background-color: white;
-    border: 1px solid black;
-}
 
 #plusButtonProjects{
   background-color: #9ec520;

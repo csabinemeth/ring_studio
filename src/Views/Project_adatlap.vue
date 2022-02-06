@@ -206,14 +206,7 @@ export default {
   border: 0;
 }
 
-#searchBarProjectAdatlap{
-    width: 10vw;
-    position: relative;
-    left: 43vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 .dateTextProjectAdatlap{
     color: white;

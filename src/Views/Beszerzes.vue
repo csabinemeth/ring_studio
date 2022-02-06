@@ -24,7 +24,7 @@
         
       </div>
       </div>
- <input class="form-control mr-sm-2" id="searchBarBeszerzes1" type="search" placeholder="Search" aria-label="Search">
+ <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateTextBeszerzes1">2021.12.23 csütörtök</text>
  <div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButtonBeszerzes1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -187,7 +187,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>102</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>76.235 Ft</td>
@@ -202,7 +202,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>103</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>76.235 Ft</td>
@@ -217,7 +217,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>104</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>76.235 Ft</td>
@@ -232,17 +232,32 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>105</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>76.235 Ft</td>
           <td>Nyitott</td>
           <td>www.ajanlat.hu</td>
           <td><i class="fas fa-exclamation"></i></td>
+        </tr>
+        <tr class="transparent">
+          <td></td>
+          <td colspan="7"></td>
+        </tr>
+         <tr>
+        <td></td>
+        <th></th>
+        <td></td>
+        <td></td>
+        <td>Beszerzés összege</td>
+        <td></td>
+        <td></td>
+        <td></td>
         </tr>
         <tr>
+          <th>Összesítő:</th>
         <td></td>
-        <th>Összesítő:</th>
+        
         <td></td>
         <td></td>
         <td>381 175 Ft</td>
@@ -360,15 +375,7 @@ export default {
   border: 0;
 }
 
-#searchBarBeszerzes1{
- width: 10vw;
-    position: absolute;
-    top: 2vh;
-    right: 200px;
-    height: 4vh;
-    background-color: #1e1f21;
 
-}
 
 #beszerzesListDropdown {
   background-color: #2a2b2d;

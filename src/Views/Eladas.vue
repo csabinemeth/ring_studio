@@ -148,7 +148,6 @@
           <th scope="col" class="rendelesTH">Rendelés összege</th>
           <th scope="col" class="rendelesTH">Számlázott összeg</th>
           <th scope="col" class="rendelesTH">Fizetett összeg</th>
-          <th scope="col" class="rendelesTH">Kiadott</th>
           <th scope="col" class="rendelesTH"></th>
           >
         </tr>
@@ -169,7 +168,6 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
-          <td>Kiadott</td>
           <td><i class="fas fa-exclamation"></i></td>
         </tr>
             <tr>
@@ -179,7 +177,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>102</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>Nyitott</td>
@@ -187,7 +185,6 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
-          <td>Kiadott</td>
           <td><i class="fas fa-exclamation"></i></td>
         </tr>
         
@@ -198,7 +195,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>103</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>Nyitott</td>
@@ -206,7 +203,6 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
-          <td>Kiadott</td>
           <td><i class="fas fa-exclamation"></i></td>
         </tr>
             <tr>
@@ -216,7 +212,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>101</td>
+          <td>104</td>
           <td>2022.01.01</td>
           <td>Horváth Jenő</td>
           <td>Nyitott</td>
@@ -224,13 +220,13 @@
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
           <td>76.235 Ft</td>
-          <td>Kiadott</td>
           <td><i class="fas fa-exclamation"></i></td>
         </tr>
              <tr>
         <th>
+        Összesítő:
         </th>
-          <th>Összesítő:</th>
+          <th></th>
           <td></td>
           <td></td>
           <td></td>
@@ -238,7 +234,6 @@
           <td>304 940 Ft</td>
           <td>304 940 Ft</td>
           <td>304 940 Ft</td>
-          <td></td>
           <td></td>
         </tr>
       </tbody>
@@ -351,14 +346,7 @@ export default {
   border: 0;
 }
 
-#searchBarEladas{
-    width: 10vw;
-    position: relative;
-    left: 43vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #beszerzesListDropdown {
   background-color: #2a2b2d;

@@ -211,18 +211,11 @@
       <text class="aktivSzuroText">Divízió</text>
       <text class="deleteActive">Szűrők törlése</text>
     </div>
-<div class="formLineAjanlat">
-        <text>Szállítási cím:</text>
-        <input class="form-control" id="inputBox" placeholder="Szállítási cím" />
-      </div>
-      <div class="formLineAjanlat">
-        <text>Szállítólevél szám:</text>
-        <input class="form-control" id="inputBox" placeholder="Szállítólevél szám" />
-      </div>
-      <div class="formLineAjanlat">
-        <text>Megjegyzés:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
-      </div>
+   <div class="formLines">
+        <input class="form-control" id="inputBox1" placeholder="Szállítási cím" />
+        <input class="form-control" id="inputBox1" placeholder="Szállítólevél száma" />
+        <input class="form-control" id="inputBox1" placeholder="Megjegyzés" />
+</div>
 <br/>
     <table class="table table-dark" id="koltsegTable">
       <thead>
@@ -236,6 +229,7 @@
           <th scope="col">Termékkód</th>
           <th scope="col">Terméknév</th>
           <th scope="col">Darabszám</th>
+          <th scope="col">Össz</th>
           <th scope="col">Kiadási darabszám</th>
           
           
@@ -253,6 +247,12 @@
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td>200</td>
+            <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
           <td> <input class="form-control" id="tableInput" placeholder="200" /></td>
         </tr>
          <tr>
@@ -265,6 +265,12 @@
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td>150</td>
+            <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
            <td> <input class="form-control" id="tableInput" placeholder="150" /></td>
         </tr>
          <tr>
@@ -277,6 +283,12 @@
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td>100</td>
+            <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
            <td> <input class="form-control" id="tableInput" placeholder="100" /></td>
         </tr>
          <tr>
@@ -289,6 +301,12 @@
           <td>BÉ-L101</td>
           <td>Spot</td>
           <td>50</td>
+            <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
            <td> <input class="form-control" id="tableInput" placeholder="50" /></td>
         </tr>
       </tbody>
@@ -418,14 +436,7 @@ export default {
   border: 0;
 }
 
-#searchBarTK{
-    width: 10vw;
-    position: relative;
-    left: 37.5vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #beszerzesListDropdown {
   background-color: #2a2b2d;

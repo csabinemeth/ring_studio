@@ -2,7 +2,7 @@
 <div class="homeBackground">
 <div class="topLine">
  <h5 class="homeTitle">Home</h5> 
- <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
+ <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateText1">2021.12.23 csütörtök</text>
 <div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -115,8 +115,7 @@ export default {
 #plusButton1{
   background-color: #9ec520;
   border: 0;
-  top: 1vh;
-  position: absolute;
+  position: relative;
   float: right;
   right: 10px;
 }
@@ -165,11 +164,11 @@ export default {
     display: flex;
 }
 
-#searchBar{
+#searchBar1{
     width: 10vw;
-    position: absolute;
+    position:fixed;
     top: 2vh;
-    right: 200px;
+    right: 210px;
     height: 4vh;
     background-color: #1e1f21;
 
@@ -177,9 +176,9 @@ export default {
 
 .dateText1{
     color: white;
-     position: absolute;
+     position: relative;
      right: 55px;
-    top: 2vh;
+    
     color:#68686a;
 }
 

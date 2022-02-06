@@ -1,26 +1,40 @@
 <template>
   <div class="projectBackGround">
-    <div class="topLine">
-      <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Költségvetés</text>
-      </h5>
-      <input
-        class="form-control mr-sm-2"
-        id="searchBar1"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <text class="dateText1">2021.12.23 csütörtök</text>
-      <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   <div class="topLine">
+<h5 class="projectTitle">P-22-03_projekt:</h5> <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="ajanlatListDropdown"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Költségvetés
+      </button>
+      <div
+        class="dropdown-menu"
+        id="openedDrowdownProjectList"
+        aria-labelledby="dropdownMenuButton"
+      >
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-edit"></i> Szerkesztés</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-trash-alt"></i> Törlés</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-share-square"></i> Elküld/megoszt</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Nyomtatás</a>
+        
+      </div>
+      </div>
+ <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
+ <text class="dateTextAjanlat">2021.12.23 csütörtök</text>
+ <div class="dropdown1">
+  <button class="btn btn-secondary " type="button" id="plusButtonAjanlat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navNewAjanlat" >Új Ajánlat</a>
   </div>
 </div>
-    </div>
+</div>
   <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap">Projektadatlap</button>
@@ -259,41 +273,59 @@
           <td>10.000 Ft</td>
           <td>Megrendelve</td>
         </tr>
-      </tbody>
-    </table>
+        <tr class="transparent">
+          <td></td>
+          <td colspan="7" > </td>
+        </tr>
+        
+          <tr>
+                  <th scope="col"></th>
 
-   
-
-    <table class="table table-dark" id="overallTable">
-      <thead>
-        <tr>
           <th scope="col"></th>
-          <td scope="col">Beszerzési ár</td>
-          <td scope="col">Eladási ár</td>
-          <td scope="col">Árrés</td>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col">Beszerzési ár</th>
+          <th scope="col">Eladási ár</th>
+          <th scope="col">Árrés</th>
+          <th scope="col"></th>
+          >
         </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Nettó összesítő</th>
-          <td>153.513 Ft</td>
-          <td>180.513 Ft</td>
-          <td>27.000 Ft</td>
+         <tr>
+        <td>Nettó összesítő:</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10.000 Ft</td>
+          <td></td>
         </tr>
-        <tr>
-          <th>ÁFA mértéke (27%)</th>
-          <td>722.081 Ft</td>
-          <td>849.041 Ft</td>
-          <td>127.000 Ft</td>
+        <tr >
+           <td>ÁFA mértéke (27%):</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10.000 Ft</td>
+          <td></td>
         </tr>
-        <tr>
-          <th>Bruttó összesítő</th>
-          <td>722.081 Ft</td>
-          <td>849.041 Ft</td>
-          <td>127.000 Ft</td>
+           <tr>
+           <td>Bruttó összesítő:</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10.000 Ft</td>
+          <td></td>
         </tr>
+     
       </tbody>
     </table>
+
+  
+    
   </div>
 </template>
 
@@ -360,11 +392,17 @@ export default {
   background-color: #2a2b2d;
 }
 
+
 .icons {
   color: white;
   position: relative;
   top: 6vh;
   left: 2vw;
+}
+
+.transparent{
+  background-color: #1e1f21;
+  height: 20px;
 }
 
 #overallTable {
@@ -494,14 +532,7 @@ export default {
   border: 0;
 }
 
-#searchBarKoltseg {
-  width: 10vw;
-  position: relative;
-  left: 41.5vw;
-  top: 2vh;
-  height: 4vh;
-  background-color: #1e1f21;
-}
+
 
 .dateTextKoltseg {
   color: white;
@@ -527,6 +558,7 @@ export default {
   height: 100vh;
   width: 90vw;
   background-color: #1e1f21;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 </style>

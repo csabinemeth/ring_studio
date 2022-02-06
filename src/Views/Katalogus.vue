@@ -423,14 +423,7 @@ export default {
   border: 0;
 }
 
-#searchBarKatalogus{
-    width: 10vw;
-    position: relative;
-    left: 40.5vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #ajanlatListDropdown {
   background-color: #2a2b2d;

@@ -151,14 +151,7 @@ export default {
     top: 2vh;
 }
  
-#PartnersSearchBar{
-  width: 10vw;
-    position: relative;
-    left: 55vw;
-    top: 2vh;
-    height: 4vh;
-    background-color: #1e1f21;
-}
+
 
 #partnerListTable{
  position: relative;
