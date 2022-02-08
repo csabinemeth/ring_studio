@@ -1,24 +1,6 @@
 <template>
   <div class="printPage">
-    <button
-      type="button"
-      @click="navToBecslesCover"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-align-center"></i> Fedlap
-    </button>
-    <button type="button" class="btn btn-primary" id="printNavButton_Active">
-      <i class="fas fa-table"></i> Törzs
-    </button>
-    <button
-      type="button"
-      @click="navToBecslesSum"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-filter"></i> Összesítő
-    </button>
+    
     <div id="paper" class="printPaper">
       <div class="printHeader">
         <div class="logoHeader">
@@ -47,9 +29,11 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
+      <br/>
+      <br/>
       <table class="table table-bordered" id="printTable">
         <thead>
-          <tr>
+          <tr class="headerRow">
             <th scope="col">Terméknév</th>
             <th scope="col">Műszaki tartalom</th>
             <th scope="col">Mennyiség</th>

@@ -305,8 +305,8 @@
         <td colspan="7"></td> 
         </tr> 
         <tr>
-          <th></th>
           <td>Összesítő:</td>
+          <th></th>
           <td></td>
           <td></td>
           <td>304 940 Ft</td>

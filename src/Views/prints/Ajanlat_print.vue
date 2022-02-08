@@ -53,7 +53,7 @@
       </div>
       <table class="table table-bordered" id="printTable">
         <thead>
-          <tr>
+          <tr class="headerRow">
             <th scope="col">Sorszám</th>
             <th scope="col">Divizió</th>
             <th scope="col">Termékfajta</th>

@@ -1,24 +1,6 @@
 <template>
   <div class="printPage">
-    <button
-      type="button"
-      @click="navToBecslesCover"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-align-center"></i> Fedlap
-    </button>
-    <button type="button" class="btn btn-primary" id="printNavButton_Active">
-      <i class="fas fa-table"></i> Törzs
-    </button>
-    <button
-      type="button"
-      @click="navToBecslesSum"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-filter"></i> Összesítő
-    </button>
+    
     <div id="paper" class="printPaper">
       <div class="printHeader">
         <div class="logoHeader">
@@ -46,9 +28,11 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
+      <br/>
+      <br/>
       <table class="table table-bordered" id="printTable">
         <thead>
-          <tr>
+          <tr class="headerRow">
             <th scope="col">Terméknév</th>
             <th scope="col">Műszaki tartalom</th>
             <th scope="col">Mennyiség</th>
@@ -84,44 +68,30 @@
             <td>5</td>
             <td>db</td>
           </tr>
-          <tr>
-            <td colspan="7" class="printComment">
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva. A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes.
-            </td>
+             <tr>
+          
+            <td>Lámpatest</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td>db</td>
           </tr>
+             <tr>
+          
+            <td>Lámpatest</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td>db</td>
+          </tr>
+             <tr>
+          
+            <td>Lámpatest</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td>db</td>
+          </tr>
+         
+           
+          
         </tbody>
       </table>
     </div>
@@ -300,6 +270,15 @@ export default {
 </script>
 
 <style>
+
+
+.headerRow{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0px 0px -1px rgba(0, 0, 0, 0.4);
+}
+
 .printPage {
   width: 90vw;
   height: 100vh;

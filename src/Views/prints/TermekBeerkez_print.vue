@@ -1,24 +1,6 @@
 <template>
   <div class="printPage">
-    <button
-      type="button"
-      @click="navToBecslesCover"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-align-center"></i> Fedlap
-    </button>
-    <button type="button" class="btn btn-primary" id="printNavButton_Active">
-      <i class="fas fa-table"></i> Törzs
-    </button>
-    <button
-      type="button"
-      @click="navToBecslesSum"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-filter"></i> Összesítő
-    </button>
+  
     <div id="paper" class="printPaper">
       <div class="printHeader">
         <div class="logoHeader">
@@ -47,15 +29,15 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
+      <br/>
+      <br/>
       <table class="table table-bordered" id="printTable">
         <thead>
-          <tr>
+          <tr class="headerRow">
             <th scope="col">Terméknév</th>
             <th scope="col">Műszaki tartalom</th>
             <th scope="col">Mennyiség</th>
             <th scope="col">Mennyiségi egység</th>
-            <th scope="col">Nettó egységár</th>
-            <th scope="col">Nettó összár</th>
           </tr>
         </thead>
         <tbody>
@@ -65,8 +47,7 @@
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
             <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+
           </tr>
           <tr>
           
@@ -74,8 +55,7 @@
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
             <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+
           </tr>
           <tr>
         
@@ -83,8 +63,7 @@
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
             <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+
           </tr>
           <tr>
           
@@ -92,23 +71,11 @@
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
             <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+
           </tr>
+         
           <tr>
-          <th colspan="5">Kedvezmény:</th>
-          <th>- 50 000 Ft</th>
-          </tr>
-           <tr>
-          <th colspan="5">ÁFA:</th>
-          <th>98 313 Ft</th>
-          </tr>
-           <tr>
-          <th colspan="5">Bruttó:</th>
-          <th>578 313 Ft</th>
-          </tr>
-          <tr>
-            <td colspan="7" class="printComment">
+            <td colspan="5" class="printComment">
               Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
               esetére érvényes. Amennyiben nem a teljes mennyiség kerül
               megrendelésre, vagy termékek kiváltása szükséges abban az esetben
@@ -275,6 +242,24 @@
             id="flexCheckChecked"
           />
             Termékfajta</a
+        >
+         <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Nettó egységár</a
+        >
+         <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Nettó összár</a
         >
         <a class="dropdown-item" href="#"
           ><input
