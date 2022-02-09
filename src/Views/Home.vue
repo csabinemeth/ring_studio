@@ -162,11 +162,12 @@ export default {
 
 .topLine{
     display: flex;
+    position: relative;
 }
 
 #searchBar1{
     width: 10vw;
-    position:fixed;
+    position:absolute;
     top: 2vh;
     right: 210px;
     height: 4vh;
@@ -177,8 +178,7 @@ export default {
 .dateText1{
     color: white;
      position: relative;
-     right: 55px;
-    
+    right: 55px;
     color:#68686a;
 }
 

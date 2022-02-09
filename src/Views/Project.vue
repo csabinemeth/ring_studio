@@ -2,7 +2,7 @@
   <div class="projectBackGround1">
     <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Dashboard</text>
+        P-22-03_projekt: <text class="dashboard"> Dashboard</text>
       </h5>
       <input
         class="form-control mr-sm-2"

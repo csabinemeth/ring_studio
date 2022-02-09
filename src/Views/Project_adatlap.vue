@@ -1,7 +1,7 @@
 <template>
 <div id="projectBackGround"> 
 <div class="topLine">
-<h5 class="projectTitle">BÉ-L101:P-22-03_projekt:<text class="dashboard">Adatlap</text></h5>
+<h5 class="projectTitle">BÉ-L101:P-22-03_projekt: <text class="dashboard"> Adatlap</text></h5>
  <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateText1">2021.12.23 csütörtök</text>
  <div class="dropdown1">

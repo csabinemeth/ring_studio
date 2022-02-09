@@ -266,9 +266,9 @@ export default {
 .companyData {
   position: relative;
   float: left;
-  left: 5px;
-  font-size: 13px;
-  top: 1vh;
+  left: 150px;
+  font-size: 10px;
+  top: -15px;
 }
 
 #printButton {
@@ -289,6 +289,9 @@ export default {
   background-size: cover;
   width: 110px;
   height: 50px;
+  top: 50px;
+  position: relative;
+
 }
 
 .catalogCell{

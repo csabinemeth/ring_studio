@@ -32,6 +32,19 @@
         </div>
       </div>
     </div>
+     <div class="buttonLine">
+  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap">Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes">Költségvetés</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat">Ajánlat</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes">Beszerzés</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas">Eladás</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Pénzügy</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToDiviziok">Divíziok</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus">Katalógus</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs">Dokumentumok</button>
+</div>
+<div class="dividerProject"></div>
     <div class="szures">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">

@@ -389,7 +389,7 @@ export default {
   position: relative;
   float: left;
   left: 5px;
-  font-size: 13px;
+  font-size: 8px;
   top: 1vh;
 }
 
