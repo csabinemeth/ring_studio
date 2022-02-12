@@ -43,16 +43,16 @@
 </div>
 </div>
 <div class="buttonLine">
-  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap">Projektadatlap</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes">Költségvetés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat">Ajánlat</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes">Beszerzés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas">Eladás</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy">Pénzügy</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToDiviziok">Divíziok</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus">Katalógus</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs">Dokumentumok</button>
+  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas"><i class="fa-solid fa-cart-arrow-down"></i> Eladás</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy"><i class="fa-solid fa-file-invoice-dollar"></i> Pénzügy</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToDiviziok"><i class="fa-solid fa-layer-group"></i> Divíziok</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
 <div class="dividerPenzugy"></div>
 

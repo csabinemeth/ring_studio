@@ -21,9 +21,9 @@
               </button>
               <div class="collapse" id="collapseExampleHome">
                 <div class="card card-body" id="expandContainerHome">
-                  <button class="projectnav" @click="navProject">P-22-03_Projekt</button>
-                  <button class="projectnav" @click="navProject">P-22-03_Projekt</button>
-                  <button class="projectnav" @click="navProject">P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><i class="fa-solid fa-circle-dot"></i> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><i class="fa-solid fa-circle-dot"></i> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><i class="fa-solid fa-circle-dot"></i> P-22-03_Projekt</button>
                 </div>
                 </div><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navPartners" ><i class="fas fa-user"></i> <label class="navText"> Ügyfelek </label></button><br/>
@@ -86,8 +86,8 @@ methods: {
    
   },
   navSettings() {
-    console.log("Settings");
-         this.$router.push("/settings");
+    console.log("SettingsMe");
+         this.$router.push("/settingsMe");
 
    
   },
@@ -140,6 +140,8 @@ methods: {
   background-color: #2a2b2d;
   color: white;
   border:0;
+  width: 150px;
+  margin-bottom: 10px;
 
 }
 

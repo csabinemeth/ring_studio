@@ -1,8 +1,23 @@
 <template>
   <div class="settingsBackGround">
+       <div class="settingsBar">
+         <h5 class="projectTitle">
+        <text class="beallitasokText"><i class="fa-solid fa-gear"></i> Beállítások</text>
+      </h5>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToMe">Mennyiségi egységek</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToTk">Termékkategóriák</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToTf">Termékfajták</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToTs">Termék státuszok</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToAs">Ajánlat státuszok</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToBs">Beszerzés státuszok</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToRs">Rendelés státuszok</button>
+      <button type="button" id="settingButton" class="btn btn-primary" @click="navToCa">Cégadatok</button>
+      <button type="button" id="settingButton"  class="btn btn-primary" @click="navToFh">Felhasználó</button>
+      </div>
+      <div class="content">
      <div class="topLine">
       <h5 class="projectTitle">
-        <text class="dashboard">Beállítások</text>
+        <text class="dashboard">Mennyiségi egységek</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -26,14 +41,8 @@
       <thead></thead>
       <tbody>
         <tr>
-          <td colspan="2">
-            <b>Mennyiségi egységek</b>
-            <i class="fas fa-plus-square" id="createIcon"></i>
-          </td>
-        </tr>
-        <tr>
           <th>Megnevezés</th>
-          <th>Rövidítés</th>
+          <th>Rövidítés <i class="fas fa-plus-square" id="createIcon"></i></th>
         </tr>
         <tr>
           <td>Darab</td>
@@ -333,6 +342,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 </template>
 
@@ -340,6 +350,36 @@
 export default {
   name: "Settings",
   path: "/settings",
+
+  methods:  {
+        navToMe(){
+            this.$router.push("/settingsMe");    
+        },
+         navToTk(){
+            this.$router.push("/settingsTk");    
+        },
+         navToTf(){
+            this.$router.push("/settingsTf");    
+        },
+         navToTs(){
+            this.$router.push("/settingsTs");    
+        },
+         navToAs(){
+            this.$router.push("/settingsAs");    
+        },
+         navToBs(){
+            this.$router.push("/settingsBs");    
+        },
+         navToRs(){
+            this.$router.push("/settingsRs");    
+        },
+         navToCa(){
+            this.$router.push("/settingsCa");    
+        },
+         navToFh(){
+            this.$router.push("/settingsFh");    
+        },
+    }
 };
 </script>
 
@@ -354,9 +394,15 @@ export default {
 .settingsBackGround {
   height: 100vh;
   width: 90vw;
+  display: flex;
   background-color: #1e1f21;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.beallitasokText{
+  position:relative;
+  left: -15px;
 }
 
 #inputBoxProfile {
@@ -378,12 +424,34 @@ export default {
   color: white;
   text-decoration: underline;
   top: 2vh;
+
+}
+
+.content{
+  position:relative;
+  left: 17vw;
+}
+
+.settingsBar{
+  width: 15vw;
+  height: 100vh;
+  background-color: #2a2b2d;
+  position: absolute;
+  border: 1px solid #1e1f21;
 }
 
 .settingsText {
   color: white;
   position: relative;
   left: 2vw;
+}
+
+#settingButton{
+  background-color: #2a2b2d;
+  border: 0;
+  position: relative;
+  top: 8.5vh;
+  margin-bottom: 7.5px;
 }
 
 #inputBoxCompany{

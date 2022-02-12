@@ -6,6 +6,15 @@ import Help from '../Views/Help'
 import Partners from '../Views/Partners'
 import Riports from '../Views/Riports'
 import Settings from '../Views/Settings'
+import SettingsMe from '../Views/SettingsMe'
+import SettingsTk from '../Views/SettingsTk'
+import SettingsTf from '../Views/SettingsTf'
+import SettingsTs from '../Views/SettingsTs'
+import SettingsAs from '../Views/SettingsAs'
+import SettingsBs from '../Views/SettingsBs'
+import SettingsRs from '../Views/SettingsRs'
+import SettingsCa from '../Views/SettingsCa'
+import SettingsFh from '../Views/SettingsFh'
 import Project_koltsegvetes from '../Views/Project_koltsegvetes'
 import Suppliers from '../Views/Suppliers'
 import CreateProject from '../Views/CreateProject'
@@ -190,6 +199,51 @@ import { createRouter, createWebHistory } from  'vue-router';
             path: '/settings',
             name: 'Settings',
             component: Settings
+        },
+        {
+            path: '/settingsMe',
+            name: 'SettingsMe',
+            component: SettingsMe
+        },
+        {
+            path: '/settingsTk',
+            name: 'SettingsTk',
+            component: SettingsTk
+        },
+        {
+            path: '/settingsTf',
+            name: 'SettingsTf',
+            component: SettingsTf
+        },
+        {
+            path: '/settingsTs',
+            name: 'SettingsTs',
+            component: SettingsTs
+        },
+        {
+            path: '/settingsAs',
+            name: 'SettingsAs',
+            component: SettingsAs
+        },
+        {
+            path: '/settingsBs',
+            name: 'SettingsBs',
+            component: SettingsBs
+        },
+        {
+            path: '/settingsRs',
+            name: 'SettingsRs',
+            component: SettingsRs
+        },
+        {
+            path: '/settingsCa',
+            name: 'SettingsCa',
+            component: SettingsCa
+        },
+        {
+            path: '/settingsFh',
+            name: 'SettingsFh',
+            component: SettingsFh
         },
         {
             path: '/suppliers',
