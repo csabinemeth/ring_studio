@@ -23,6 +23,47 @@
     >
       <i class="fas fa-filter"></i> Összesítő
     </button>
+      <div class="btn-group dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
+    <i class="fa-solid fa-layer-group"></i> Csoportosítás
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i> Csoport1</a>
+    <a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i> Csoport2</a>
+    <a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i> Csoport3</a>
+  </div>
+</div>
+    <div class="btn-group dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-print"></i> Nyomtatás
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás</a>
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal</a>
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás összesítővel</a>
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a>
+  </div>
+</div>
+
+
+ <div class="btn-group dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-cog"></i> Törzs szerkesztése
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Terméknév</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Műszaki tartalom</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Mennyiség</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Mennyiségi egység</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Nettó egységár</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Nettó összár</a>
+
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Divíziók</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Kategória</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Termékfajta</a>
+    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Kép</a>
+  </div>
+</div>
     <div id="paper" class="printPaper">
       <div class="printHeader">
         <div class="logoHeader">
@@ -59,7 +100,6 @@
             <th scope="col">Termékfajta</th>
             <th scope="col">Terméknév</th>
             <th scope="col">Műszaki tartalom</th>
-            <th scope="col">Kép</th>
             <th scope="col">Menny.</th>
             <th scope="col">M.e.</th>
             <th scope="col">Nettó egység ár</th>
@@ -73,7 +113,6 @@
             <td>Falikar</td>
             <td>falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td><div id="kep1"></div></td>
             <td>5</td>
             <td>db</td>
             <td>35 480 Ft</td>
@@ -85,7 +124,6 @@
             <td>függesztett lámpa</td>
             <td>függesztett lámpa</td>
             <td>Lámpatest arany színnel 1</td>
-            <td><div id="kep2"></div></td>
             <td>2</td>
             <td>db</td>
             <td>43 943 Ft</td>
@@ -97,7 +135,6 @@
             <td>függesztett lámpa</td>
             <td>függesztett lámpa</td>
             <td>Lámpatest arany színnel 1</td>
-            <td><div id="kep3"></div></td>
             <td>2</td>
             <td>db</td>
             <td>43 943 Ft</td>
@@ -109,14 +146,6 @@
             <td>alk.</td>
             <td>90 000 Ft</td>
             <td>90 000 Ft</td>
-          </tr>
-          <tr>
-            <th colspan="9">Kedvezmény:</th>
-            <th>-50 000 Ft</th>
-          </tr>
-           <tr>
-            <th colspan="9">ÁFA:</th>
-            <th>228 564 Ft</th>
           </tr>
           <tr>
             <th colspan="8" rowspan="2">
@@ -132,79 +161,12 @@
             <th>Öszesen bruttó:</th>
             <th>1 075 099 Ft</th>
           </tr>
-          <tr>
-            <td colspan="10" class="printComment">
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva. A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. 
-            </td>
-          </tr>
+          
         </tbody>
       </table>
     </div>
 
-   <div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-print"></i> Nyomtatás
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás</a>
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal</a>
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás összesítővel</a>
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a>
-  </div>
-</div>
-
-
- <div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-cog"></i> Törzs szerkesztése
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Terméknév</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Műszaki tartalom</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Mennyiség</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Mennyiségi egység</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Nettó egységár</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Nettó összár</a>
-
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Divíziók</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Kategória</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Termékfajta</a>
-    <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Kép</a>
-  </div>
-</div>
+   
 
   </div>
 </template>
@@ -330,10 +292,10 @@ export default {
   top: 1vh;
 }
 
-#printButton {
+#printButton1 {
   position: relative;
-  left: 2vw;
-  top: 4vh;
+  left: 22.3vw;
+  top: -1vh;
   background-color: #9ec520;
   border: 0;
   margin-right: 10px;

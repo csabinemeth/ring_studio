@@ -11,69 +11,13 @@
     <button type="button" class="btn btn-primary" id="printNavButton_Active">
       <i class="fas fa-table"></i> Törzs
     </button>
-    <button
-      type="button"
-      @click="navToBecslesSum"
-      class="btn btn-primary"
-      id="printNavButton"
-    >
-      <i class="fas fa-filter"></i> Összesítő
-    </button>
-    <div id="paper" class="printPaper">
-      <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Eladó: Ring Studio Kft.</h6>
-          <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
-        </div>
-        <div class="titleHeader">
-          <h2 class="printTitleTb">Katalógus</h2>
-          <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
-          <h6 class="printDate">Dátum: 2022.01.21</h6>
-        </div>
-        <div class="dataHeader">
-          <h6 class="printData">Megbízó: Sibalin Milán</h6>
-          <br />
-          <h6 class="printData">Szervezet: Sibalin Kft.</h6>
-          <br />
-          <h6 class="printData">Címe: 9082, Nyúl Fő út 3</h6>
-          <br />
-          <h6 class="printData">Telefon: +36204321123</h6>
-          <br />
-          <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
-        </div>
-      </div>
-      <table class="table table-bordered" id="printTable">
-        <thead>
-        </thead>
-        <tbody>
-          <tr>
-            
-            <th class="catalogCell">Falikar
-            <div class="catalogPic"></div>
-            </th>
-            <th class="catalogCell" >Függesztett lámpa 
-            <div class="catalogPic"></div>
-            </th>
-            <th class="catalogCell">Lámpa
-            <div class="catalogPic"></div>
-            </th>
-
-          </tr>
-       
-        </tbody>
-      </table>
-    </div>
 
     <div class="btn-group dropup">
       <button
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButton"
+        id="printButtonNew"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -94,7 +38,7 @@
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButton"
+        id="printButtonNew"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -165,6 +109,41 @@
         
       </div>
     </div>
+    
+    <div id="paper" class="printPaper">
+      
+      <table class="table table-bordered" id="printTable">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <th class="catalogCell" colspan="3">Lámpák
+            </th>
+
+          </tr>
+          <tr>
+            
+            <th class="catalogCell">Falikar
+            <div class="catalogPic"></div>
+            </th>
+            <th class="catalogCell" >Függesztett lámpa 
+            <div class="catalogPic"></div>
+            </th>
+            <th class="catalogCell">Lámpa
+            <div class="catalogPic"></div>
+            </th>
+
+          </tr>
+      
+       
+        </tbody>
+      </table>
+    </div>
+
+    
+
+    
   </div>
 </template>
 
@@ -271,14 +250,6 @@ export default {
   top: -15px;
 }
 
-#printButton {
-  position: relative;
-  left: 2vw;
-  top: 4vh;
-  background-color: #9ec520;
-  border: 0;
-  margin-right: 10px;
-}
 
 .printHeader {
   display: flex;
@@ -297,6 +268,8 @@ export default {
 .catalogCell{
     text-align: center;
 }
+
+
 
 .logoHeader {
   width: 27.3vw;
@@ -346,5 +319,15 @@ export default {
   font-size: 13px;
   position: relative;
   left: 9vw;
+}
+
+#printButtonNew {
+  position: relative;
+  float: right;
+  left: 44.4vw;
+  top: 4vh;
+  background-color: #9ec520;
+  border: 0;
+  margin-right: 10px;
 }
 </style>

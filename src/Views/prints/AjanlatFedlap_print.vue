@@ -23,9 +23,18 @@
     >
       <i class="fas fa-filter"></i> Összesítő
     </button>
+
+      <button
+      type="button"
+      @click="print"
+      class="btn btn-primary"
+      id="printButtonCover1"
+    >
+      <i class="fas fa-print"></i> Nyomtatás
+    </button>
     <div id="paper" class="printPaper">
     <h1 class="coverTitle"> Projekt: P-20-14</h1>
-     <h5 class="coverTitle2">BELSŐÉPÍTÉSZETI KÖLTSÉGVETÉS ÖSSZESÍTŐ TÁBLÁZAT</h5>
+     <h5 class="coverTitle2">AJÁNLAT</h5>
      <h6 class="coverTitle3">Megbízó: Sibalin Miklós</h6>
      <h6 class="coverTitle4">Helyszín: Budapest</h6>
      <h6 class="coverTitle5">2022.01.21</h6>
@@ -38,14 +47,7 @@
      </div>
     </div>
 
-    <button
-      type="button"
-      @click="print"
-      class="btn btn-primary"
-      id="printButtonCover"
-    >
-      <i class="fas fa-print"></i> Nyomtatás
-    </button>
+  
     <br/>
   </div>
 </template>
@@ -97,7 +99,7 @@ export default {
 
 .coverTitle2{
     position: relative;
-    left: 26vw;
+    left: 40vw;
     top: 25vh;
 }
 
@@ -165,10 +167,11 @@ export default {
 }
 
 
-#printButtonCover {
+#printButtonCover1 {
   position: relative;
-  left: 2vw;
-  top: 50vh;
+  float: right;
+  right: 6vw;
+  top: 4vh;
   background-color: #9ec520;
   border: 0;
 }

@@ -24,35 +24,52 @@
     >
       <i class="fas fa-filter"></i> Összesítő
     </button>
+    
+    <button
+      type="button"
+      @click="print"
+      class="btn btn-primary"
+      id="printButtonSum1"
+    >
+      <i class="fas fa-print"></i> Nyomtatás
+    </button>
     <div id="paper" class="printPaper">
     <div class="ringLogo" id="ringLogoSum"></div>
     <h1 class="sumTitle"> Projekt: P-20-14</h1>
     <h6 class="sumTitle2">Helyszín: Budapest</h6>
-     <h5 class="sumTitle3">BELSŐÉPÍTÉSZETI KÖLTSÉGVETÉS ÖSSZESÍTŐ TÁBLÁZAT</h5>
+     <h5 class="sumTitle3">AJÁNLAT</h5>
 
      <table class="table table-bordered" id="sumTable">
   <thead>
     <tr>
       <th scope="col">Megnevezés</th>
       <th scope="col">Összesen Nettó</th>
-      <th scope="col">Összesen Bruttó</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Lámpatestek, fényforrások</td>
       <td>846 535 Ft</td>
-      <td>1 075 099 Ft</td>
     </tr>
     <tr>
       <td>Burkolatok</td>
       <td>1 022 923 Ft</td>
-      <td>1 299 113 Ft</td>
+    </tr>
+    <tr>
+      <th>Kedvezmény:</th>
+      <th>100 000 Ft</th>
+    </tr>
+    <tr>
+      <th>ÁFA:</th>
+      <th>27%</th>
     </tr>
     <tr>
       <th>Összesen:</th>
       <th>1 869 458 Ft</th>
-      <th>2 374 212 Ft</th>
+    </tr>
+     <tr>
+      <th>Összes bruttó:</th>
+      <th>2 252 359 Ft</th>
     </tr>
      <tr>
       <td colspan="3" id="sumComment">Ajánlatunk a kiadástól számított max. 30 napig érvényes, azt követően az árakat újra egyeztetni szükséges!</td>
@@ -66,14 +83,6 @@
      </div>
     </div>
 
-    <button
-      type="button"
-      @click="print"
-      class="btn btn-primary"
-      id="printButtonSum"
-    >
-      <i class="fas fa-print"></i> Nyomtatás
-    </button>
     <br/>
   </div>
 </template>
@@ -132,7 +141,7 @@ export default {
 
 .sumTitle3{
     position: relative;
-    left: 25vw;
+    left: 39.5vw;
     top: 15vh;
 }
 
@@ -191,10 +200,11 @@ export default {
 }
 
 
-#printButtonSum {
+#printButtonSum1 {
   position: relative;
-  left: 2vw;
-  top: 25vh;
+  float: right;
+  right: 2vw;
+  top: 4vh;
   background-color: #9ec520;
   border: 0;
 }
