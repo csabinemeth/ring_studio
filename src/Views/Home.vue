@@ -1,7 +1,7 @@
 <template>
 <div class="homeBackground">
 <div class="topLine">
- <h5 class="homeTitle">Home</h5> 
+ <h5 class="homeTitle"><div class="homeAvatar"><i class="fas fa-home" id="avatarIcon"></i></div>&ensp;Home</h5> 
  <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateText1">2021.12.23 csütörtök</text>
 <div class="dropdown1">
@@ -27,15 +27,20 @@
   <tbody>
     <tr class="projectRow">
       <td>P-22-03_projekt </td>
-      <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
+    
     </tr>
     <tr class="projectRow">
       <td >P-22-03_projekt</td>
-      <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
     </tr>
     <tr class="projectRow">
       <td >P-22-03_projekt</td>
-      <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
+      
+    </tr>
+
+    
+     <tr class="projectRow">
+      <td class="more">Show more</td>
+        
     </tr>
   
   </tbody>
@@ -43,36 +48,41 @@
 
 <table class="table table-dark" id="projectsTable">
   <thead>
-  <th>Feladatok</th>
+  <th>Üzeneteim</th>
   </thead>
   <tbody>
     <tr class="projectRow">
       <td class="projectRow">
       Feladat: P-22-03_projekt 
-      <br/>
+      
        Feladat és projekt leírása
-       <br/>
+     
        2021.12.10 10.05 am
 
       </td>
-       <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
+       
     </tr>
     <tr class="projectRow">
       <td class="projectRow">Feladat: P-22-03_projekt 
-      <br/>
+     
        Feladat és projekt leírása
-       <br/>
+    
        2021.12.10 10.05 am</td>
-        <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
+       
     </tr>
     <tr class="projectRow">
       <td class="projectRow">Feladat: P-22-03_projekt 
-      <br/>
+      
        Feladat és projekt leírása
-       <br/>
+      
        2021.12.10 10.05 am</td>
-        <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
+        
     </tr>
+     <tr class="projectRow">
+      <td class="more">Show more</td>
+        
+    </tr>
+    
     
   </tbody>
 </table>
@@ -109,6 +119,7 @@ export default {
     color: white;
     text-decoration: underline;
     top: 2vh;
+    display: flex;
     
 }
 
@@ -123,6 +134,11 @@ export default {
 .iconCell{
   text-align: right;
 }
+
+.more{
+  text-align: center;
+}
+
 
 .divider{
     width: 84vw;
@@ -175,6 +191,22 @@ export default {
 
 }
 
+.homeAvatar{
+  background-color: #9ec520;
+  color: white;
+  width: 35px;
+  text-align: center;
+  height: 35px;
+   border-radius: 15%;
+}
+
+
+#avatarIcon{
+  position: relative;
+  top: 4.5px;
+ 
+}
+
 .dateText1{
     color: white;
      position: relative;
@@ -183,9 +215,9 @@ export default {
 }
 
 #projectsTable{
-    width: 35vw;
+    width: 40vw;
     position: relative;
-    left:4.5vw;
+    left:-1vw;
     top: 10vh;
     margin-left: 3vw;
     background-color: #2a2b2d;

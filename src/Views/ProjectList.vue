@@ -3,14 +3,14 @@
   <div class="partnersTopLine">
     <div class="dropdown">
       <button
-        class="btn btn-secondary dropdown-toggle"
+        class="btn btn-secondary "
         type="button"
         id="projectListDropdown"
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Projektek
+       <div class="projectsAvatar"><i class="fas fa-list" id="avatarIconProjects"></i></div>&ensp;Projektek<i class="fa-solid fa-caret-down" id="projectsCaret"></i>
       </button>
       <div
         class="dropdown-menu"
@@ -181,12 +181,34 @@ export default {
   background-color: #1e1f21;
   overflow: hidden;
 }
+
+#projectsCaret{
+  position:relative;
+  top: 6px;
+}
+ 
 .projectListTitle {
   position: relative;
   left: 2vw;
   color: white;
   text-decoration: underline;
   top: 2vh;
+}
+
+.projectsAvatar{
+  background-color: dodgerblue;
+  color: white;
+  width: 35px;
+  text-align: center;
+  height: 35px;
+   border-radius: 15%;
+}
+
+
+#avatarIconProjects{
+  position: relative;
+  top: 2px;
+ 
 }
 
 .iconLine{
@@ -203,9 +225,14 @@ export default {
   position: relative;
   background-color: #1e1f21;
   left: 2vw;
+  top:-25px;
+  display: flex;
   font-size: 20px;
   text-decoration: underline;
 }
+
+
+
 
 .divider {
   width: 83vw;

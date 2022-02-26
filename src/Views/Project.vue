@@ -22,7 +22,7 @@
 </div>
     </div>
     <div class="buttonLine">
-  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
+  <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
@@ -590,6 +590,13 @@ export default {
   margin-left: 1px;
   background-color: #1e1f21;
   border: 0;
+}
+
+#projectButtonActive {
+  background-color: #9ec520;
+  border: 0;
+  height: 33px;
+  margin-right: 1px;
 }
 
 
