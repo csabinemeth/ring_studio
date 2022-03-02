@@ -1,7 +1,7 @@
 <template>
 <div class="ujAjanlatBackGround"> 
 <div class="topLine">
-<h5 class="projectTitle">P-22-03_projekt:</h5> <div class="dropdown">
+<h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;P-22-03_projekt:</h5> <div class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
@@ -233,7 +233,8 @@
           <th scope="col">Termék</th>
           <th scope="col">Kép</th>
           <th scope="col">Beszerzési ár</th>
-          <th scope="col">Eladási ár</th>
+          <th scope="col">Kalkulált ár</th>
+          <th scope="col">Ajánlati ár</th>
           <th scope="col">Árrés</th>
                     <th scope="col">Státusz</th>
                     <th></th>
@@ -254,21 +255,6 @@
           <td><div class="productImage"></div></td>
           <td>76.235 Ft</td>
           <td>86.235 Ft</td>
-          <td>10 000 Ft</td>
-          <td>Megrendelve</td>
-          <td><i class="fas fa-minus"></i></td>
-        </tr>
-         <tr>
-          <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>BÉ-L101</td>
-          <td>Spot</td>
-          <td><div class="productImage"></div></td>
-          <td>76.235 Ft</td>
           <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
@@ -286,6 +272,7 @@
           <td><div class="productImage"></div></td>
           <td>76.235 Ft</td>
           <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
           <td><i class="fas fa-minus"></i></td>
@@ -302,9 +289,31 @@
           <td><div class="productImage"></div></td>
           <td>76.235 Ft</td>
           <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
           <td>10 000 Ft</td>
           <td>Megrendelve</td>
           <td><i class="fas fa-minus"></i></td>
+        </tr>
+         <tr>
+          <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
+          <td>BÉ-L101</td>
+          <td>Spot</td>
+          <td><div class="productImage"></div></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10 000 Ft</td>
+          <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
+        </tr>
+          <tr class="transparent">
+          <td></td>
+          <td colspan="9" > </td>
         </tr>
         <tr>
           <th></th>
@@ -312,6 +321,7 @@
           <td></td>
           <td></td>
           <td>381 150 Ft</td>
+          <td>431 175 Ft</td>
           <td>431 175 Ft</td>
           <td>40 000 Ft</td>
           <td></td>
@@ -325,7 +335,7 @@
         @click="create"
         class="btn btn-success"
       >
-        Mentés
+        <i class="fa-solid fa-floppy-disk"></i>
       </button>
       <button
         type="button"
@@ -333,7 +343,7 @@
         @click="navToAjanlat_print"
         class="btn btn-success"
       >
-        Nyomtatás
+       <i class="fa-solid fa-print"></i>
       </button>
 
     
@@ -419,7 +429,7 @@ export default {
 #createButtonAjanlat{
   position: relative;
   top: 8vh;
-  left: 2vw;
+  float: right;
   margin-right: 10px;
   background-color: #9fc321;
   border: 0;

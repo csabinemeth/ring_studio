@@ -1,7 +1,7 @@
 <template>
   <div class="createBackground">
    <div class="topLine">
-      <h5 class="projectTitle">
+      <h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;
         P-22-03_projekt:<text class="dashboard"> Új divizió</text>
       </h5>
       <input

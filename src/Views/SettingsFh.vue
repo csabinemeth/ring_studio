@@ -51,7 +51,7 @@
               <input
                 class="form-control"
                 id="inputBoxProfile"
-                placeholder="Horváth Julianna"
+                placeholder="Horváth Borbála"
               />
             </div>
             <br/>
@@ -60,7 +60,7 @@
               <input
                 class="form-control"
                 id="inputBoxProfile"
-                placeholder="horvath.juli@gmail.com"
+                placeholder="horvath.bori@gmail.com"
               />
             </div>
             <br/>

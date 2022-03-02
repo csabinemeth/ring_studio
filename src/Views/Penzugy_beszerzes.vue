@@ -1,7 +1,7 @@
 <template>
 <div class="projectBackGround"> 
 <div class="topLine">
-<h5 class="projectTitle">P-22-03_projekt:</h5> <div class="dropdown">
+<h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;P-22-03_projekt:</h5> <div class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"

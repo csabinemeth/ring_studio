@@ -2,7 +2,7 @@
   <div class="createBackground">
     <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Beszerzés számla</text>
+       <div class="projectAvatar1"></div>&ensp; P-22-03_projekt:<text class="dashboard">Beszerzés számla</text>
       </h5>
       <input
         class="form-control mr-sm-2"

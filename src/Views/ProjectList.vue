@@ -10,7 +10,7 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-       <div class="projectsAvatar"><i class="fas fa-list" id="avatarIconProjects"></i></div>&ensp;Projektek<i class="fa-solid fa-caret-down" id="projectsCaret"></i>
+       <div class="projectsAvatar"><i class="fas fa-list" id="avatarIconProjects"></i></div>Projektek<i class="fa-solid fa-caret-down" id="projectsCaret"></i>
       </button>
       <div
         class="dropdown-menu"
@@ -62,7 +62,145 @@
 </div>
 </div>
 
-    <div class="divider"></div>
+     <div class="szures">
+      <text class="szuroText">Szűrés:</text>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Ügyfél
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Projektkód
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Projektnév
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Szekció 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Szekció 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Szekció 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Telefon
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés A</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés B</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés C</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="szuroDropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          E-mail
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
+          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
+          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
+        </div>
+      </div>
+      
+     
+      <div class="dropdown" id="csoportDiv">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="csoportositas1"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Csoportosítás
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aktivSzurok">
+      <text class="aktivSzuroText">BÉ-L101</text>
+      <text class="aktivSzuroText">Beszállító 1</text>
+      <text class="aktivSzuroText">Szekció 1</text>
+      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
+    </div>
+
   <div id="responsiveTable">
     <table class="table table-dark" id="projectListTable">
       <thead>
@@ -91,7 +229,7 @@
               id="flexCheckDefault"
             />
           </th>
-          <td>P-22-03 Projekt</td>
+          <td class="projectFlex"><div class="projectAvatar1"></div>&ensp; P-22-03 Projekt</td>
           <td>Project neve</td>
           <td>Lölő</td>
           <td>+36201212112</td>
@@ -107,7 +245,7 @@
               id="flexCheckDefault"
             />
           </th>
-          <td>P-22-03 Projekt</td>
+          <td class="projectFlex"><div class="projectAvatar1"></div>&ensp; P-22-03 Projekt</td>
           <td>Project neve</td>
           <td>Lölő</td>
           <td>+36201212112</td>
@@ -124,7 +262,7 @@
               id="flexCheckDefault"
             />
           </th>
-          <td>P-22-03 Projekt</td>
+          <td class="projectFlex"><div class="projectAvatar1"></div>&ensp; P-22-03 Projekt</td>
           <td>Project neve</td>
           <td>Lölő</td>
           <td>+36201212112</td>
@@ -141,7 +279,7 @@
               id="flexCheckDefault"
             />
           </th>
-          <td>P-22-03 Projekt</td>
+          <td class="projectFlex"><div class="projectAvatar1"></div>&ensp; P-22-03 Projekt</td>
           <td>Project neve</td>
           <td>Lölő</td>
           <td>+36201212112</td>
@@ -153,7 +291,6 @@
     </table>
     </div>
      <div class="divider2"></div>
-     <div class="iconLine"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></div>
   </div>
 </template>
 
@@ -182,21 +319,23 @@ export default {
   overflow: hidden;
 }
 
+.projectFlex{
+  display: flex;
+}
+
 #projectsCaret{
   position:relative;
   top: 6px;
 }
- 
+
 .projectListTitle {
   position: relative;
   left: 2vw;
   color: white;
-  text-decoration: underline;
   top: 2vh;
 }
 
 .projectsAvatar{
-  background-color: dodgerblue;
   color: white;
   width: 35px;
   text-align: center;

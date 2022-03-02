@@ -21,9 +21,9 @@
               </button>
               <div class="collapse" id="collapseExampleHome">
                 <div class="card card-body" id="expandContainerHome">
-                  <button class="projectnav" @click="navProject"><i class="fa-solid fa-circle-dot"></i> P-22-03_Projekt</button>
-                  <button class="projectnav" @click="navProject"><i class="fa-solid fa-circle-dot"></i> P-22-03_Projekt</button>
-                  <button class="projectnav" @click="navProject"><i class="fa-solid fa-circle-dot"></i> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><div class="projectAvatar1"></div> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
                 </div>
                 </div><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navPartners" ><i class="fas fa-user"></i> <label class="navText"> Ügyfelek </label></button><br/>
@@ -33,6 +33,7 @@
  <button type="button" id="navButton" class="btn btn-primary" @click="navHelp" ><i class="fas fa-question"></i> <label class="navText"> Súgó </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navSettings" ><i class="fas fa-cog"></i> <label class="navText"> Beállítások </label></button>
  <button type="button" id="modeChanger" class="btn btn-primary" @click="navToHomeLight"><i class="fas fa-adjust"></i></button>
+ <button type="button" id="profileButton" class="btn btn-primary" @click="navToFh"><div class="profileAvatar"> </div>    Horváth Borbála</button>
 </div>
 <router-view/>
 </div>
@@ -75,6 +76,10 @@ methods: {
    
   },
 
+    navToFh(){
+            this.$router.push("/settingsFh");    
+        },
+
  navToHomeLight() {
    this.$router.push("/home_light");
  },
@@ -116,6 +121,7 @@ methods: {
   height: 100vh;
   background-color: #2a2b2d;
   z-index: 1;
+  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.20);
 }
 
 #navCollapse{
@@ -126,12 +132,56 @@ methods: {
 }
 
 
+.profileAvatar{
+  background-image: url("assets/avatar1.jpg");
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+}
+
+
+
+.projectAvatar1{
+  background-image: url("assets/projectAvatar1.png");
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+}
+
+
+
+.projectAvatar2{
+  background-image: url("assets/avatar1.jpg");
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+}
+
+
+.projectAvatar2{
+  background-image: url("assets/avatar1.jpg");
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+}
 
 
 #collapseExampleHome{
   background-color: #2a2b2d;
   position: relative;
-  top: 5vh;
+  top: 3vh;
   border:0;
 }
 
@@ -139,6 +189,7 @@ methods: {
 .projectnav{
   background-color: #2a2b2d;
   color: white;
+  display: flex;
   border:0;
   width: 150px;
   margin-bottom: 10px;
@@ -162,15 +213,31 @@ methods: {
 
 #expandContainerHome{
   background-color: #2a2b2d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100px;
+  left: -20px;
+  width: 210px;
+  margin-bottom: -30px;
 }
 
 #modeChanger{
   background-color: #2a2b2d;
   border: 0;
   position: absolute;
+  top: 85vh;
+  left: 2px;
+}
+
+#profileButton{
+  background-color: #2a2b2d;
+  border: 0;
+  position: absolute;
+  display: flex;
   top: 92vh;
   left: 2px;
 }
+
 
 .allDiv{
   display: flex;

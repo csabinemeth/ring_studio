@@ -2,7 +2,7 @@
   <div class="createBackgroundProject">
      <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard"> Új projekt</text>
+        <div class="projectAvatar1"></div>&ensp;P-22-03_projekt:<text class="dashboard"> Új projekt</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -34,6 +34,10 @@
       <div class="formLine">
         <text>Projekt név:</text>
         <input class="form-control" id="inputBox" placeholder="Projekt név" />
+      </div>
+       <div class="formLine">
+        <text>Avatar:</text>
+        <input type="file" class="form-control" id="fileUpload" />
       </div>
        <div class="formLine">
         <text>Számlázási cím: irányítószám:</text>

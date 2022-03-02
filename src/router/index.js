@@ -26,6 +26,7 @@ import Beszerzes from '../Views/Beszerzes'
 import Eladas from '../Views/Eladas'
 import Diviziok from '../Views/Diviziok'
 import CreateAjanlat from '../Views/CreateAjanlat'
+import CreateAjanlatCsoportositas from '../Views/CreateAjanlatCsoportositas'
 import CreateBeszerzes from '../Views/CreateBeszerzes'
 import CreateDivizio from '../Views/CreateDivizio'
 import CreateFizetes from '../Views/CreateFizetes'
@@ -274,6 +275,11 @@ import { createRouter, createWebHistory } from  'vue-router';
             path: '/createajanlat',
             name: 'CreateAjanlat',
             component: CreateAjanlat
+        },
+        {
+            path: '/createajanlatcsoportositas',
+            name: 'CreateAjanlatCsoportositas',
+            component: CreateAjanlatCsoportositas
         },
         {
             path: '/createbeszerzes',

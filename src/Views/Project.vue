@@ -1,8 +1,8 @@
 <template>
   <div class="projectBackGround1">
     <div class="topLine">
-      <h5 class="projectTitle">
-        P-22-03_projekt: <text class="dashboard"> Dashboard</text>
+      <h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;
+       P-22-03_projekt: <text class="dashboard"> Dashboard</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -337,6 +337,15 @@ export default {
   margin-left: 5px;
 }
 
+#projectAvatar{
+  background-color: dodgerblue;
+  color: white;
+  width: 35px;
+  text-align: center;
+  height: 35px;
+   border-radius: 15%;
+}
+
 .btn:focus {
   outline: none;
   box-shadow: none;
@@ -567,7 +576,8 @@ export default {
 
 .projectTitle {
   position: relative;
-  left: 2vw;
+  left: 0vw;
+  display: flex;
   color: white;
   text-decoration: none;
   top: 2vh;

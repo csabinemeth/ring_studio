@@ -1,7 +1,7 @@
 <template>
 <div class="projectBackGround"> 
 <div class="topLine">
-<h5 class="projectTitle">P-22-03_projekt: <button
+<h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;P-22-03_projekt: <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
         id="docsDropdown"
@@ -338,7 +338,7 @@ export default {
   bottom: 29px;
   background-color: #1e1f21;
   left: -5px;
-  top: -2px;
+  top: -9px;
   font-size: 20px;
   text-decoration: underline;
 }

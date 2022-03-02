@@ -1,5 +1,5 @@
 <template>
-<div class="projectBackGround"> 
+<div class="ujAjanlatBackGround"> 
 <div class="topLine">
 <h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;P-22-03_projekt:</h5> <div class="dropdown">
       <button
@@ -10,7 +10,7 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Katalógus
+        Új ajánlat
       </button>
       <div
         class="dropdown-menu"
@@ -18,19 +18,42 @@
         aria-labelledby="dropdownMenuButton"
       >
         <a class="dropdown-item" id="dropdownItem"><i class="far fa-edit"></i> Szerkesztés</a>
-        <a class="dropdown-item" id="dropdownItem"><i class="far fa-copy"></i> Duplikál</a>
-        <a class="dropdown-item" id="dropdownItem"><i class="far fa-star"></i> Mentés a kedvencek közé</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-trash-alt"></i> Törlés</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="far fa-share-square"></i> Elküld/megoszt</a>
+        <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="createBeszerzesListDropdown"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+       <i class="fas fa-print"></i> Nyomtatás
+      </button>
+      <div
+        class="dropdown-menu"
+        id="openedDrowdownProjectList"
+        aria-labelledby="dropdownMenuButton"
+      >
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Nyomtatás előlappal</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Nyomtatás képpel</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Nyomtatás árakkal</a>
+        <a class="dropdown-item" id="dropdownItem"><i class="fas fa-print"></i> Nyomtatás összesítővel</a>
+        
+      </div>
+        
+       
         
       </div>
       </div>
  <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateText1">2021.12.23 csütörtök</text>
  <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" >Új Termék</a>
+    <a class="dropdown-item" id="dropdownItem" >Új Ajánlat</a>
   </div>
 </div>
 </div>
@@ -43,7 +66,7 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas"><i class="fa-solid fa-cart-arrow-down"></i> Eladás</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy"><i class="fa-solid fa-file-invoice-dollar"></i> Pénzügy</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDiviziok"><i class="fa-solid fa-layer-group"></i> Divíziok</button>
- <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
 
@@ -60,16 +83,16 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Szállító
+          Ügyfél
         </button>
         <div
           class="dropdown-menu"
           id="openedDrowdown"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item" id="szuroDropdownItem">Szállító 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Szállító 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Szállító 3</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
         </div>
       </div>
       <div class="dropdown">
@@ -81,19 +104,18 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Gyártó
+          Divízió
         </button>
         <div
           class="dropdown-menu"
           id="openedDrowdown"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item" id="szuroDropdownItem">Gyártó 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Gyártó 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Gyártó 3</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
         </div>
       </div>
-
       <div class="dropdown">
         <button
           class="btn btn-secondary dropdown-toggle"
@@ -103,20 +125,19 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Termékkategória
+          Kategória
         </button>
         <div
           class="dropdown-menu"
           id="openedDrowdown"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item" id="szuroDropdownItem">Kategória 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Kategória 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Kategória 3</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Nyitott</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Lezárt</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Elfogadott</a>
         </div>
       </div>
-
-      <div class="dropdown">
+       <div class="dropdown">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
@@ -125,20 +146,19 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Termékfajta
+          Termék státusz
         </button>
         <div
           class="dropdown-menu"
           id="openedDrowdown"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item" id="szuroDropdownItem">Fajta 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Fajta 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Fajta 3</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
         </div>
       </div>
-
-      <div class="dropdown">
+       <div class="dropdown">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
@@ -147,47 +167,26 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Szín
+          Ajánlat száma
         </button>
         <div
           class="dropdown-menu"
           id="openedDrowdown"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item" id="szuroDropdownItem">Fekete</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Zöld</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Piros</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
+          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
         </div>
       </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Méret
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">20x20</a>
-          <a class="dropdown-item" id="szuroDropdownItem">30x30</a>
-          <a class="dropdown-item" id="szuroDropdownItem">40x40</a>
-        </div>
-      </div>
-
+      
     
-      <div class="dropdown">
+    
+      <div class="dropdown" id="csoportDiv">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
-          id="csoportositasAjanlat"
+          id="csoportositas1"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
@@ -207,11 +206,20 @@
     </div>
 
     <div class="aktivSzurok">
-      <text class="aktivSzuroText">Spot</text>
-      <text class="aktivSzuroText">101</text>
-      <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
+      <text class="aktivSzuroText">Ügyfél</text>
+      <text class="aktivSzuroText">Divízió</text>
+      <text class="deleteActive">Szűrők törlése</text>
     </div>
-    <br/>
+    <div class="formLines">
+        <input class="form-control" id="inputBox1" placeholder="Ajánlat címe" />
+        <input class="form-control" id="inputBox1" placeholder="Kedvezmény (%)" />
+        <input class="form-control" id="inputBox1" placeholder="Kedvezmény (Ft)" />
+        <input class="form-control" id="inputBox1" placeholder="Ajánlat érvényessége" />
+        <input class="form-control" id="inputBox1" placeholder="Ajánlat száma" />
+        <input class="form-control" id="inputBox1" placeholder="Megjegyzés" />
+</div>
+<br/>
+
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
@@ -221,95 +229,121 @@
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <th scope="col">Szállító</th>
-          <th scope="col">Gyártó</th>
-          <th scope="col">Kategória</th>
-          <th scope="col">Termékfajta</th>
-          <th scope="col">Szín</th>
-          <th scope="col">Méret</th>
+          <th scope="col">Termékkód</th>
+          <th scope="col">Termék</th>
+          <th scope="col">Kép</th>
+          <th scope="col">Beszerzési ár</th>
+          <th scope="col">Kalkulált ár</th>
+          <th scope="col">Ajánlati ár</th>
+          <th scope="col">Árrés</th>
+                    <th scope="col">Státusz</th>
+                    <th></th>
+          >
         </tr>
       </thead>
       <tbody>
-        <tr>
-        <th><input
+        
+         <tr>
+          <th><input
               class="form-check-input"
               type="checkbox"
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>Szállító kft.</td>
-          <td>Gyártó kft.</td>
-          <td>Kategória</td>
-          <td>Fajta</td>
-          <td>Fekete</td>
-          <td>20x20</td>
-        </tr>
-          <tr>
-        <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>Szállító kft.</td>
-          <td>Gyártó kft.</td>
-          <td>Kategória</td>
-          <td>Fajta</td>
-          <td>Fekete</td>
-          <td>20x20</td>
-        </tr>
-          <tr>
-        <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>Szállító kft.</td>
-          <td>Gyártó kft.</td>
-          <td>Kategória</td>
-          <td>Fajta</td>
-          <td>Fekete</td>
-          <td>20x20</td>
-        </tr>
-          <tr>
-        <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>Szállító kft.</td>
-          <td>Gyártó kft.</td>
-          <td>Kategória</td>
-          <td>Fajta</td>
-          <td>Fekete</td>
-          <td>20x20</td>
+          <td>BÉ-L101</td>
+          <td>Spot</td>
+          <td><div class="productImage"></div></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10 000 Ft</td>
+          <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
         </tr>
          <tr>
-        <th><input
+          <th><input
               class="form-check-input"
               type="checkbox"
               value=""
               id="flexCheckDefaultPartners"
             /></th>
-          <td>Szállító kft.</td>
-          <td>Gyártó kft.</td>
-          <td>Kategória</td>
-          <td>Fajta</td>
-          <td>Fekete</td>
-          <td>20x20</td>
+          <td>BÉ-L101</td>
+          <td>Spot</td>
+          <td><div class="productImage"></div></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10 000 Ft</td>
+          <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
+        </tr>
+         <tr>
+          <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
+          <td>BÉ-L101</td>
+          <td>Spot</td>
+          <td><div class="productImage"></div></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10 000 Ft</td>
+          <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
+        </tr>
+         <tr>
+          <th><input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefaultPartners"
+            /></th>
+          <td>BÉ-L101</td>
+          <td>Spot</td>
+          <td><div class="productImage"></div></td>
+          <td>76.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>86.235 Ft</td>
+          <td>10 000 Ft</td>
+          <td>Megrendelve</td>
+          <td><i class="fas fa-minus"></i></td>
+        </tr>
+          <tr class="transparent">
+          <td></td>
+          <td colspan="9" > </td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Összesítő:</th>
+          <td></td>
+          <td></td>
+          <td>381 150 Ft</td>
+          <td>431 175 Ft</td>
+          <td>431 175 Ft</td>
+          <td>40 000 Ft</td>
+          <td></td>
         </tr>
       </tbody>
     </table>
 
-    <button
+<button
         type="button"
-        id="createButtonKatalógus"
+        id="createButtonAjanlat"
         @click="create"
         class="btn btn-success"
       >
-        Katalógus
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+      <button
+        type="button"
+        id="createButtonAjanlat"
+        @click="navToAjanlat_print"
+        class="btn btn-success"
+      >
+       <i class="fa-solid fa-print"></i>
       </button>
 
     
@@ -325,12 +359,12 @@ export default {
 
 
 
-      name: "Katalogus",
-      path: "/katalogus",
+      name: "createajanlatcsoportositas",
+      path: "/createajanlatcsoportositas",
 
   methods: {
 
-      navKoltsegvetes() {
+  navKoltsegvetes() {
       this.$router.push('/project_koltsegvetes')
     },
 
@@ -369,6 +403,11 @@ export default {
       this.$router.push('/docs')
     },
 
+    navToAjanlat_print(){
+      this.$router.push('/ajanlat_print');
+    }
+
+
 
   }
     
@@ -386,26 +425,45 @@ export default {
     
 }
 
-#createButtonKatalógus{
-    position: relative;
-    top: 7vh;
-    left: 2vw;
-    background-color: #9ec520;
-    border: 0;
 
+#createButtonAjanlat{
+  position: relative;
+  top: 8vh;
+  float: right;
+  margin-right: 10px;
+  background-color: #9fc321;
+  border: 0;
+}
+
+
+.formLines{
+  display: flex;
 }
 
 .dashboard{
   text-decoration: underline;
 }
 
-#plusButtonKatalogus{
-  background-color: #2a2b2d;
+#plusButtonujAjanlat{
+  background-color: #9ec520;
   border: 0;
   top: 1vh;
   position: relative;
-  left: 41vw;
+  left: 40vw;
 }
+
+
+#inputBox1 {
+   width: 175px;
+  height: 28px;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 2vw;
+  top: 10vh;
+  background-color: #1e1f21;
+}
+  
 
 
 .dividerProject{
@@ -415,6 +473,7 @@ export default {
     height: 1px;
     background-color: #68686e;
     top: 2.5vh;
+    
 }
 
 #projectButton{
@@ -425,7 +484,7 @@ export default {
 
 
 
-#ajanlatListDropdown {
+#beszerzesListDropdown {
   background-color: #2a2b2d;
   border: 0;
   position: relative;
@@ -436,12 +495,23 @@ export default {
   text-decoration: underline;
 }
 
-.dateTextKatalogus{
-    color: white;
-    position: relative;
+.dateText1{
+     position: absolute;
+     right: 65px;
     top: 2vh;
-    left: 40.5vw;
     color:#68686a;
+}
+
+
+#createBeszerzesListDropdown {
+  background-color: #2a2b2d;
+  border: 0;
+  position: relative;
+  bottom: 29px;
+  background-color: #1e1f21;
+  left: 0.5vw;
+  top: 0.5vh;
+  
 }
 
 
@@ -457,20 +527,24 @@ export default {
   left: 1vw;
 }
 
-.projectBackGround{
-     height: 100vh;
-  width: 90vw;
-  background-color: #1e1f21;
-  overflow: hidden;
-}
 
-#csoportositasAjanlat {
+#csoportositasCAjanlat {
   background-color: #2a2b2d;
   border: 0;
   position: relative;
-  left: 53.5vw;
+  left: 27.5vw;
   margin-left: 5px;
   font-size: 15px;
 }
+
+.ujAjanlatBackGround {
+  height: 100vh;
+  width: 90vw;
+  background-color: #1e1f21;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
 
 </style>

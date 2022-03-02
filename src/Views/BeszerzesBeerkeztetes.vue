@@ -2,7 +2,7 @@
   <div class="projectBackGround">
     <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt: <text class="dashboard">Beszerzés Beérkeztetés</text>
+        <div class="projectAvatar1"></div>&ensp;P-22-03_projekt: <text class="dashboard">Beszerzés Beérkeztetés</text>
       </h5>
       <input
         class="form-control mr-sm-2"

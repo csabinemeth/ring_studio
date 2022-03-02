@@ -2,7 +2,7 @@
   <div class="createBackgroundTermek">
   <div class="topLine">
       <h5 class="projectTitle">
-        P-22-03_projekt:<text class="dashboard">Új termék</text>
+        <div class="projectAvatar1"></div>&ensp;P-22-03_projekt:<text class="dashboard">Új termék</text>
       </h5>
       <input
         class="form-control mr-sm-2"
@@ -21,202 +21,130 @@
   </div>
 </div>
     </div>
-    <div class="formStuff">
-      <div class="formLine">
-        <text>Státusz:</text>
-        <select class="form-control" id="FormControlSelect" >
-          <option>Státusz</option>
-          <option>Státusz2</option>
-          <option>Státusz3</option>
-        </select>
+    <div class="inputs">
+     <div class="formLine">
+        <input class="form-control" id="inputBoxProduct1" placeholder="Termékkód" />
       </div>
-      <div class="formLine">
-        <text>Típus:</text>
-        <input class="form-control" id="inputBox" placeholder="Típus" />
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Terméknév" />
       </div>
-      <div class="formLine">
-        <text>Terménév:</text>
-        <input class="form-control" id="inputBox" placeholder="Terméknév" />
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Státusz" />
       </div>
-      <div class="formLine">
-        <text class="addressText">Termékkód:</text>
-        <input class="form-control" id="inputBox" placeholder="Termékkód" />
       </div>
-      <div class="formLine">
-        <text>Lista:</text>
-        <input class="form-control" id="inputBox" placeholder="Lista" />
-      </div>
-      <div class="formLine">
-        <text class="telText">Termékkategória:</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Termékkategória"
-        />
-      </div>
-      <div class="formLine">
-        <text>Termékfajta:</text>
-        <input class="form-control" id="inputBox" placeholder="Termékfajta" />
-      </div>
-      <div class="formLine">
-        <text class="addressText">Műszaki tartalom:</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Műszaki tartalom"
-        />
-      </div>
-      <div class="formLine">
-        <text class="telText">Szín:</text>
-        <input class="form-control" id="inputBox" placeholder="Szín" />
-      </div>
-      <div class="formLine">
-        <text>Méret:</text>
-        <input class="form-control" id="inputBox" placeholder="Méret" />
-      </div>
-      <div class="formLine">
-        <text>Mennyiségi egység:</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Mennyiségi egység"
-        />
-      </div>
-      <div class="formLine">
-        <text>Mennyiség:</text>
-        <input class="form-control" id="inputBox" placeholder="Mennyiség" />
-      </div>
-      <div class="formLine">
-        <text>Megjegyzés:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
-      </div>
-      <div class="formLine">
-        <text>Terméklink:</text>
-        <input class="form-control" id="inputBox" placeholder="Terméklink" />
-      </div>
-      <div class="formLine">
-        <text>Szállító:</text>
-        <select class="form-control" id="FormControlSelect">
-          <option>Szállító</option>
-          <option>Szállító2</option>
-          <option>Szállító3</option>
-        </select>
-      </div>
-      <div class="formLine">
-        <text>Gyártó:</text>
-        <select class="form-control" id="FormControlSelect">
-          <option>Gyártó</option>
-          <option>Gyártó2</option>
-          <option>Gyártó3</option>
-        </select>
-      </div>
-      <div class="formLine">
-        <text>Gyártó kód:</text>
-        <input class="form-control" id="inputBox" placeholder="Gyártó kód" />
-      </div>
-      <div class="formLine">
-        <text>Gyári kedvezmény:</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Gyári kedvezmény"
-        />
-      </div>
-      <div class="formLine">
-        <text>Haszonkulcs:</text>
-        <input class="form-control" id="inputBox" placeholder="Haszonkulcs" />
-      </div>
-      <div class="formLine">
-        <text>Becsült ár:</text>
-        <input class="form-control" id="inputBox" placeholder="Becsült ár" />
-      </div>
-      <div class="formLine">
-        <text>Beszerzés EUR/Ft:</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Beszerzés EUR/Ft"
-        />
-      </div>
-      <div class="formLine">
-        <text>Eladás EUR/Ft:</text>
-        <input class="form-control" id="inputBox" placeholder="Eladás EUR/Ft" />
-      </div>
-      <div class="formLine">
-        <text>Listaáras:</text>
-        <input class="form-control" id="inputBox" placeholder="Listaáras" />
-      </div>
-      <div class="formLine">
-        <text>Listaár (Ft):</text>
-        <input class="form-control" id="inputBox" placeholder="Listaár (Ft)" />
-      </div>
-      <div class="formLine">
-        <text>Listaár (EUR):</text>
-        <input class="form-control" id="inputBox" placeholder="Listaár (EUR)" />
-      </div>
-      <div class="formLine">
-        <text>Beszerzési ár (Ft):</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Beszerzési ár (Ft)"
-        />
-      </div>
-      <div class="formLine">
-        <text>Beszerzési ár (EUR):</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Beszerzési ár (EUR)"
-        />
-      </div>
-      <div class="formLine">
-        <text>Eladási ár (Ft):</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Eladási ár (Ft)"
-        />
-      </div>
-      <div class="formLine">
-        <text>Eladási ár (EUR):</text>
-        <input
-          class="form-control"
-          id="inputBox"
-          placeholder="Eladási ár (EUR)"
-        />
-      </div>
-      <div class="formLine">
-        <text>Kommentek:</text>
-        <textarea
-          class="form-control"
-          id="textArea"
-          aria-label="With textarea"
-          placeholder="Kommentek"
-        ></textarea>
-      </div>
-      <div class="formLine">
-        <text>Kép:</text>
-        <input type="file" class="form-control" id="fileUpload" />
-      </div>
-      <button
-        type="button"
-        id="createButton"
-        @click="create"
-        class="btn btn-success"
-      >
-        Létrehozás
-      </button>
-      <button
-        type="button"
-        id="cancelButton"
-        @click="back"
-        class="btn btn-danger"
-      >
-        Mégsem
-      </button>
-    </div>
+<div class="bothSide">
+  <div class="leftSide">
+    <p>
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Alapadatok <i class="fa-solid fa-caret-down"></i>
+  </a>
+</p>
+<div class="collapse" id="collapseExample1">
+  <div class="card card-body" id="contentCollapse">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
+</div>
+ <p>
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Árak <i class="fa-solid fa-caret-down"></i>
+  </a>
+</p>
+<div class="collapse" id="collapseExample2">
+  <div class="card card-body" id="contentCollapse">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+ <p>
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Beszerzés / Eladás <i class="fa-solid fa-caret-down"></i>
+  </a>
+</p>
+<div class="collapse" id="collapseExample3">
+  <div class="card card-body" id="contentCollapse">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+ <p>
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Rendszeradatok <i class="fa-solid fa-caret-down"></i>
+  </a>
+</p>
+<div class="collapse" id="collapseExample4" >
+  <div class="card card-body" id="contentCollapse">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+  </div>
+  <div class="rightSide"><p>
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+    History <i class="fa-solid fa-caret-down"></i>
+  </a>
+</p>
+<div class="collapse" id="collapseExample5" >
+  <div class="card card-body" id="contentCollapse">
+    <label class="post">02.05 - Horváth Borbála létehozta a terméket!</label>
+    <label class="post">02.10 - Horváth Borbála rendelést adott le a termékre!</label>
+    <label class="post">02.20 - A rendelés megérkezett!</label>
+  </div>
+</div>
+<p>
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Kommentek <i class="fa-solid fa-caret-down"></i>
+  </a>
+</p>
+<div class="collapse" id="collapseExample6" >
+  <div class="card card-body" id="contentCollapse">
+
+    <div class="comment">
+      <div class="commentter">
+     <div class="profileAvatar"> </div> &ensp; Horváth Borbála: <text class="dateLabel">02.10 10:05</text>
+     </div>
+      <br/>
+      <div class="comment-content">
+      Ebből rendelni kell!
+      </div>
+      </div>
+
+    <div class="comment">
+      <div class="commentter">
+     <div class="profileAvatar"> </div> &ensp; Horváth Borbála: <text class="dateLabel">02.20 11:20</text>
+     </div>
+      <br/>
+      <div class="comment-content">
+      Megrendelve! 
+      </div>
+      </div>
+        <div class="comment">
+      <div class="commentter">
+     <div class="profileAvatar"> </div> &ensp; Horváth Borbála: <text class="dateLabel">03.02 15:44</text>
+     </div>
+      <br/>
+      <div class="comment-content">
+      A rendelés megérkezett!
+      </div>
+      </div>
+
+      <div class="writeComment">
+      <div class="commentter">
+     <div class="profileAvatar"> </div> &ensp; Horváth Borbála: 
+     </div>
+      <br/>
+      <div class="comment-content">
+       <div class="form-group">
+   
+    <textarea class="form-control" id="commentWriteSpace" rows="3"></textarea>
+    <button class="commentButton"><i class="fa-solid fa-plus"></i> Comment</button>
+  </div>
+      </div>
+      </div>
+
+
+  </div>
+</div></div>
+</div>
+
+
+    </div>
 </template>
 
 <script>
@@ -237,6 +165,48 @@ export default {
 </script>
 
 <style>
+
+.dateLabel{
+  float: right;
+  position: relative;
+  right: -210px;
+  color: grey;
+}
+
+#commentWriteSpace{
+  background-color: #1e1f21;
+  position: relative;
+  left: -65px;
+  width: 35vw;
+  border: 0;
+  color: white;
+}
+.writeComment{
+  background-color: #2a2b2d;
+  border-radius: 10px;
+}
+
+.post{
+  font-size: 15px;
+  color: grey;
+  position: relative;
+  left: 1vw;
+}
+
+
+
+.commentButton{
+  background-color: #2a2b2d;
+  border: 0;
+  color: white;
+  position: relative;
+  float: right;
+  right: 70px;
+  cursor: pointer;
+  top: 5px;
+  margin-bottom: 10px;
+}
+
 .createBackgroundTermek {
   height: 100vh;
   width: 90vw;
@@ -245,6 +215,90 @@ export default {
   color: white;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+
+.commentter{
+  display: flex;
+  position: relative;
+  left: 1vw;
+  top: 5px;
+}
+
+.comment-content{
+  position: relative;
+  left: 5vw;
+  margin-bottom: 20px;
+}
+
+#collapses{
+  background-color:#1e1f21;
+  border: 0;
+  position: relative;
+  left: 1vw;
+  top: 10px;
+}
+
+.inputs{
+  display: flex;
+}
+
+#contentCollapse{
+  background-color:#1e1f21;
+}
+
+.leftSide{
+  height: auto;
+  min-height: 80vh;
+  border:0;
+  width: 40vw;
+  border-radius: 10px;
+  position: relative;
+  top: 60px;
+  left: 2vw;
+  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.20);
+}
+
+
+.comment{
+  border: 0;
+  background-color: #2a2b2d;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.15);
+}
+
+#inputBoxProduct1{
+  background-color: #1e1f21;
+  width: 150px;
+  position: relative;
+  left: 2vw;
+}
+
+#inputBoxProduct{
+  background-color: #1e1f21;
+  margin-left: 10px;
+  width: 150px;
+  position: relative;
+  left: 2vw;
+}
+
+.bothSide{
+  display: flex;
+}
+
+.rightSide{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 80vh;
+  border: 0;
+  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.20);
+  width: 40vw;
+  border-radius: 10px;
+  position: relative;
+  top: 60px;
+  float: right;
+  left: 4vw;
 }
 
 #cancelButton{

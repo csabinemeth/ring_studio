@@ -185,7 +185,6 @@ export default {
   position: relative;
   left: 2vw;
   color: white;
-  text-decoration: underline;
   top: 2vh;
 }
 
