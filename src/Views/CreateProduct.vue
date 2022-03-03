@@ -51,7 +51,15 @@
 </p>
 <div class="collapse" id="collapseExample2">
   <div class="card card-body" id="contentCollapse">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAr" placeholder="Beszerzési ár" />
+      </div>
+        <div class="formLine">
+        <input class="form-control" id="inputBoxProductAr" placeholder="Eladási ár" />
+      </div>
+        <div class="formLine">
+        <input class="form-control" id="inputBoxProductAr" placeholder="Árrés" />
+      </div>
   </div>
 </div>
  <p>
@@ -77,7 +85,7 @@
   </div>
   <div class="rightSide"><p>
   <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
-    History <i class="fa-solid fa-caret-down"></i>
+    Előzmények <i class="fa-solid fa-caret-down"></i>
   </a>
 </p>
 <div class="collapse" id="collapseExample5" >
@@ -232,7 +240,7 @@ export default {
 }
 
 #collapses{
-  background-color:#1e1f21;
+  background-color:#9ec520;
   border: 0;
   position: relative;
   left: 1vw;
@@ -273,6 +281,15 @@ export default {
   width: 150px;
   position: relative;
   left: 2vw;
+}
+
+
+#inputBoxProductAr{
+  background-color: #1e1f21;
+  width: 170px;
+  position: relative;
+  left: 0vw;
+  bottom: 50px;
 }
 
 #inputBoxProduct{

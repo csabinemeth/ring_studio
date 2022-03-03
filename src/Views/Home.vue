@@ -39,7 +39,7 @@
 
     
      <tr class="projectRow">
-      <td class="more">Show more</td>
+      <td class="more">Mutass többet</td>
         
     </tr>
   
@@ -79,7 +79,7 @@
         
     </tr>
      <tr class="projectRow">
-      <td class="more">Show more</td>
+      <td class="more">Mutass többet</td>
         
     </tr>
     

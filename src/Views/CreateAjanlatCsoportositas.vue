@@ -242,6 +242,10 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <th colspan="9">Lámpák</th>
+
+          </tr>
         
          <tr>
           <th><input
@@ -277,7 +281,12 @@
           <td>Megrendelve</td>
           <td><i class="fas fa-minus"></i></td>
         </tr>
+        <tr>
+          <th colspan="9">Burkolatok</th>
+
+          </tr>
          <tr>
+           
           <th><input
               class="form-check-input"
               type="checkbox"
@@ -294,6 +303,10 @@
           <td>Megrendelve</td>
           <td><i class="fas fa-minus"></i></td>
         </tr>
+        <tr>
+          <th colspan="9">Egyéb</th>
+
+          </tr>
          <tr>
           <th><input
               class="form-check-input"

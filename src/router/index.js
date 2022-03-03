@@ -166,6 +166,7 @@ import { createRouter, createWebHistory } from  'vue-router';
             name: 'Ajanlat',
             component: Ajanlat
         },
+
         {
             path: '/riports',
             name: 'Riports',
