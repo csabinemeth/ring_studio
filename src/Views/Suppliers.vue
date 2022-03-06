@@ -103,7 +103,7 @@
               value=""
               id="flexCheckDefaultPartners"
             /></td>
-          <td>Horváth Péter</td>
+          <td class="addressD">Horváth Péter</td>
           <td class="addressD" >9082, Nyúl, Fő út 2</td>
           <td>12345678</td>
           <td>11773377-01010101</td>
@@ -139,13 +139,18 @@ export default {
 
 
 .addressD{
-    font-size: 9px;
+  
+  min-width: 150px;
+  position: relative;
+  font-size: 15px;
+  top: -1px;
 }
 
 #flexCheckDefaultPartners{
   position: relative;
   left: 20px;
 }
+
 
 #iconButton{
     width: 100px;
@@ -171,6 +176,9 @@ export default {
  position: relative;
   top: 10vh;
   width: 84.5vw;
+   overflow-x: scroll;
+  overflow-y: hidden;
+ 
   left: 1vw;
   background-color: #2a2b2d;
   font-size: 14px;

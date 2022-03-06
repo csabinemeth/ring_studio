@@ -49,7 +49,7 @@
     Árak <i class="fa-solid fa-caret-down"></i>
   </a>
 </p>
-<div class="collapse" id="collapseExample2">
+<div class="collapse.show" id="collapseExample2">
   <div class="card card-body" id="contentCollapse">
       <div class="formLine">
         <input class="form-control" id="inputBoxProductAr" placeholder="Beszerzési ár" />
@@ -88,7 +88,7 @@
     Előzmények <i class="fa-solid fa-caret-down"></i>
   </a>
 </p>
-<div class="collapse" id="collapseExample5" >
+<div class="collapse.show" id="collapseExample5" >
   <div class="card card-body" id="contentCollapse">
     <label class="post">02.05 - Horváth Borbála létehozta a terméket!</label>
     <label class="post">02.10 - Horváth Borbála rendelést adott le a termékre!</label>
@@ -96,12 +96,12 @@
   </div>
 </div>
 <p>
-  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse in" href="#collapseExample6" role="button" aria-expanded="true" aria-controls="collapseExample">
     Kommentek <i class="fa-solid fa-caret-down"></i>
   </a>
 </p>
-<div class="collapse" id="collapseExample6" >
-  <div class="card card-body" id="contentCollapse">
+<div class="collapse.show" id="collapseExample6" >
+  <div class="card card-body in" id="contentCollapse">
 
     <div class="comment">
       <div class="commentter">

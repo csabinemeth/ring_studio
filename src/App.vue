@@ -5,7 +5,7 @@
 
 
 <div class="sidebar">
-<div class="logo"> </div>
+<div class="logo"> </div> <i class="fa-solid fa-arrow-left" id="sideBarClose"></i>
  <button type="button" id="navButton" @click="navHome" class="btn btn-primary"><i class="fas fa-home"></i><label class="navText"> Home </label></button><br/>
 <button
                 class="btn btn-primary"
@@ -115,6 +115,15 @@ methods: {
 </script>
 
 <style>
+
+
+#sideBarClose{
+  position: absolute;
+  left: 11.5vw;
+  z-index: 2;
+  top: 1vh;
+  color: white;
+}
 
 .sidebar{
   width: 14vw;
