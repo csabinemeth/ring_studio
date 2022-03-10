@@ -150,7 +150,7 @@ export default {
 
 
 #plusButtonUjFizetes{
-  background-color: #9ec520;
+  background-color: #2d2b2a;
   border: 0;
   top: 1vh;
   position: relative;

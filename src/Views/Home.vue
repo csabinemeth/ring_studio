@@ -124,7 +124,7 @@ export default {
 }
 
 #plusButton1{
-  background-color: #9ec520;
+  background-color: #2a2b2d;
   border: 0;
   position: relative;
   float: right;

@@ -24,17 +24,52 @@
         
       </div>
       </div>
- <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
- <text class="dateTextAjanlat">2021.12.23 csütörtök</text>
- <div class="dropdown1">
-  <button class="btn btn-secondary " type="button" id="plusButtonAjanlat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <i class="fas fa-plus"></i>
-  </button>
-  <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" @click="navNewAjanlat" >Új Ajánlat</a>
-  </div>
-</div>
-</div>
+
+     
+  <button
+                      class="btn btn-primary"
+                      type="button"
+                      data-toggle="collapse"
+                      id="productSearchTop"
+                      data-target="#collapseSearchTop"
+                      aria-expanded="false"
+                      aria-controls="collapseSearchTop"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                     <button
+                      class="btn btn-primary"
+                      type="button"
+                      data-toggle="collapse"
+                      id="productFilterTop"
+                      data-target="#collapseFilterTop"
+                      aria-expanded="false"
+                      aria-controls="collapseFilterTop"
+                    >
+                      <i class="fa-solid fa-filter"></i>
+                    </button>
+      
+      <div class="dropdown1">
+        <button
+          class="btn btn-secondary"
+          type="button"
+          id="plusButton1"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-plus"></i>
+        </button>
+        <div
+          class="dropdown-menu"
+          id="openedDrowdown"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" id="dropdownItem">Új Ajánlat</a>
+        </div>
+      </div>
+    </div>
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
@@ -49,7 +84,17 @@
 </div>
 
     <div class="dividerProject"></div>
+<div class="collapse" id="collapseSearchTop">
+  <div class="card card-body" id="searchBarTop">
+    <div class="searchLine">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchBarInput">
+    <button class="btn btn-success" type="submit" id="searchButtonTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+  </div>
+</div>
 
+<div class="collapse" id="collapseFilterTop">
+  <div class="card card-body" id="filterCollapseContent">
     <div class="szures1">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
@@ -118,11 +163,14 @@
       </div>
     </div>
 
-    <div class="aktivSzurok">
+    <div class="aktivSzurokAjanlatok">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">101</text>
       <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
+  </div>
+</div>
+    
 
     <table class="table table-dark" id="koltsegTable">
       <thead>
@@ -140,7 +188,7 @@
           <th scope="col">Ajánlat státusza</th>
           <th scope="col">Link</th>
           <th scope="col">Érvényesség</th>
-          >
+          
         </tr>
       </thead>
       <tbody>
@@ -219,6 +267,9 @@
           <td>www.ajanlat.hu</td>
           <td>2022.12.31.</td>
         </tr>
+        <tr @click="navToCreateAjanlat">
+        <th colspan="8" >Új ajánlat <i class="fa-solid fa-plus"></i></th>
+        </tr>
       </tbody>
     </table>
 
@@ -284,6 +335,10 @@ export default {
       this.$router.push('/docs')
     },
 
+    navToCreateAjanlat(){
+      this.$router.push('/createajanlatempty')
+    }
+
   
 
 
@@ -311,7 +366,7 @@ export default {
 }
 
 #plusButtonAjanlat{
-   background-color: #9ec520;
+   background-color: #2a2b2d;
   border: 0;
   top: 1vh;
   position: absolute;
@@ -322,10 +377,9 @@ export default {
 
 
 .szures1{
-  
   color: white;
   position: relative;
-  top: 1vh;
+  bottom: 35px;
   left: 2vw;
   display: flex;
 }
@@ -347,18 +401,52 @@ export default {
   border: 0;
 }
 
+#productFilterTop{
+  background-color: #2a2b2d;
+  border: 0;
+  position: relative;
+  left: 54vw;
+  }
 
+
+#filterCollapseContent{
+  position: relative;
+  top: 25px;
+  background-color: #1e1f21;
+  color: white;
+}
+
+#collapseFilterTop{
+  position: relative;
+  bottom: 15px;
+}
 
 #ajanlatListDropdown {
   background-color: #2a2b2d;
   border: 0;
   position: relative;
   bottom: 29px;
-  background-color: #1e1f21;
+  
   left: 2vw;
   font-size: 20px;
   text-decoration: underline;
 }
+
+#searchBarInput{
+  background-color: #1e1f21;
+  width: 40vw;
+}
+
+.aktivSzurokAjanlatok{
+  height: 20px;
+  width: 83vw;
+  border: 1px solid white;
+  position: relative;
+  top: 2vh;
+  left: 1vw;
+  display: flex;
+}
+
 
 .dateTextAjanlat{
      position: absolute;
@@ -375,7 +463,7 @@ export default {
 
 .buttonLine{
   display: flex;
-  top: 3vh;
+  top:0vh;
   position: relative;
   left: 1vw;
 }
@@ -393,6 +481,23 @@ export default {
   right: 0;
   position: absolute;
 
+}
+
+
+
+#searchButtonTop{
+  width: 40px;
+  border: 0;
+  color: white;
+  background-color: #1e1f21;
+}
+
+#searchBarTop{
+  background-color: #1e1f21;
+  position: relative;
+  color: white;
+  top: 30px;
+  left: 1vw;
 }
 
 #csoportDiv{

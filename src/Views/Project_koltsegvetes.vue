@@ -549,7 +549,7 @@ export default {
 
 .buttonLine {
   display: flex;
-  top: 3vh;
+  top: 0vh;
   position: relative;
   left: 1vw;
 }

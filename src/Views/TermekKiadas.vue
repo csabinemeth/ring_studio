@@ -486,7 +486,7 @@ export default {
 
 .buttonLine{
   display: flex;
-  top: 3vh;
+  top: 0vh;
   position: relative;
   left: 1vw;
 }
@@ -519,7 +519,7 @@ export default {
     position: relative;
   left: 38vw;
   top: 1vh;
-  background-Color: #9fc321;
+  background-Color: #2a2b2d;
 }
 
 </style>

@@ -430,7 +430,6 @@ export default {
   border: 0;
   position: relative;
   bottom: 29px;
-  background-color: #1e1f21;
   left: 2vw;
   font-size: 20px;
   text-decoration: underline;
@@ -452,7 +451,7 @@ export default {
 
 .buttonLine{
   display: flex;
-  top: 3vh;
+  top: 0vh;
   position: relative;
   left: 1vw;
 }

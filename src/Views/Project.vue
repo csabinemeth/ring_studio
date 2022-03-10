@@ -518,7 +518,7 @@ export default {
   position: relative;
   left: 42vw;
   top: 1vh;
-  background-Color: #9fc321;
+  background-Color: #2a2d2b;
 }
 
 .bar4 {
@@ -603,7 +603,7 @@ export default {
 }
 
 #projectButtonActive {
-  background-color: #9ec520;
+  background-color: #2a2b2d;
   border: 0;
   height: 33px;
   margin-right: 1px;
@@ -625,7 +625,7 @@ export default {
 
 .buttonLine {
   display: flex;
-  top: 3vh;
+  top: 0vh;
   position: relative;
   left: 1vw;
 }

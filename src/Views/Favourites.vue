@@ -197,7 +197,7 @@ export default {
 }
 
 #plusButtonFavourites{
-  background-color: #9ec520;
+  background-color: #2a2b2d;
   border: 0;
   top: 1vh;
   position: relative;

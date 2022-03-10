@@ -514,7 +514,7 @@ export default {
   position: relative;
   left: 42vw;
   top: 1vh;
-  background-Color: #9fc321;
+  background-Color: #2a2d2b;
   border: 0;
 }
 
@@ -615,7 +615,7 @@ export default {
 
 .buttonLine {
   display: flex;
-  top: 3vh;
+  top: 0vh;
   position: relative;
   left: 1vw;
 }

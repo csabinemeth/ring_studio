@@ -292,7 +292,7 @@ export default {
 
 
 #plusButtonProjects{
-  background-color: #9ec520;
+  background-color: #2a2b2d;
   border: 0;
   top: 7vh;
   position: relative;

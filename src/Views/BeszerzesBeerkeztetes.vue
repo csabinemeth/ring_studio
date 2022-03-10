@@ -518,7 +518,7 @@ export default {
 
 .buttonLine {
   display: flex;
-  top: 3vh;
+  top: 0vh;
   position: relative;
   left: 1vw;
 }
@@ -531,7 +531,7 @@ export default {
 }
 
 #plusButton1{
-  background-color: #9ec520;
+  background-color: #2a2b2d;
   border: 0;
   top: 1vh;
   position: absolute;

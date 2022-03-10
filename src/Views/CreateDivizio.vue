@@ -163,7 +163,7 @@ export default {
 
 
 #plusButtonUjDivizio{
-  background-color: #9ec520;
+  background-color: #2b2d2a;
   border: 0;
   top: 1vh;
   position: relative;

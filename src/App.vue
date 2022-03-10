@@ -24,6 +24,8 @@
                   <button class="projectnav" @click="navProject"><div class="projectAvatar1"></div> P-22-03_Projekt</button>
                   <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
                   <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
+                  <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
                 </div>
                 </div><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navPartners" ><i class="fas fa-user"></i> <label class="navText"> Ügyfelek </label></button><br/>
@@ -32,8 +34,7 @@
  <button type="button" id="navButton" class="btn btn-primary" @click="navRiports" ><i class="fas fa-flag"></i> <label class="navText"> Riportok </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navHelp" ><i class="fas fa-question"></i> <label class="navText"> Súgó </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navSettings" ><i class="fas fa-cog"></i> <label class="navText"> Beállítások </label></button>
- <button type="button" id="modeChanger" class="btn btn-primary" @click="navToHomeLight"><i class="fas fa-adjust"></i></button>
- <button type="button" id="profileButton" class="btn btn-primary" @click="navToFh"><div class="profileAvatar"> </div>    Horváth Borbála</button>
+ <button type="button" id="profileButton" class="btn btn-primary" @click="navToFh"><div class="profileAvatar"> </div>    Bori</button>
 </div>
 <router-view/>
 </div>
@@ -155,8 +156,8 @@ methods: {
 
 .projectAvatar1{
   background-image: url("assets/projectAvatar1.png");
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -224,7 +225,7 @@ methods: {
   background-color: #2a2b2d;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 100px;
+  height: 150px;
   left: -20px;
   width: 210px;
   margin-bottom: -30px;
