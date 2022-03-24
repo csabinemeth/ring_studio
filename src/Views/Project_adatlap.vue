@@ -1,7 +1,7 @@
 <template>
 <div id="projectBackGround"> 
 <div class="topLine">
-<h5 class="projectTitle"> <div class="projectAvatar1"></div>&ensp;BÉ-L101:P-22-03_projekt: <text class="dashboard"> Adatlap</text></h5>
+<h5 class="projectTitle"> <div class="projectAvatar1"></div>&ensp;BÉ-L101:P-22-03_projekt: <text class="dashboard"> Info</text></h5>
  <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
  <text class="dateText1">2021.12.23 csütörtök</text>
  <div class="dropdown1">
@@ -16,7 +16,7 @@
 </div>
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
- <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
+ <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektinfo</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
@@ -26,56 +26,74 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
-<div class="dividerProject"></div>
 <div class="dataContainer">
-<div class="formLine">
-<h5>Ügyfél: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="Horváth Ferenc" disabled>
-</div>
-<div class="formLine">
-<h5>Projektkód: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="BÉ-L101" disabled>
-</div>
-<div class="formLine">
-<h5>Projektcím: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="Projekt" disabled>
-</div>
-<div class="formLine">
-<h5>Szállítási cím: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="9082, Nyúl Fő út 1" disabled>
-</div>
-<div class="formLine">
-<h5>Kapcsolattartó: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="Nagy Béla" disabled>
-</div>
-<div class="formLine">
-<h5>Megjegyzés: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="Megjegyzés" disabled>
-</div>
-<div class="formLine">
-<h5>Költésgkeret: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="1 000 000" disabled>
-</div>
-<div class="formLine">
-<h5>Deviza: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="HUF" disabled>
-</div>
-<div class="formLine">
-<h5>ÁFA kulcs: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="27%" disabled>
-</div>
-<div class="formLine">
-<h5>Projektvezető: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="Nagy Tamás" disabled>
-</div>
-<div class="formLine">
-<h5>Minimum árrés: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="100 000 Ft" disabled>
-</div>
-<div class="formLine">
-<h5>Maximum árrés: </h5>
-<input class="form-control" id="disabledTextBox" type="text" placeholder="999 999 999 Ft" disabled>
-</div>
+
+<table class="table table-dark" id="projectInfoTable">
+  <tbody>
+    <tr>
+      <td>Ügyfél:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="Horváth Ferenc"></td>
+    </tr>
+    <tr>
+      <td>Projektkód:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="BÉ-L101" disabled>
+</td>
+    </tr>
+    <tr>
+      <td>Projektcím:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="Projekt" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Szállítási cím:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="9082, Nyúl Fő út 1" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Kapcsolattartó:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="Nagy Béla" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Megjegyzés:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="Megjegyzés" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Költségkeret:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="1 000 000" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Deviza:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="HUF" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>ÁFA kulcs:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="27%" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Projektvezető:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="Nagy Tamás" disabled>
+</td>
+    </tr>
+     <tr>
+      <td>Minimum árrés:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="10 000 Ft" disabled>
+
+</td>
+    </tr>
+     <tr>
+       <td>Maximum árrés:</td>
+      <td><input class="form-control" id="disabledTextBox" type="text" placeholder="999 999 999 Ft" disabled></td>
+    </tr>
+
+    
+  </tbody>
+</table>
+
 </div>
 
  </div>
@@ -198,6 +216,13 @@ export default {
     height: 1px;
     background-color: #68686e;
     top: 2.5vh;
+}
+
+#projectInfoTable{
+  height: auto;
+  background-color: #2a2b2d;
+  min-width: 50vw;
+  border-radius: 10px;
 }
 
 #projectButton{

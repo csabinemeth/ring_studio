@@ -119,7 +119,7 @@
         class="btn btn-primary"
         @click="navAdatlap"
       >
-        <i class="fa-solid fa-list"></i> Projektadatlap
+        <i class="fa-solid fa-list"></i> Projektinfo
       </button>
       <button
         type="button"

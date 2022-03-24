@@ -131,7 +131,7 @@ methods: {
   height: 100vh;
   background-color: #2a2b2d;
   z-index: 1;
-  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.20);
+ 
 }
 
 #navCollapse{
@@ -224,11 +224,12 @@ methods: {
 #expandContainerHome{
   background-color: #2a2b2d;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
   height: 150px;
   left: -20px;
   width: 210px;
   margin-bottom: -30px;
+  border: 0;
 }
 
 #modeChanger{

@@ -283,7 +283,7 @@ export default {
 }
 #openedDrowdownProjectList {
   width: 22vw;
-  background-color: #1e1f21;
+background-color: #2a2b2d;
 }
 
 .titleLine {

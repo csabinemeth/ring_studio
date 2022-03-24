@@ -37,7 +37,7 @@
 </div>
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektinfo</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
  <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
@@ -48,9 +48,8 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
 
-    <div class="dividerProject"></div>
-
-    <div class="szures">
+   
+    <div class="szures2">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
         <button
@@ -139,13 +138,13 @@
       </div>
     </div>
 
-    <div class="aktivSzurok">
+    <div class="aktivSzurokBeszerzes">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">Beszálító</text>
       <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
     </div>
 
-    <table class="table table-dark" id="koltsegTable">
+    <table class="table table-dark" id="beszerzesTable">
       <thead>
         <tr>
         <th><input
@@ -244,18 +243,9 @@
           <td></td>
           <td colspan="7"></td>
         </tr>
-         <tr>
-        <td></td>
-        <th></th>
-        <td></td>
-        <td></td>
-        <td>Beszerzés összege</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
+         
         <tr>
-          <th>Összesítő:</th>
+          <th>Beszerzések összesen:</th>
         <td></td>
         
         <td></td>
@@ -346,6 +336,17 @@ export default {
     
 }
 
+.aktivSzurokBeszerzes{
+  height: 20px;
+  width: 83vw;
+  border: 1px solid white;
+  position: relative;
+  top: 10px;
+  left: 2vw;
+  display: flex;
+}
+
+
 .dashboard{
   text-decoration: underline;
 }
@@ -357,6 +358,15 @@ export default {
   position: absolute;
   float: right;
   right: 10px;
+}
+
+
+.szures2{
+  color: white;
+  position: relative;
+  bottom: 33px;
+  left: 2vw;
+  display: flex;
 }
 
 
@@ -393,6 +403,15 @@ export default {
      right: 55px;
     top: 2vh;
     color:#68686a;
+}
+
+#beszerzesTable {
+  position: relative;
+  top: 10px;
+  width: 84vw;
+  left: 2vw;
+  background-color: #2a2b2d;
+  border-radius: 10px;
 }
 
 

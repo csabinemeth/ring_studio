@@ -216,7 +216,6 @@
           <th scope="col">Ügyfél</th>
           <th scope="col">Telefon</th>
           <th scope="col">Email</th>
-          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
@@ -234,7 +233,6 @@
           <td>Lölő</td>
           <td>+36201212112</td>
           <td>info@lolo.hu</td>
-          <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
         </tr>
         <tr class="projectRow" @click="toProject">
           <th>
@@ -250,7 +248,6 @@
           <td>Lölő</td>
           <td>+36201212112</td>
           <td>info@lolo.hu</td>
-                    <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
 
         </tr>
         <tr class="projectRow" @click="toProject">
@@ -267,7 +264,6 @@
           <td>Lölő</td>
           <td>+36201212112</td>
           <td>info@lolo.hu</td>
-                    <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
 
         </tr>
         <tr class="projectRow" @click="toProject">
@@ -284,13 +280,12 @@
           <td>Lölő</td>
           <td>+36201212112</td>
           <td>info@lolo.hu</td>
-          <td class="iconCell"><i class="far fa-edit"></i>&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;<i class="far fa-trash-alt"></i></td>
 
         </tr>
       </tbody>
     </table>
     </div>
-     <div class="divider2"></div>
+     
   </div>
 </template>
 
@@ -435,6 +430,7 @@ export default {
   width: 83vw;
   left: 2vw;
   background-color: #2a2b2d;
+  border-radius: 10px;
 }
 
 .projectRow:hover {
@@ -450,7 +446,7 @@ export default {
 }
 #openedDrowdownProjectList {
   width: 22vw;
-  background-color: #1e1f21;
+  background-color: #2a2b2d;
 }
 
 .titleLine {

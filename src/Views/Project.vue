@@ -23,7 +23,7 @@
     </div>
     <div class="buttonLine">
   <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektinfo</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
@@ -33,7 +33,7 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
-    <div class="dividerProject"></div>
+    
 
     <div class="barChart">
       <label class="verticalLabel1">5000 000 </label>
@@ -66,12 +66,15 @@
       <table id="projectFirstTable" class="table table-dark">
         <thead>
           <tr>
-            <th>Projektinfo </th>
+            <th class="biggerTitle">Projektinfo </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>P-22-03 projekt</td>
+          </tr>
+          <tr>
+            <td>Projekt cím</td>
           </tr>
           <tr>
             <td>Lölö Lala</td>
@@ -83,22 +86,25 @@
             <td>info@lolo.hu</td>
           </tr>
           <tr>
-            <td>Kacsalábonforgó</td>
+            <td>Tagok</td>
+          </tr>
+          <tr class="memberRow">
+            <td class="memberRow"><div class="profileAvatar"> </div>&ensp;<div class="profileAvatar"></div>&ensp;<div class="profileAvatar"></div></td>
           </tr>
         </tbody>
       </table>
 
-      <div class="verticalDivider"></div>
+
 
       <table id="projectSecondTable" class="table table-dark">
         <thead>
           <tr>
-            <th>Ellenőrizendő </th>
+            <th class="biggerTitle">Ellenőrizendő </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td class="expandRow">
               <button
                 class="btn btn-primary"
                 id="collapsableRow"
@@ -116,7 +122,7 @@
                     <thead>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -124,7 +130,7 @@
                         <td>P-22-03 projekt</td>
                         <td><i class="fas fa-check" id="tableIcons"></i><i class="far fa-trash-alt" id="tableIcons"></i></td>
                       </tr>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -141,7 +147,7 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="expandRow">
               <button
                 class="btn btn-primary"
                 id="collapsableRow"
@@ -159,7 +165,7 @@
                     <thead>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -167,7 +173,7 @@
                         <td>P-22-03 projekt</td>
                         <td><i class="fas fa-check" id="tableIcons"></i><i class="far fa-trash-alt" id="tableIcons"></i></td>
                       </tr>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -182,7 +188,7 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="expandRow">
               <button
                 class="btn btn-primary"
                 id="collapsableRow"
@@ -200,7 +206,7 @@
                     <thead>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -208,7 +214,7 @@
                         <td>P-22-03 projekt</td>
                         <td><i class="fas fa-check" id="tableIcons"></i><i class="far fa-trash-alt" id="tableIcons"></i></td>
                       </tr>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -223,7 +229,7 @@
             </td>
           </tr>
           <tr>
-            <td>
+            <td class="expandRow">
               <button
                 class="btn btn-primary"
                 id="collapsableRow"
@@ -241,7 +247,7 @@
                     <thead>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -249,7 +255,7 @@
                         <td>P-22-03 projekt</td>
                         <td><i class="fas fa-check" id="tableIcons"></i><i class="far fa-trash-alt" id="tableIcons"></i></td>
                       </tr>
-                      <tr>
+                      <tr class="expandedLine">
                         <td>P-22-03 projekt</td>
                         <td>Lölö Lala</td>
                         <td>P-22-03 projekt</td>
@@ -321,7 +327,7 @@ export default {
 
 <style>
 #expandedTable {
-  background-color: #202429;
+  background-color: #2a2b2d;
 }
 
 .projectBackGround1 {
@@ -330,6 +336,22 @@ export default {
   background-color: #1e1f21;
   overflow-y: scroll;
   overflow-x: hidden;
+  
+}
+
+.biggerTitle{
+  font-size: 20px;
+}
+
+.expandRow{
+  max-height: 20px;
+}
+
+.expandedLine{
+  
+  border: 1px solid grey;
+  border-right: 0;
+  border-left: 0;
 }
 
 #tableIcons{
@@ -351,19 +373,24 @@ export default {
   box-shadow: none;
 }
 
+.memberRow{
+  display: flex;
+  border: 0;
+}
+
 #collapsableRow {
-  background-color: #202429;
+  background-color: #2a2b2d;
   border: 0;
 }
 
 #expandContainer {
-  background-color: #202429;
+  background-color: #2a2b2d;
+  border: 0;
 }
 
 .tableLine {
-  position: relative;
-  top: 20vh;
   display: flex;
+  top: 0;
 }
 
 @media (max-width: 1300px){
@@ -383,14 +410,20 @@ export default {
 
 #projectFirstTable {
   width: 20vw;
-  position: relative;
+  position: absolute;
   left: 3.5vw;
+  background-color: #2a2b2d;
+  border-radius: 10px;
+  top: -16vh;
 }
 
 #projectSecondTable {
-  width: 52.5vw;
-  position: relative;
-  left: 10.5vw;
+  width: 59.5vw;
+  top: -16vh;
+  position: absolute;
+  border-radius: 10px;
+  left: 24vw;
+  background-color: #2a2b2d;
 }
 
 .verticalLabel1 {
@@ -483,8 +516,9 @@ export default {
   background-color: #2a2b2d;
   height: 60vh;
   width: 80vw;
+  border-radius: 10px;
   left: 3.5vw;
-  top: 10vh;
+  top: 2vh;
 }
 
 .bar1 {

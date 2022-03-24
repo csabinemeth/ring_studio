@@ -37,7 +37,7 @@
 </div>
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektinfo</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
@@ -48,9 +48,9 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
 
-    <div class="dividerProject"></div>
+    
 
-    <div class="szures">
+    <div class="szuresDiviziok">
       <text class="szuroText">Szűrés:</text>
       <div class="dropdown">
         <button
@@ -119,7 +119,7 @@
       </div>
     </div>
 
-    <div class="aktivSzurok">
+    <div class="aktivSzurokDiviziok">
       <text class="aktivSzuroText">Nyitott</text>
       <text class="aktivSzuroText">Ügyfél 1</text>
       <text class="deleteActive">Szűrők törlése <i class="fas fa-times"></i></text>
@@ -186,13 +186,7 @@
       </tbody>
     </table>
 
-    <div class="iconsDiviziok">
-      <i class="fas fa-th-large"></i>&nbsp;<i class="fas fa-check"></i>&nbsp;<i
-        class="far fa-trash-alt"
-      ></i
-      >&nbsp;<i class="fas fa-adjust"></i>&nbsp;<i class="far fa-edit"></i
-      >&nbsp;
-    </div>
+
 
     
   </div>
@@ -272,6 +266,27 @@ export default {
     text-decoration: none;
     top: 2vh;
     
+}
+
+
+.aktivSzurokDiviziok{
+  height: 20px;
+  width: 83vw;
+  border: 1px solid white;
+  position: relative;
+  top: 20px;
+  left: 2vw;
+  display: flex;
+}
+
+
+.szuresDiviziok {
+  color: white;
+  position: relative;
+  top: -3vh;
+  bottom:4vh;
+  left: 2vw;
+  display: flex;
 }
 
 .dashboard{
@@ -354,9 +369,10 @@ export default {
 
 #diviziokTable {
   position: relative;
-  top: 10vh;
+  top: 5vh;
   width: 84vw;
   left: 2vw;
+  border-radius: 10px;
   background-color: #2a2b2d;
 }
 

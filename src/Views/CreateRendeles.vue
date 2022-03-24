@@ -60,7 +60,7 @@
 
 <div class="buttonLine">
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard">Dashboard</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap">Projektadatlap</button>
+ <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap">Projektinfo</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes">Költségvetés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat">Ajánlat</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes">Beszerzés</button>

@@ -50,7 +50,7 @@
         @click="create"
         class="btn btn-success"
       >
-        Létrehozás
+        <i class="fa-solid fa-floppy-disk"></i>
       </button>
       <button
         type="button"
@@ -58,7 +58,7 @@
         @click="back"
         class="btn btn-danger"
       >
-        Mégsem
+        <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
   </div>
@@ -97,7 +97,10 @@ export default {
 #createButton {
   position: relative;
   top: 8vh;
+  float: right;
   margin-right: 10px;
+  right: 31vw;
+  width: auto;
 }
 
 .formStuff {

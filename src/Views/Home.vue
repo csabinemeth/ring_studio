@@ -26,14 +26,14 @@
   </thead>
   <tbody>
     <tr class="projectRow">
-      <td>P-22-03_projekt </td>
+      <td class="projectD"> <div class="projectAvatar1"></div>&ensp; P-22-03_projekt </td>
     
     </tr>
     <tr class="projectRow">
-      <td >P-22-03_projekt</td>
+      <td class="projectD" > <div class="projectAvatar1"></div>&ensp; P-22-03_projekt</td>
     </tr>
     <tr class="projectRow">
-      <td >P-22-03_projekt</td>
+      <td class="projectD" > <div class="projectAvatar1"></div>&ensp; P-22-03_projekt</td>
       
     </tr>
 
@@ -48,34 +48,52 @@
 
 <table class="table table-dark" id="projectsTable">
   <thead>
-  <th>Üzeneteim</th>
+  <th class="titleRow">Üzeneteim</th>
   </thead>
   <tbody>
     <tr class="projectRow">
       <td class="projectRow">
-      Feladat: P-22-03_projekt 
+      Cím
       
-       Feladat és projekt leírása
+      Feladó: Hováth István
+
+      P-22-03_projekt 
      
        2021.12.10 10.05 am
+
+      <i class="fa-solid fa-envelope"></i>
 
       </td>
        
     </tr>
     <tr class="projectRow">
-      <td class="projectRow">Feladat: P-22-03_projekt 
+        <td class="projectRow">
+      Cím
+      
+      Feladó: Hováth István
+
+      P-22-03_projekt 
      
-       Feladat és projekt leírása
-    
-       2021.12.10 10.05 am</td>
+       2021.12.10 10.05 am
+
+      <i class="fa-solid fa-envelope-open"></i>
+
+      </td>
        
     </tr>
     <tr class="projectRow">
-      <td class="projectRow">Feladat: P-22-03_projekt 
+        <td class="projectRow">
+      Cím
       
-       Feladat és projekt leírása
-      
-       2021.12.10 10.05 am</td>
+      Feladó: Hováth István
+
+      P-22-03_projekt 
+     
+       2021.12.10 10.05 am
+
+       <i class="fa-solid fa-envelope-open"></i>
+
+      </td>
         
     </tr>
      <tr class="projectRow">
@@ -88,7 +106,7 @@
 </table>
 
 </div>
-<div class="divider"></div>
+
 
   </div>
 </template>
@@ -139,6 +157,9 @@ export default {
   text-align: center;
 }
 
+.more:hover{
+  border-radius: 0 0 10px 10px;
+}
 
 .divider{
     width: 84vw;
@@ -179,6 +200,7 @@ export default {
 .topLine{
     display: flex;
     position: relative;
+    border-left: 2px solid #1e1f21;
 }
 
 #searchBar1{
@@ -222,10 +244,16 @@ export default {
     margin-left: 3vw;
     background-color: #2a2b2d;
     margin-bottom: 10vh;
+    border-radius: 10px;
+    border: 0;
+ 
+  
 }
 
-.projectRow{
-    border: 2px solid #68686a;
+
+
+.projectD{
+  display: flex;
 }
 
 .projectRow:hover{
@@ -269,6 +297,11 @@ export default {
     margin-right: 1vw;
     
 }
+
+tr{
+  border-top: hidden;
+}
+
 .actionIcon4{
     width: 25px;
     height: 25px;
