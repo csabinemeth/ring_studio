@@ -4,14 +4,19 @@
       <h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;
        P-22-03_projekt: <text class="dashboard"> Dashboard</text>
       </h5>
-      <input
-        class="form-control mr-sm-2"
-        id="searchBar1"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <text class="dateText1">2021.12.23 csütörtök</text>
+
+<button
+                      class="btn btn-primary"
+                      type="button"
+                      data-toggle="collapse"
+                      id="productSearchTop"
+                      data-target="#collapseSearchTop"
+                      aria-expanded="false"
+                      aria-controls="collapseSearchTop"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
       <div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
@@ -34,7 +39,14 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
     
-
+<div class="collapse" id="collapseSearchTop">
+  <div class="card card-body" id="searchBarTop">
+    <div class="searchLine">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchBarInput">
+    <button class="btn btn-success" type="submit" id="searchButtonTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+  </div>
+</div>
     <div class="barChart">
       <label class="verticalLabel1">5000 000 </label>
       <label class="verticalLabel2">1000 000 </label>

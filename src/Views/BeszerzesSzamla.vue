@@ -22,50 +22,62 @@
 </div>
 </div>
     <div class="formStuff">
-      <div class="formLine">
-        <text>Beszállító:</text>
-        <input class="form-control" id="inputBox" placeholder="Számla száma" />
-      </div>
-      <div class="formLine">
-        <text>Számla száma:</text>
-        <input class="form-control" id="inputBox" placeholder="Számla dátuma" />
-      </div>
-      <div class="formLine">
-        <text>Számla dátuma:</text>
-        <input class="form-control" id="inputBox" placeholder="Számla típusa" />
-      </div>
-     
-      <div class="formLine">
-        <text>Számla típusa:</text>
-        <input class="form-control" id="inputBox" placeholder="Rendelés száma" />
-      </div>
-     
-      <div class="formLine">
-        <text>Rendelés száma:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+      <div class="inputsBSZ">
+     <div class="formLine">
+        <input class="form-control" id="inputBoxProduct1" placeholder="Rendelés" /> <div class="verticalSplit"></div>
       </div>
        <div class="formLine">
-        <text>Számla:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+        <input class="form-control" id="inputBoxProduct" placeholder="Számlaszám" /> <div class="verticalSplit"></div>
       </div>
        <div class="formLine">
-        <text>Melléklet:</text>
-        <input type="file" class="form-control" id="fileUpload" />
+        <input class="form-control" id="inputBoxProduct" placeholder="Számla" /> 
       </div>
-      <div class="formLine">
-        <text>Megjegyzés:</text>
-        <input class="form-control" id="inputBox" placeholder="Megjegyzés" />
+     
       </div>
 
-      
-      <button
-        type="button"
-        id="createButton"
-        @click="create"
-        class="btn btn-success"
-      >
-        Mentés
-      </button>
+    
+
+<table class="table table-dark" id="bsz-table">
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beszállító</td>
+      <td><input class="form-control" id="inputBox" placeholder="Beszállító" /></td>
+    </tr>
+    <tr>
+      <td>Számla száma:</td>
+      <td>     <input class="form-control" id="inputBox" placeholder="Számla száma" /></td>
+    </tr>
+    <tr>
+      <td>Számla dátuma:</td>
+      <td><input class="form-control" id="inputBox" placeholder="Számla dátuma" /></td>
+    </tr>
+    <tr>
+      <td>Számla típusa:</td>
+      <td><input class="form-control" id="inputBox" placeholder="Számla típusa" /></td>
+    </tr>
+    <tr>
+      <td>Rendelés száma:</td>
+      <td>     <input class="form-control" id="inputBox" placeholder="Rendelés száma" /></td>
+    </tr>
+    <tr>
+      <td>Számla:</td>
+      <td>     <input class="form-control" id="inputBox" placeholder="Számla" /></td>
+    </tr>
+    <tr>
+      <td>Melléklet:</td>
+      <td>
+        <input type="file" class="form-control" id="fileUpload" /></td>
+    </tr>
+    <tr>
+      <td>Megjegyzés:</td>
+      <td>     <input class="form-control" id="inputBox" placeholder="Megjegyzés" /></td>
+    </tr>
+  </tbody>
+</table>
+
+  
      
     </div>
   </div>
@@ -95,6 +107,8 @@ export default {
   background-color: #1e1f21;
   overflow: hidden;
   color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .telText{
@@ -105,6 +119,10 @@ export default {
   position: relative;
   top: 8vh;
   margin-right: 10px;
+}
+
+.szamlatitle{
+  color: white;
 }
 
 .formStuff {
@@ -126,6 +144,23 @@ export default {
   margin-right: 10px;
 }
 
+.inputsBSZ{
+  display: flex;
+  background-color:  #2a2b2d;
+  width: 90vw;
+  top: 2px;
+  position: relative;
+  left: -1.8vw;
+} 
+
+#bsz-table{
+  background-color: #2a2b2d;
+  position: relative;
+  left: -1.8vw;
+  width: 90vw;
+  top: 4px;
+
+}
 
 
 .createTitle {

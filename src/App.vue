@@ -232,6 +232,11 @@ methods: {
   border: 0;
 }
 
+
+table{
+  border-radius: 10px;
+}
+
 #modeChanger{
   background-color: #2a2b2d;
   border: 0;

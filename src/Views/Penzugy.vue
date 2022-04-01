@@ -136,8 +136,10 @@
       <th scope="col"></th>
       <th scope="col">Költségvetés</th>
       <th scope="col">Beszerzés</th>
+      <th scope="col">Beszerzés számla</th>
       <th scope="col">Beszerzés fizetve</th>
       <th scope="col">Eladás</th>
+      <th scope="col">Eladás számla</th>
       <th scope="col">Eladás fizetve</th>
       <th scope="col">Árrés</th>
     </tr>
@@ -147,17 +149,21 @@
       <th>Szállító 1</th>
       <td>500 000 Ft</td>
       <td>200 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>200 000 Ft</td>
       <td>300 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>300 000 Ft</td>
       <td>100 000 Ft</td>
     </tr>
     <tr>
-          <th>Szállító 2</th>
+      <th>Szállító 2</th>
       <td>500 000 Ft</td>
       <td>200 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>200 000 Ft</td>
       <td>300 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>300 000 Ft</td>
       <td>100 000 Ft</td>
     </tr>
@@ -165,17 +171,21 @@
           <th>Szállító 3</th>
       <td>500 000 Ft</td>
       <td>200 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>200 000 Ft</td>
       <td>300 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>300 000 Ft</td>
       <td>100 000 Ft</td>
     </tr>
     <tr>
           <th>Szállító 4</th>
-      <td>500 000 Ft</td>
+     <td>500 000 Ft</td>
       <td>200 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>200 000 Ft</td>
       <td>300 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>300 000 Ft</td>
       <td>100 000 Ft</td>
     </tr>
@@ -183,21 +193,25 @@
           <th>Szállító 5</th>
       <td>500 000 Ft</td>
       <td>200 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>200 000 Ft</td>
       <td>300 000 Ft</td>
+      <td>Beszerzés számla</td>
       <td>300 000 Ft</td>
       <td>100 000 Ft</td>
     </tr>
     <tr class="transparent">
       <td></td>
-      <td colspan="6"></td>
+      <td colspan="8"></td>
     </tr>
      <tr>
           <th>Összesen:</th>
       <td>2 500 000 Ft</td>
       <td>1 000 000 Ft</td>
+      <td></td>
       <td>1 000 000 Ft</td>
       <td>1 500 000 Ft</td>
+      <td></td>
       <td>1 500 000 Ft</td>
       <td>500 000 Ft</td>
     </tr>

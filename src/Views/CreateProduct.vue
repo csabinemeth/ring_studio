@@ -23,13 +23,31 @@
     </div>
     <div class="inputs">
      <div class="formLine">
-        <input class="form-control" id="inputBoxProduct1" placeholder="Termékkód" />
+        <input class="form-control" id="inputBoxProduct1" placeholder="Kód" /> <div class="verticalSplit"></div>
       </div>
        <div class="formLine">
-        <input class="form-control" id="inputBoxProduct" placeholder="Terméknév" />
+        <input class="form-control" id="inputBoxProduct" placeholder="Terméknév" /> <div class="verticalSplit"></div>
       </div>
        <div class="formLine">
-        <input class="form-control" id="inputBoxProduct" placeholder="Státusz" />
+        <input class="form-control" id="inputBoxProduct" placeholder="Státusz" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Szállító" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Beszerzés" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Státusz" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Katalógus" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Eladás" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProduct" placeholder="Divizió" /> 
       </div>
       </div>
 <div class="bothSide">
@@ -82,6 +100,35 @@
     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
 </div>
+<table class="table table-dark" id="price-table">
+  <thead>
+    <tr>
+      <th scope="col">Árak</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Becsült ár</td>
+      <td> <input class="form-control" id="price-input"  placeholder="100 000 Ft"  disabled/> </td>
+    </tr>
+    <tr>
+      <td>Beszserzés ár</td>
+      <td><input class="form-control" id="price-input"  placeholder="100 000 Ft"  disabled/></td>
+    </tr>
+    <tr>
+      <td>Kalkulált ár</td>
+      <td><input class="form-control" id="price-input"  placeholder="100 000 Ft"  disabled/></td>
+    </tr>
+    <tr>
+      <td>Eladási ár</td>
+      <td><input class="form-control" id="price-input"  placeholder="100 000 Ft"  disabled/></td>
+    </tr><tr>
+      <td>Árrés</td>
+      <td><input class="form-control" id="price-input"  placeholder="100 000 Ft"  disabled/></td>
+    </tr>
+  </tbody>
+</table>
   </div>
   <div class="rightSide"><p>
   <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -96,7 +143,7 @@
   </div>
 </div>
 <p>
-  <a class="btn btn-primary" id="collapses" data-toggle="collapse in" href="#collapseExample6" role="button" aria-expanded="true" aria-controls="collapseExample">
+  <a class="btn btn-primary" id="collapses" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="true" aria-controls="collapseExample">
     Kommentek <i class="fa-solid fa-caret-down"></i>
   </a>
 </p>
@@ -132,7 +179,12 @@
       </div>
       </div>
 
-      <div class="writeComment">
+      
+
+
+  </div>
+</div>
+<div class="writeComment">
       <div class="commentter">
      <div class="profileAvatar"> </div> &ensp; Horváth Borbála: 
      </div>
@@ -145,10 +197,7 @@
   </div>
       </div>
       </div>
-
-
-  </div>
-</div></div>
+</div>
 </div>
 
 
@@ -192,6 +241,24 @@ export default {
 .writeComment{
   background-color: #2a2b2d;
   border-radius: 10px;
+  left: 20px;
+  position: relative;
+  top:40px;
+
+}
+
+#price-input{
+  background-color: #1e1f21;
+  width: auto;
+  border: 0;
+}
+
+
+
+
+
+#price-table{
+  background-color: #2a2b2d;
 }
 
 .post{
@@ -209,7 +276,7 @@ export default {
   color: white;
   position: relative;
   float: right;
-  right: 70px;
+  right: 100px;
   cursor: pointer;
   top: 5px;
   margin-bottom: 10px;
@@ -240,7 +307,7 @@ export default {
 }
 
 #collapses{
-  background-color:#9ec520;
+  background-color:#1e1f21;
   border: 0;
   position: relative;
   left: 1vw;
@@ -249,22 +316,31 @@ export default {
 
 .inputs{
   display: flex;
+  background-color:  #2a2b2d;
+  width: 90vw;
+  top: 2px;
+  position: relative;
+  left: 2px;
 }
 
 #contentCollapse{
-  background-color:#1e1f21;
+  background-color:#2a2b2d;
+  border: 0;
 }
 
 .leftSide{
   height: auto;
-  min-height: 80vh;
+  max-height: 80vh;
   border:0;
-  width: 40vw;
+  width: 41vw;
   border-radius: 10px;
   position: relative;
-  top: 60px;
+  background-color: #2a2b2d;
+  top: 10px;
   left: 2vw;
-  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.20);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
 }
 
 
@@ -273,13 +349,27 @@ export default {
   background-color: #2a2b2d;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.15);
+  border: 1px solid grey;
+}
+
+.verticalSplit{
+  background-color: grey;
+  width: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  height: 35px;
+  position: relative;
+  top: -40px;
+  left: 2.3vw;
+
 }
 
 #inputBoxProduct1{
   background-color: #1e1f21;
-  width: 150px;
+  width: 110px;
   position: relative;
+  top: -40px;
+  border: 0;
   left: 2vw;
 }
 
@@ -295,7 +385,10 @@ export default {
 #inputBoxProduct{
   background-color: #1e1f21;
   margin-left: 10px;
-  width: 150px;
+    top: -40px;
+    border: 0;
+
+  width: 110px;
   position: relative;
   left: 2vw;
 }
@@ -309,13 +402,13 @@ export default {
   overflow-x: hidden;
   height: 80vh;
   border: 0;
-  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.20);
-  width: 40vw;
+  width: 41vw;
   border-radius: 10px;
   position: relative;
-  top: 60px;
+  background-color: #2a2b2d;
+  top: 10px;
   float: right;
-  left: 4vw;
+  left: 30px;
 }
 
 #cancelButton{
@@ -353,6 +446,8 @@ export default {
   display: flex;
   margin-top: 17px;
 }
+
+
 
 #inputBoxSmall {
   width: 137px;

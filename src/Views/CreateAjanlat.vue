@@ -94,7 +94,7 @@
   <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektinfo</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
+ <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas"><i class="fa-solid fa-cart-arrow-down"></i> Eladás</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy"><i class="fa-solid fa-file-invoice-dollar"></i> Pénzügy</button>
@@ -102,8 +102,6 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
-
-    <div class="dividerProject"></div>
 
 <div class="collapse" id="collapseSearchTop">
   <div class="card card-body" id="searchBarTop">
@@ -191,6 +189,31 @@
     </div>
   </div>
 </div>
+
+<div class="formStuff">
+      <div class="inputsBSZ">
+     <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Ajánlat címe" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Kedvezmény(%)" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Kedvezmény(Ft)" /> <div class="verticalSplit"></div>
+      </div>
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Ajánlat érvényessége" /> <div class="verticalSplit"></div>
+      </div>
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Ajánlat száma" /> <div class="verticalSplit"></div>
+      </div>
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Megjegyzés" /> 
+      </div>
+     
+      </div>
+    </div>
+    
     
     <table class="table table-dark" id="koltsegTable1">
       <thead>
@@ -210,7 +233,7 @@
           <th scope="col">Árrés</th>
                     <th scope="col">Státusz</th>
                     <th></th>
-          >
+          
         </tr>
       </thead>
       <tbody>
@@ -283,6 +306,449 @@
           <td>Megrendelve</td>
           <td><i class="fas fa-minus"></i></td>
         </tr>
+
+        <tr>
+          <th scope="col" colspan="2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="productsModalButton"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Termékek hozzáadása <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content" id="productsModalContent">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="productsLabel">
+                      Termékek hozzáadása
+                    </h5>
+
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      data-toggle="collapse"
+                      id="productSearch"
+                      data-target="#collapseExampleSearch"
+                      aria-expanded="false"
+                      aria-controls="collapseExampleSearch"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      data-toggle="collapse"
+                      id="productFilter"
+                      data-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <i class="fa-solid fa-filter"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body" id="collapseContent">
+                        <div class="szuresAjanlat">
+                          <text class="szuroText">Szűrés:</text>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              id="szuroDropdown"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Ügyfél
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              id="openedDrowdown"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 1</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 2</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 3</a
+                              >
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              id="szuroDropdown"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Divízió
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              id="openedDrowdown"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 1</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 2</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 3</a
+                              >
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              id="szuroDropdown"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Kategória
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              id="openedDrowdown"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Nyitott</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Lezárt</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Elfogadott</a
+                              >
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              id="szuroDropdown"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Termék státusz
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              id="openedDrowdown"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 1</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 2</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 3</a
+                              >
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              id="szuroDropdown"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Ajánlat száma
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              id="openedDrowdown"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 1</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 2</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Ügyfél 3</a
+                              >
+                            </div>
+                          </div>
+
+                          <div class="dropdown" id="csoportDiv">
+                            <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              id="csoportositas1"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Csoportosítás
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              id="openedDrowdown"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Csoport1</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Csoport2</a
+                              >
+                              <a class="dropdown-item" id="szuroDropdownItem"
+                                >Csoport3</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="aktivSzurokAjanlat">
+                          <text class="aktivSzuroText">Ügyfél</text>
+                          <text class="aktivSzuroText">Divízió</text>
+                          <text class="deleteActive">Szűrők törlése</text>
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class="collapse" id="collapseExampleSearch">
+                      <div class="card card-body" id="collapseContent">
+                        <div class="searchLine">
+                        <input class="form-control mr-sm-2" type="search" id="addProductSearch" placeholder="Search" aria-label="Search"> <button class="btn btn-success" id="searchApply" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    </div>
+                    </div>
+                    <table class="table table-dark" id="ajanlatTable">
+                      <thead>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <th scope="col">Termékkód</th>
+                          <th scope="col">Termék</th>
+                          <th scope="col">Kép</th>
+                          <th scope="col">Beszerzési ár</th>
+                          <th scope="col">Kalkulált ár</th>
+                          <th scope="col">Ajánlati ár</th>
+                          <th scope="col">Árrés</th>
+                          <th scope="col">Státusz</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefaultPartners"
+                            />
+                          </th>
+                          <td>BÉ-L101</td>
+                          <td>Spot</td>
+                          <td><div class="productImage"></div></td>
+                          <td>76.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>86.235 Ft</td>
+                          <td>10 000 Ft</td>
+                          <td>Megrendelve</td>
+                          <td><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr class="transparent">
+                          <td></td>
+                          <td colspan="9"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Mégsem
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-dark"
+                      data-dismiss="modal"
+                      @click="navToAjanlat"
+                    >
+                      Hozzáadás
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </th>
+        </tr>
+        
           <tr class="transparent">
           <td></td>
           <td colspan="9" > </td>
@@ -405,6 +871,12 @@ export default {
   margin-right: 10px;
   background-color: #9fc321;
   border: 0;
+}
+
+.formLinesAjanlat2 {
+  display: flex;
+  position: relative;
+  bottom: 50px;
 }
 
 

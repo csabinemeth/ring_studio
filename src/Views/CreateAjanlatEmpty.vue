@@ -187,7 +187,7 @@
       </button>
     </div>
 
-    <div class="dividerProject"></div>
+    
     <div class="collapse" id="collapseSearchTop">
   <div class="card card-body" id="searchBarTop">
     <div class="searchLine">
@@ -275,23 +275,29 @@
   </div>
 </div>
 
-    <div class="formLinesAjanlat">
-      <input class="form-control" id="inputBox1" placeholder="Ajánlat címe" />
-      <input class="form-control" id="inputBox1" placeholder="Kedvezmény (%)" />
-      <input
-        class="form-control"
-        id="inputBox1"
-        placeholder="Kedvezmény (Ft)"
-      />
-      <input
-        class="form-control"
-        id="inputBox1"
-        placeholder="Ajánlat érvényessége"
-      />
-      <input class="form-control" id="inputBox1" placeholder="Ajánlat száma" />
-      <input class="form-control" id="inputBox1" placeholder="Megjegyzés" />
+    <div class="formStuff">
+      <div class="inputsBSZ">
+     <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Ajánlat címe" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Kedvezmény(%)" /> <div class="verticalSplit"></div>
+      </div>
+       <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Kedvezmény(Ft)" /> <div class="verticalSplit"></div>
+      </div>
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Ajánlat érvényessége" /> <div class="verticalSplit"></div>
+      </div>
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Ajánlat száma" /> <div class="verticalSplit"></div>
+      </div>
+      <div class="formLine">
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Megjegyzés" /> 
+      </div>
+     
+      </div>
     </div>
-    
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
@@ -739,22 +745,6 @@
       <tbody></tbody>
     </table>
 
-    <button
-      type="button"
-      id="createButtonAjanlat"
-      @click="create"
-      class="btn btn-success"
-    >
-      <i class="fa-solid fa-floppy-disk"></i>
-    </button>
-    <button
-      type="button"
-      id="createButtonAjanlat"
-      @click="navToAjanlat_print"
-      class="btn btn-success"
-    >
-      <i class="fa-solid fa-print"></i>
-    </button>
   </div>
 </template>
 
@@ -836,12 +826,22 @@ export default {
 
 #productsModalContent {
   background-color: #1e1f21;
-  width: 80vw;
+  width: 85vw;
   position: relative;
-  left: -20vw;
+  left: -22vw;
   height: auto;
 }
 
+#inputBoxProductAjanlat1{
+  background-color: #1e1f21;
+  margin-left: 10px;
+    top: -40px;
+    border: 0;
+
+  width: 140px;
+  position: relative;
+  left: 2vw;
+}
 #productFilter {
   background-color: #1e1f21;
   border: 0;
@@ -882,6 +882,7 @@ export default {
 #productsModalButton {
   background-color: #2a2b2d;
   border: 0;
+  width: auto;
 }
 
 #createButtonAjanlat {
@@ -893,10 +894,10 @@ export default {
   border: 0;
 }
 
-.formLinesAjanlat {
+.formLinesAjanlatempty {
   display: flex;
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
 }
 
 .dashboard {
@@ -922,7 +923,7 @@ export default {
   display: flex;
 }
 
-#inputBox1 {
+#inputBox{
   width: 175px;
   height: 28px;
   margin-left: 12px;
@@ -933,9 +934,12 @@ export default {
   background-color: #1e1f21;
 }
 
+
+
 #ajanlatTable {
   position: relative;
   width: 84vw;
+  left: -0.2vw;
   background-color: #2a2b2d;
 }
 

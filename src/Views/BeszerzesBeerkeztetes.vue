@@ -33,175 +33,21 @@
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
 </div>
-    <div class="dividerProject"></div>
+  
 
-    <div class="szures">
-      <text class="szuroText">Szűrés:</text>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Ügyfél
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Ügyfél 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Beszállító
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Beszállító 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Szekció
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Szekció 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Szekció 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Szekció 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Beszerzés
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés A</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés B</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Beszerzés C</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Termékkód
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
-          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
-          <a class="dropdown-item" id="szuroDropdownItem">BÉ-L101</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Termék név
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
-        </div>
-      </div> 
-      <div class="dropdown" id="csoportDiv">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="csoportositas1"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Csoportosítás
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Spot</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="aktivSzurok">
-      <text class="aktivSzuroText">BÉ-L101</text>
-      <text class="aktivSzuroText">Beszállító 1</text>
-      <text class="aktivSzuroText">Szekció 1</text>
-      <text class="deleteActive">Szűrők törlése</text>
-    </div>
-<div class="formLines">
+  
+<div class="formStuff">
+      <div class="inputsBSZ">
      <div class="formLine">
-        <text class="bizonylatText">Külső bizonylat száma:</text>
-        <input class="form-control" id="bizonylatSzam" placeholder="Külső bizonylat száma" />
+        <input class="form-control" id="inputBoxProductAjanlat1" placeholder="Külső biz. száma " /> <div class="verticalSplit"></div>
       </div>
-      <div class="formLineFileBB">
-        <text class="formLineFileBBText">Melléklet:</text>
-        <input type="file" class="form-control" id="fileUpload" />
+       <div class="formLine">
+        <input type="file" class="form-control" id="beszbe-file" placeholder="Melléklet" />
       </div>
-</div>
+     
+     
+      </div>
+    </div>
     
 
     <table class="table table-dark" id="koltsegTable">
@@ -212,7 +58,7 @@
           <th scope="col">Szállító cikkszám</th>
           <th scope="col">DB szám</th>
           <th scope="col">Érkezett db</th>
-          >
+          
         </tr>
       </thead>
       <tbody>
@@ -328,7 +174,19 @@ export default {
     left: 2vw;
 }
 
-#koltsegTable {
+
+#beszbe-file {
+  width: 400px;
+  height: 40px;
+  margin-left: 10px;
+  position: relative;
+  border:0;
+  left: 25px;
+  bottom: 40px;
+  background-color: #1e1f21;
+}
+
+#Table {
   position: relative;
   top: 7vh;
   width: 84vw;

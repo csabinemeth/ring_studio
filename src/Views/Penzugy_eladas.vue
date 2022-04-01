@@ -135,7 +135,9 @@
       <th scope="col">Dátum</th>
       <th scope="col">Bizonylat</th>
       <th scope="col">Vevő</th>
+      <th scope="col">Típus</th>
       <th scope="col">Megrendelés</th>
+      
       <th scope="col">Előleg</th>
       <th scope="col">Számla</th>
       <th scope="col">Fizetés</th>
@@ -146,6 +148,7 @@
       <th>2021.12.06</th>
       <td>OC2021-18</td>
       <td>Gipsz Jakab</td>
+      <td>típus</td>
       <td>1 500 000 Ft</td>
       <td>500 000 Ft</td>
       <td></td>
@@ -155,21 +158,24 @@
           <th>2021.12.31</th>
       <td>RING-2021-258</td>
       <td>Gipsz Jakab</td>
+      <td>típus</td>
       <td></td>
+      
       <td></td>
       <td>1 500 000 Ft</td>
       <td>1 000 000 Ft</td>
     </tr>
     <tr class="transparent">
       <td></td>
-      <td colspan="6"></td>
+      <td colspan="7"></td>
     </tr>
     <tr>
       <th>Összesen:</th>
           <th></th>
       <td></td>
-      
+      <td></td>
       <td>1 500 000 Ft</td>
+      
       <td>500 000 Ft</td>
       <td>1 500 000 Ft</td>
       <td>1 500 000 Ft</td>

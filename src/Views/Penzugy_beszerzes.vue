@@ -136,6 +136,7 @@
       <th scope="col">Dátum</th>
       <th scope="col">Bizonylat</th>
       <th scope="col">Beszállító</th>
+      <th scoper="col">Típus</th>
       <th scope="col">Beszerzés</th>
       <th scope="col">Előleg</th>
       <th scope="col">Számla</th>
@@ -147,6 +148,7 @@
       <td>2021.12.06</td>
       <td>OC2021-18</td>
       <td>calligaris</td>
+      <td>Típus</td>
       <td>1 200 000 Ft</td>
       <td>500 000 Ft</td>
       <td></td>
@@ -156,6 +158,7 @@
           <td>2021.12.31</td>
       <td>OC2021-19</td>
       <td>calligaris</td>
+      <td>Típus</td>
       <td></td>
       <td>500 000 Ft</td>
       <td>1 200 000 Ft</td>
@@ -163,11 +166,12 @@
     </tr>
     <tr class="transparent">
       <td></td>
-      <td colspan="6"></td>
+      <td colspan="7"></td>
     </tr>
     <tr>
       <th>Összesen:</th>
           <th></th>
+      <td></td>
       <td></td>
       
       <td>1 200 000 Ft</td>

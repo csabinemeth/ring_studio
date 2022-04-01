@@ -1,6 +1,6 @@
 <template>
-<div class="ujAjanlatBackGround"> 
-<div class="topLine">
+  <div class="ujAjanlatBackGround">
+    <div class="topLine">
 <h5 class="projectTitle"><div class="projectAvatar1"></div>&ensp;P-22-03_projekt:</h5> <div class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -82,20 +82,91 @@
         </div>
       </div>
     </div>
-<div class="buttonLine">
-  <button type="button" id="projectButton" class="btn btn-primary" @click="navToDashboard"><i class="fa-solid fa-chart-column"></i> Dashboard</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navAdatlap"><i class="fa-solid fa-list"></i> Projektinfo</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navKoltsegvetes"><i class="fa-solid fa-chart-line"></i> Költségvetés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToAjanlat"><i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat</button>
- <button type="button" id="projectButtonActive" class="btn btn-primary" @click="navToBeszerzes"><i class="fa-solid fa-dolly"></i> Beszerzés</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToEladas"><i class="fa-solid fa-cart-arrow-down"></i> Eladás</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToPenzugy"><i class="fa-solid fa-file-invoice-dollar"></i> Pénzügy</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToDiviziok"><i class="fa-solid fa-layer-group"></i> Divíziok</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToKatalogus"><i class="fa-solid fa-newspaper"></i> Katalógus</button>
- <button type="button" id="projectButton" class="btn btn-primary" @click="navToDocs"><i class="fa-solid fa-file-lines"></i> Dokumentumok</button>
-</div>
+    <div class="buttonLine">
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToDashboard"
+      >
+        <i class="fa-solid fa-chart-column"></i> Dashboard
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navAdatlap"
+      >
+        <i class="fa-solid fa-list"></i> Projektinfo
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navKoltsegvetes"
+      >
+        <i class="fa-solid fa-chart-line"></i> Költségvetés
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToAjanlat"
+      >
+        <i class="fa-solid fa-hand-holding-dollar"></i> Ajánlat
+      </button>
+      <button
+        type="button"
+        id="projectButtonActive"
+        class="btn btn-primary"
+        @click="navToBeszerzes"
+      >
+        <i class="fa-solid fa-dolly"></i> Beszerzés
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToEladas"
+      >
+        <i class="fa-solid fa-cart-arrow-down"></i> Eladás
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToPenzugy"
+      >
+        <i class="fa-solid fa-file-invoice-dollar"></i> Pénzügy
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToDiviziok"
+      >
+        <i class="fa-solid fa-layer-group"></i> Divíziok
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToKatalogus"
+      >
+        <i class="fa-solid fa-newspaper"></i> Katalógus
+      </button>
+      <button
+        type="button"
+        id="projectButton"
+        class="btn btn-primary"
+        @click="navToDocs"
+      >
+        <i class="fa-solid fa-file-lines"></i> Dokumentumok
+      </button>
+    </div>
 
-<div class="collapse" id="collapseSearchTop">
+   
+    <div class="collapse" id="collapseSearchTop">
   <div class="card card-body" id="searchBarTop">
     <div class="searchLine">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchBarInput">
@@ -180,8 +251,6 @@
   </div>
 </div>
     
-    
-
 <div class="inputs">
      <div class="formLine">
         <input class="form-control" id="inputBoxProductBe" placeholder="Beszerzési cím" /> <div class="verticalSplit"></div>
@@ -204,100 +273,10 @@
       </div>
       </div>
     
-    <table class="table table-dark" id="koltsegTable1">
+    <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
-        <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <th scope="col">Termékkód</th>
-          <th scope="col">Termék</th>
-          <th scope="col">Kép</th>
-          <th scope="col">Beszerzési ár</th>
-          <th scope="col">Kalkulált ár</th>
-          <th scope="col">Ajánlati ár</th>
-          <th scope="col">Árrés</th>
-                    <th scope="col">Státusz</th>
-                    <th></th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        
-         <tr>
-          <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>BÉ-L101</td>
-          <td>Spot</td>
-          <td><div class="productImage"></div></td>
-          <td>76.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>10 000 Ft</td>
-          <td>Megrendelve</td>
-          <td><i class="fas fa-minus"></i></td>
-        </tr>
-         <tr>
-          <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>BÉ-L101</td>
-          <td>Spot</td>
-          <td><div class="productImage"></div></td>
-          <td>76.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>10 000 Ft</td>
-          <td>Megrendelve</td>
-          <td><i class="fas fa-minus"></i></td>
-        </tr>
-         <tr>
-          <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>BÉ-L101</td>
-          <td>Spot</td>
-          <td><div class="productImage"></div></td>
-          <td>76.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>10 000 Ft</td>
-          <td>Megrendelve</td>
-          <td><i class="fas fa-minus"></i></td>
-        </tr>
-         <tr>
-          <th><input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefaultPartners"
-            /></th>
-          <td>BÉ-L101</td>
-          <td>Spot</td>
-          <td><div class="productImage"></div></td>
-          <td>76.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>86.235 Ft</td>
-          <td>10 000 Ft</td>
-          <td>Megrendelve</td>
-          <td><i class="fas fa-minus"></i></td>
-        </tr>
-
-        <tr>
-          <th scope="col" colspan="2">
+          <th scope="col">
             <button
               type="button"
               class="btn btn-primary"
@@ -727,7 +706,7 @@
                       type="button"
                       class="btn btn-dark"
                       data-dismiss="modal"
-                      @click="navToAjanlat"
+                      @click="navToBeszerzes1"
                     >
                       Hozzáadás
                     </button>
@@ -737,123 +716,165 @@
             </div>
           </th>
         </tr>
-        
-          <tr class="transparent">
-          <td></td>
-          <td colspan="9" > </td>
-        </tr>
-        <tr>
-          <th></th>
-          <th>Összesítő:</th>
-          <td></td>
-          <td></td>
-          <td>381 150 Ft</td>
-          <td>431 175 Ft</td>
-          <td>431 175 Ft</td>
-          <td>40 000 Ft</td>
-          <td></td>
-        </tr>
-      </tbody>
+      </thead>
+      <tbody></tbody>
     </table>
 
-<button
-        type="button"
-        id="createButtonAjanlat"
-        @click="create"
-        class="btn btn-success"
-      >
-        <i class="fa-solid fa-floppy-disk"></i>
-      </button>
-      <button
-        type="button"
-        id="createButtonAjanlat"
-        @click="navToAjanlat_print"
-        class="btn btn-success"
-      >
-       <i class="fa-solid fa-print"></i>
-      </button>
-
-    
   </div>
-
 </template>
 
 <script>
-
-
-
 export default {
-
-
-
-      name: "createbeszerzes",
-      path: "/createbeszerzes",
+  name: "createbeszerzesempty",
+  path: "/createbeszerzesempty",
 
   methods: {
-
-  navKoltsegvetes() {
-      this.$router.push('/project_koltsegvetes')
+    navKoltsegvetes() {
+      this.$router.push("/project_koltsegvetes");
     },
 
     navAdatlap() {
-      this.$router.push('/project_adatlap')
+      this.$router.push("/project_adatlap");
     },
-    
+
     navToAjanlat() {
-      this.$router.push('/ajanlat')
+      this.$router.push("/createajanlat");
     },
 
- navToDashboard(){
-      this.$router.push('/project')
+    navToDashboard() {
+      this.$router.push("/project");
     },
-       navToBeszerzes(){
-      this.$router.push('/beszerzes')
-    },
-
-   navToEladas(){
-      this.$router.push('/eladas')
+    navToBeszerzes1() {
+      this.$router.push("/createBeszerzes");
     },
 
-   navToPenzugy(){
-      this.$router.push('/penzugy')
+    navToEladas() {
+      this.$router.push("/eladas");
     },
 
-   navToDiviziok(){
-      this.$router.push('/diviziok')
+    navToPenzugy() {
+      this.$router.push("/penzugy");
     },
 
-   navToKatalogus(){
-      this.$router.push('/katalogus')
+    navToDiviziok() {
+      this.$router.push("/diviziok");
     },
 
-   navToDocs(){
-      this.$router.push('/docs')
+    navToKatalogus() {
+      this.$router.push("/katalogus");
     },
 
-    navToAjanlat_print(){
-      this.$router.push('/ajanlat_print');
-    }
+    navToDocs() {
+      this.$router.push("/docs");
+    },
 
-
-
-  }
-    
+    navToAjanlat_print() {
+      this.$router.push("/ajanlat_print");
+    },
+  },
 };
 </script>
 
 <style>
+.projectTitle {
+  position: relative;
+  left: 2vw;
+  color: white;
+  text-decoration: none;
+  top: 2vh;
+}
 
-.projectTitle{
-    position: relative;
-    left: 2vw;
-    color: white;
-    text-decoration: none;
-    top: 2vh;
-    
+#collapseContent {
+  background-color: #1e1f21;
+  display: flex;
+}
+
+.aktivSzurokAjanlat {
+  height: 20px;
+  width: 72vw;
+  border: 1px solid white;
+  position: relative;
+  top: 0vh;
+  left: 1vw;
+  display: flex;
 }
 
 
-#createButtonAjanlat{
+
+#productsModalContent {
+  background-color: #1e1f21;
+  width: 85vw;
+  position: relative;
+  left: -22vw;
+  height: auto;
+}
+
+#productFilter {
+  background-color: #1e1f21;
+  border: 0;
+}
+
+#productSearch {
+  background-color: #1e1f21;
+  border: 0;
+  float: right;
+  position: relative;
+  left: 28vw;
+  }
+
+
+#inputBoxProductBe{
+  background-color: #1e1f21;
+  margin-left: 10px;
+    top: -40px;
+    border: 0;
+
+  width: 130px;
+  position: relative;
+  left: 2vw;
+}
+
+
+
+
+  #productSearchTop {
+  background-color: #2a2b2d;
+  border: 0;
+  float: right;
+  right: 70px;
+  top: 5px;
+  position: absolute;
+
+  }
+
+.szuresAjanlat {
+  color: white;
+  position: relative;
+  top: -7vh;
+  left: 1vw;
+  display: flex;
+}
+
+#searchApply{
+  background-color: #2a2b2d;
+  border: 0;
+  width:40px;
+}
+
+#productsModalButton {
+  background-color: #2a2b2d;
+  border: 0;
+  width: auto;
+}
+
+#productFilterTopBeszerzes{
+  background-color: #2a2b2d;
+  border: 0;
+  position: relative;
+  left: 52.5vw;
+  }
+
+#createButtonAjanlat {
   position: relative;
   top: 8vh;
   float: right;
@@ -862,30 +883,13 @@ export default {
   border: 0;
 }
 
-.formLinesAjanlat2 {
-  display: flex;
-  position: relative;
-  bottom: 50px;
-}
 
 
-  #productFilterTop1{
-  background-color: #2a2b2d;
-  border: 0;
-  position: relative;
-  left: 51vw;
-  }
-
-
-.formLines{
-  display: flex;
-}
-
-.dashboard{
+.dashboard {
   text-decoration: underline;
 }
 
-#plusButtonujAjanlat{
+#plusButtonujAjanlat {
   background-color: #2a2b2d;
   border: 0;
   top: 1vh;
@@ -894,8 +898,18 @@ export default {
 }
 
 
+#addProductSearch{
+  width: 500px;
+  color: white;
+  background-color: #1e1f21;
+}
+
+.searchLine{
+  display: flex;
+}
+
 #inputBox1 {
-   width: 175px;
+  width: 175px;
   height: 28px;
   margin-left: 12px;
   margin-bottom: 10px;
@@ -904,34 +918,32 @@ export default {
   top: 10vh;
   background-color: #1e1f21;
 }
-  
 
-
-.dividerProject{
-    width: 84vw;
-    position: relative;
-    left: 2vw;
-    height: 1px;
-    background-color: #68686e;
-    top: 2.5vh;
-    
-}
-
-#koltsegTable1 {
+#ajanlatTable {
   position: relative;
-  top: 3vh;
   width: 84vw;
-  left: 2vw;
+  left: -0.2vw;
   background-color: #2a2b2d;
 }
 
-#projectButton{
+#productsLabel {
+  color: white;
+}
+
+.dividerProject {
+  width: 84vw;
+  position: relative;
+  left: 2vw;
+  height: 1px;
+  background-color: #68686e;
+  top: 2.5vh;
+}
+
+#projectButton {
   margin-left: 2px;
   background-color: #1e1f21;
   border: 0;
 }
-
-
 
 #beszerzesListDropdown {
   background-color: #2a2b2d;
@@ -944,13 +956,12 @@ export default {
   text-decoration: underline;
 }
 
-.dateText1{
-     position: absolute;
-     right: 65px;
-    top: 2vh;
-    color:#68686a;
+.dateText1 {
+  position: absolute;
+  right: 65px;
+  top: 2vh;
+  color: #68686a;
 }
-
 
 #createBeszerzesListDropdown {
   background-color: #2a2b2d;
@@ -960,22 +971,19 @@ export default {
   background-color: #1e1f21;
   left: 0.5vw;
   top: 0.5vh;
-  
 }
 
-
-#projectButton:focus{
+#projectButton:focus {
   box-shadow: none;
   text-decoration: underline;
 }
 
-.buttonLine{
+.buttonLine {
   display: flex;
-  top: 0vh;
+  top:0vh;
   position: relative;
   left: 1vw;
 }
-
 
 #csoportositasCAjanlat {
   background-color: #2a2b2d;
@@ -993,7 +1001,4 @@ export default {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
-
-
 </style>

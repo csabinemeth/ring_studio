@@ -29,6 +29,8 @@ import CreateAjanlat from '../Views/CreateAjanlat'
 import CreateAjanlatEmpty from '../Views/CreateAjanlatEmpty'
 import CreateAjanlatCsoportositas from '../Views/CreateAjanlatCsoportositas'
 import CreateBeszerzes from '../Views/CreateBeszerzes'
+import CreateBeszerzesEmpty from '../Views/CreateBeszerzesEmpty'
+
 import CreateDivizio from '../Views/CreateDivizio'
 import CreateFizetes from '../Views/CreateFizetes'
 import Penzugy from '../Views/Penzugy'
@@ -292,6 +294,11 @@ import { createRouter, createWebHistory } from  'vue-router';
             path: '/createbeszerzes',
             name: 'CreateBeszerzes',
             component: CreateBeszerzes
+        },
+        {
+            path: '/createbeszerzesempty',
+            name: 'CreateBeszerzesEmpty',
+            component: CreateBeszerzesEmpty
         },
         {
             path: '/createdivizio',
