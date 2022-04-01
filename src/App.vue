@@ -28,7 +28,7 @@
                   <button class="projectnav" @click="navProject"><div class="projectAvatar1"> </div> P-22-03_Projekt</button>
                 </div>
                 </div><br/>
- <button type="button" id="navButton" class="btn btn-primary" @click="navPartners" ><i class="fas fa-user"></i> <label class="navText"> Ügyfelek </label></button><br/>
+ <button type="button" id="navButton" class="btn btn-primary" @click="navPartners" ><i class="fa-solid fa-users"></i> <label class="navText"> Ügyfelek </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navSuppliers" ><i class="fas fa-truck"></i> <label class="navText"> Beszállítók </label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navFavourites" ><i class="fas fa-heart"></i> <label class="navText"> Kedvencek</label></button><br/>
  <button type="button" id="navButton" class="btn btn-primary" @click="navRiports" ><i class="fas fa-flag"></i> <label class="navText"> Riportok </label></button><br/>

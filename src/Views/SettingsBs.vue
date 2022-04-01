@@ -16,27 +16,49 @@
       </div>
       <div class="content">
      <div class="topLineSettings">
-      <h5 class="projectTitle">
-        <text class="dashboard">Beszerzés státuszok</text>
-      </h5>
-      <input
-        class="form-control mr-sm-2"
-        id="searchBar1"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <text class="dateText1">2021.12.23 csütörtök</text>
-      <div class="dropdown1">
+ <h5 class="homeTitle"><i class="fa-solid fa-truck-ramp-box" id="avatarIcon-Partners"></i>&nbsp;Beszerzési státuszok</h5> 
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        id="homeSearchTop"
+        data-target="#collapseSearchTop"
+        aria-expanded="false"
+        aria-controls="collapseSearchTop"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+<div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navToCreateProject" >Új projekt</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navToCreateProduct">Új Termék</a>
+    <a class="dropdown-item" id="dropdownItem" >Új Beszállító</a>
   </div>
 </div>
-    </div>
 
+    
+</div>
+
+<div class="collapse" id="collapseSearchTop">
+      <div class="card card-body" id="searchBarTop">
+        <div class="searchLine">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchBarInput"
+          />
+          <button class="btn btn-success" type="submit" id="searchButtonTop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
     <table class="table table-dark" id="settingsTable">
       <thead></thead>
       <tbody>
@@ -103,7 +125,7 @@ export default {
 <style>
 #settingsTable {
   position: relative;
-  top: 10vh;
+  top: 4vh;
   width: 60vw;
   left: 2vw;
 }
@@ -188,6 +210,6 @@ export default {
 
 #createIcon {
   float: right;
-  color: #9ec520;
+  color: white;
 }
 </style>

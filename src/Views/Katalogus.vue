@@ -32,14 +32,42 @@
           >
         </div>
       </div>
-      <input
-        class="form-control mr-sm-2"
-        id="searchBar1"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <text class="dateText1">2021.12.23 csütörtök</text>
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        id="productGroupTop"
+        data-target="#collapseGroupTop"
+        aria-expanded="false"
+        aria-controls="collapseGroupTop"
+      >
+        <i class="fa-solid fa-layer-group"></i>
+      </button>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        id="productSearchTop"
+        data-target="#collapseSearchTop"
+        aria-expanded="false"
+        aria-controls="collapseSearchTop"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        id="katalogusFilterTop"
+        data-target="#collapseFilterTop"
+        aria-expanded="false"
+        aria-controls="collapseFilterTop"
+      >
+        <i class="fa-solid fa-filter"></i>
+      </button>
+      
       <div class="dropdown1">
         <button
           class="btn btn-secondary"
@@ -142,173 +170,217 @@
         <i class="fa-solid fa-file-lines"></i> Dokumentumok
       </button>
     </div>
-
-    <div class="dividerProject"></div>
-
-    <div class="szures">
-      <text class="szuroText">Szűrés:</text>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Szállító
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Szállító 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Szállító 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Szállító 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Gyártó
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Gyártó 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Gyártó 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Gyártó 3</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Termékkategória
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Kategória 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Kategória 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Kategória 3</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Termékfajta
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Fajta 1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Fajta 2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Fajta 3</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Szín
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Fekete</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Zöld</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Piros</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="szuroDropdown"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Méret
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">20x20</a>
-          <a class="dropdown-item" id="szuroDropdownItem">30x30</a>
-          <a class="dropdown-item" id="szuroDropdownItem">40x40</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="csoportositasAjanlat"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Csoportosítás
-        </button>
-        <div
-          class="dropdown-menu"
-          id="openedDrowdown"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <a class="dropdown-item" id="szuroDropdownItem">Csoport1</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Csoport2</a>
-          <a class="dropdown-item" id="szuroDropdownItem">Csoport3</a>
+<div class="collapse" id="collapseSearchTop">
+      <div class="card card-body" id="searchBarTop">
+        <div class="searchLine">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchBarInput"
+          />
+          <button class="btn btn-success" type="submit" id="searchButtonTop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="aktivSzurok">
-      <text class="aktivSzuroText">Spot</text>
-      <text class="aktivSzuroText">101</text>
-      <text class="deleteActive"
-        >Szűrők törlése <i class="fas fa-times"></i
-      ></text>
+    <div class="collapse" id="collapseGroupTop">
+      <div class="card card-body" id="groupTop">
+        Csoportosítás:
+        <div class="csoportLine">
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Ajánlat száma
+          </button>
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Dátum
+          </button>
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Vevő
+          </button>
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Összeg
+          </button>
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Státusz
+          </button>
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Link
+          </button>
+
+          <button type="button" id="csoportButton" class="btn btn-dark">
+            Érvényesség
+          </button>
+        </div>
+      </div>
     </div>
-    <br />
+
+    <div class="collapse" id="collapseFilterTop">
+      <div class="card card-body" id="filterCollapseContent">
+        <div class="szuresAjanlat">
+          <div class="szuro-oszlop">
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                id="szuro-drop-right"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Kategória
+              </button>
+              <div class="dropdown-menu" id="szuro-content">
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Kategória"
+                /></a>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                id="szuro-drop-right"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Szállító
+              </button>
+              <div class="dropdown-menu" id="szuro-content">
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Szállító"
+                /></a>
+              </div>
+            </div>
+            <br />
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                id="szuro-drop-right"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Vevő
+              </button>
+              <div class="dropdown-menu" id="szuro-content">
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Vevő"
+                /></a>
+              </div>
+            </div>
+            <br />
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                id="szuro-drop-right"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Státusz
+              </button>
+              <div class="dropdown-menu" id="szuro-content">
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Státusz"
+                /></a>
+              </div>
+            </div>
+            <br />
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                id="szuro-drop-right"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Fajta
+              </button>
+              <div class="dropdown-menu" id="szuro-content">
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Fajta"
+                /></a>
+              </div>
+            </div>
+            <br />
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                id="szuro-drop-right"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Új szűrő
+              </button>
+              <div class="dropdown-menu" id="szuro-content">
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Mező"
+                /></a>
+
+                <a class="dropdown-item" id="szuro-line" href="#"
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="szuro-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Érték"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="aktivSzurokAjanlatok">
+          <text class="aktivSzuroText">Nyitott</text>
+          <text class="aktivSzuroText">101</text>
+          <text class="deleteActive"
+            >Szűrők törlése <i class="fas fa-times"></i
+          ></text>
+        </div>
+      </div>
+    </div>
     <table class="table table-dark" id="koltsegTable">
       <thead>
         <tr>
@@ -497,6 +569,13 @@ export default {
   background-size: cover;
   width: 90px;
   height: 60px;
+}
+
+#katalogusFilterTop {
+  background-color: #2a2b2d;
+  border: 0;
+  position: relative;
+  left: 52.3vw;
 }
 
 

@@ -4,14 +4,18 @@
       <h5 class="projectTitle">
        <div class="projectAvatar1"></div>&ensp; P-22-03_projekt:<text class="dashboard">Beszerzés számla</text>
       </h5>
-      <input
-        class="form-control mr-sm-2"
-        id="searchBar1"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <text class="dateText1">2021.12.23 csütörtök</text>
+          <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        id="productSearchTop"
+        data-target="#collapseSearchTop"
+        aria-expanded="false"
+        aria-controls="collapseSearchTop"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
       <div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
@@ -21,6 +25,22 @@
   </div>
 </div>
 </div>
+<div class="collapse" id="collapseSearchTop">
+      <div class="card card-body" id="searchBarTop">
+        <div class="searchLine">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchBarInput"
+          />
+          <button class="btn btn-success" type="submit" id="searchButtonTop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="formStuff">
       <div class="inputsBSZ">
      <div class="formLine">
@@ -43,27 +63,27 @@
   <tbody>
     <tr>
       <td>Beszállító</td>
-      <td><input class="form-control" id="inputBox" placeholder="Beszállító" /></td>
+      <td><input class="form-control" id="inputBoxSzamla" placeholder="Beszállító" /></td>
     </tr>
     <tr>
       <td>Számla száma:</td>
-      <td>     <input class="form-control" id="inputBox" placeholder="Számla száma" /></td>
+      <td>     <input class="form-control" id="inputBoxSzamla" placeholder="Számla száma" /></td>
     </tr>
     <tr>
       <td>Számla dátuma:</td>
-      <td><input class="form-control" id="inputBox" placeholder="Számla dátuma" /></td>
+      <td><input class="form-control" id="inputBoxSzamla" placeholder="Számla dátuma" /></td>
     </tr>
     <tr>
       <td>Számla típusa:</td>
-      <td><input class="form-control" id="inputBox" placeholder="Számla típusa" /></td>
+      <td><input class="form-control" id="inputBoxSzamla" placeholder="Számla típusa" /></td>
     </tr>
     <tr>
       <td>Rendelés száma:</td>
-      <td>     <input class="form-control" id="inputBox" placeholder="Rendelés száma" /></td>
+      <td>     <input class="form-control" id="inputBoxSzamla" placeholder="Rendelés száma" /></td>
     </tr>
     <tr>
       <td>Számla:</td>
-      <td>     <input class="form-control" id="inputBox" placeholder="Számla" /></td>
+      <td>     <input class="form-control" id="inputBoxSzamla" placeholder="Számla" /></td>
     </tr>
     <tr>
       <td>Melléklet:</td>
@@ -72,7 +92,7 @@
     </tr>
     <tr>
       <td>Megjegyzés:</td>
-      <td>     <input class="form-control" id="inputBox" placeholder="Megjegyzés" /></td>
+      <td>     <input class="form-control" id="inputBoxSzamla" placeholder="Megjegyzés" /></td>
     </tr>
   </tbody>
 </table>
@@ -177,5 +197,15 @@ export default {
   margin-left: 10px;
   position: absolute;
   left: 25vw;
+}
+
+#inputBoxSzamla {
+  width: 400px;
+  height: 28px;
+  margin-left: 10px;
+  position: relative;
+  left: 0.5vw;
+  background-color: #1e1f21;
+  color: white;
 }
 </style>

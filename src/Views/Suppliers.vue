@@ -1,20 +1,50 @@
 <template>
 <div class="SuppliersBackGround">
-<div class="SuppliersTopLine">
- <h5 class="homeTitle">Beszállítók</h5> 
- <input class="form-control mr-sm-2" id="searchBar1" type="search" placeholder="Search" aria-label="Search">
- <text class="dateText1">2021.12.23 csütörtök</text>
- <div class="dropdown1">
+<div class="topLine">
+ <h5 class="homeTitle"><i class="fa-solid fa-truck" id="avatarIcon-Partners"></i>&nbsp;Beszállítók</h5> 
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        id="homeSearchTop"
+        data-target="#collapseSearchTop"
+        aria-expanded="false"
+        aria-controls="collapseSearchTop"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+<div class="dropdown1">
   <button class="btn btn-secondary " type="button" id="plusButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   <i class="fas fa-plus"></i>
   </button>
   <div class="dropdown-menu" id="openedDrowdown" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdownItem" > Új beszállító</a>
+    <a class="dropdown-item" id="dropdownItem" > Új ügyfél</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navToCreateProject" >Új projekt</a>
+    <a class="dropdown-item" id="dropdownItem" @click="navToCreateProduct">Új Termék</a>
+    <a class="dropdown-item" id="dropdownItem" >Új Beszállító</a>
   </div>
 </div>
- 
+
     
 </div>
+
+<div class="collapse" id="collapseSearchTop">
+      <div class="card card-body" id="searchBarTop">
+        <div class="searchLine">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchBarInput"
+          />
+          <button class="btn btn-success" type="submit" id="searchButtonTop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
 
 <table class="table table-dark" id="supplierListTable">
       <thead>
@@ -159,7 +189,8 @@ export default {
     height: 100vh;
   width: 90vw;
   background-color: #1e1f21;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   color: white;
 }
 
@@ -174,11 +205,10 @@ export default {
 
 #supplierListTable{
  position: relative;
-  top: 10vh;
+  top: 2vh;
   width: 84.5vw;
-   overflow-x: scroll;
-  overflow-y: hidden;
- 
+  overflow-x: scroll;
+  overflow-y: visible;
   left: 1vw;
   background-color: #2a2b2d;
   font-size: 14px;
