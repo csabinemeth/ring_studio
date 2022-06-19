@@ -2,6 +2,146 @@
   <div class="printPage">
     
     <div id="paper" class="printPaper">
+    <div class="btn-group dropdown">
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        id="printButtonTK"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="fas fa-print"></i> Nyomtatás
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás fedlappal</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás összesítővel</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a
+        >
+      </div>
+    </div>
+
+    <div class="btn-group dropdown">
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        id="printButtonTK"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="fas fa-cog"></i> Törzs szerkesztése
+      </button>
+      <div class="dropdown-menu">
+        
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Terméknév</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Műszaki tartalom</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Mennyiség</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Mennyiségi egység</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Nettó egységár</a
+        >
+         <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Nettó összár</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Divíziók</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Kategória</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Termékfajta</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Kép</a
+        >
+       
+        
+      </div>
+    </div>
       <div class="printHeader">
         <div class="logoHeader">
           <div class="ringLogo"></div>
@@ -28,8 +168,7 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
-      <br/>
-      <br/>
+ 
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
@@ -96,145 +235,7 @@
       </table>
     </div>
 
-    <div class="btn-group dropup">
-      <button
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        id="printButton"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fas fa-print"></i> Nyomtatás
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás fedlappal</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás összesítővel</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a
-        >
-      </div>
-    </div>
-
-    <div class="btn-group dropup">
-      <button
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        id="printButton"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fas fa-cog"></i> Törzs szerkesztése
-      </button>
-      <div class="dropdown-menu">
-        
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Terméknév</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Műszaki tartalom</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Mennyiség</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Mennyiségi egység</a
-        >
-       
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Divíziók</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Kategória</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Termékfajta</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Kép</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Nettó egységár</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Nettó összár</a
-        >
-       
-        
-      </div>
-    </div>
+   
   </div>
 </template>
 

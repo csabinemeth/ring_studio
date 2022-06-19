@@ -126,12 +126,136 @@
             
             <th class="catalogCell">Falikar
             <div class="catalogPic"></div>
+            
+            <br/>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Terméknév</th>
+      <th scope="col">Falikar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Méret</th>
+      <td>200x10 cm</td>
+
+    </tr>
+    <tr>
+      <th>Szín</th>
+      <td>Fekete</td>
+
+    </tr>
+    <tr>
+      <th>Gyártó</th>
+      <td>Gyártó kft.</td>
+
+    </tr>
+     <tr>
+      <th>Műszaki tartalom</th>
+      <td>Függesztett falikar </td>
+
+    </tr>
+     <tr>
+      <th>Helyiség</th>
+      <td>Nappali</td>
+
+    </tr>
+     <tr>
+      <th>Ajánlati ár</th>
+      <td>20 000 Ft</td>
+
+    </tr>
+  </tbody>
+</table>
             </th>
             <th class="catalogCell" >Függesztett lámpa 
             <div class="catalogPic"></div>
+            <br/>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Terméknév</th>
+      <th scope="col">Falikar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Méret</th>
+      <td>200x10 cm</td>
+
+    </tr>
+    <tr>
+      <th>Szín</th>
+      <td>Fekete</td>
+
+    </tr>
+    <tr>
+      <th>Gyártó</th>
+      <td>Gyártó kft.</td>
+
+    </tr>
+     <tr>
+      <th>Műszaki tartalom</th>
+      <td>Függesztett falikar </td>
+
+    </tr>
+     <tr>
+      <th>Helyiség</th>
+      <td>Nappali</td>
+
+    </tr>
+     <tr>
+      <th>Ajánlati ár</th>
+      <td>20 000 Ft</td>
+
+    </tr>
+  </tbody>
+</table>
             </th>
             <th class="catalogCell">Lámpa
             <div class="catalogPic"></div>
+            <br/>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Terméknév</th>
+      <th scope="col">Falikar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Méret</th>
+      <td>200x10 cm</td>
+
+    </tr>
+    <tr>
+      <th>Szín</th>
+      <td>Fekete</td>
+
+    </tr>
+    <tr>
+      <th>Gyártó</th>
+      <td>Gyártó kft.</td>
+
+    </tr>
+     <tr>
+      <th>Műszaki tartalom</th>
+      <td>Függesztett falikar </td>
+
+    </tr>
+     <tr>
+      <th>Helyiség</th>
+      <td>Nappali</td>
+
+    </tr>
+     <tr>
+      <th>Ajánlati ár</th>
+      <td>20 000 Ft</td>
+
+    </tr>
+  </tbody>
+</table>
             </th>
 
           </tr>
@@ -214,8 +338,8 @@ export default {
 .catalogPic{
      background-image: url("../../assets/lamp.png");
   background-size: cover;
-  width: 340px;
-  height: 200px;
+  width: 395px;
+  height: 280px;
 }
 
 #formInput {

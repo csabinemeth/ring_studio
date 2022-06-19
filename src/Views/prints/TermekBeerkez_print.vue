@@ -29,8 +29,7 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
-      <br/>
-      <br/>
+
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
@@ -46,7 +45,7 @@
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
 
           </tr>
           <tr>
@@ -54,7 +53,7 @@
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
 
           </tr>
           <tr>
@@ -62,7 +61,7 @@
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
 
           </tr>
           <tr>
@@ -70,48 +69,11 @@
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
 
           </tr>
          
-          <tr>
-            <td colspan="5" class="printComment">
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva. A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes.
-            </td>
-          </tr>
+          
         </tbody>
       </table>
     </div>

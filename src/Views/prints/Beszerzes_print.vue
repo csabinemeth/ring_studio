@@ -16,6 +16,7 @@
           <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
+          <h6 class="printTitleMS">Megrendelés száma: 1235</h6>
         </div>
         <div class="dataHeader">
           <h6 class="printData">Szállító: Sibalin Milán</h6>
@@ -29,8 +30,7 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
-      <br/>
-      <br/>
+
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
@@ -47,28 +47,28 @@
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
             <td>5</td>
-            <td>db</td>
+            <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td colspan="5" class="printComment">
@@ -280,6 +280,10 @@ export default {
   top: 1vh;
 }
 
+.mennyisegi-egyseg{
+  text-align: center;
+}
+
 #printNavButton {
   background-color: white;
   color: black;
@@ -414,6 +418,12 @@ export default {
 .printTitle3 {
   position: relative;
   left: 6.5vw;
+  font-size: 13px;
+}
+
+.printTitleMS{
+  position: relative;
+  left: 7.5vw;
   font-size: 13px;
 }
 

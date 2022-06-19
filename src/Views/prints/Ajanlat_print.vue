@@ -23,34 +23,13 @@
     >
       <i class="fas fa-filter"></i> Összesítő
     </button>
-      <div class="btn-group dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
-    <i class="fa-solid fa-layer-group"></i> Csoportosítás
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i> Csoport1</a>
-    <a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i> Csoport2</a>
-    <a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i> Csoport3</a>
-  </div>
-</div>
+
     <div class="btn-group dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-print"></i> Nyomtatás
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás</a>
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal</a>
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás összesítővel</a>
-    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a>
-  </div>
-</div>
-
-
- <div class="btn-group dropdown">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
     <i class="fas fa-cog"></i> Törzs szerkesztése
   </button>
-  <div class="dropdown-menu">
+ 
+   <div class="dropdown-menu">
     <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Terméknév</a>
     <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Műszaki tartalom</a>
     <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> Mennyiség</a>
@@ -62,6 +41,19 @@
     <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Kategória</a>
     <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Termékfajta</a>
     <a class="dropdown-item" href="#"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> Kép</a>
+  </div>
+</div>
+
+
+ <div class="btn-group dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton1" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-print"></i> Nyomtatás
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás</a>
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal</a>
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás összesítővel</a>
+    <a class="dropdown-item" href="#"><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a>
   </div>
 </div>
     <div id="paper" class="printPaper">
@@ -79,6 +71,7 @@
           <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
+          <h6 class="printTitle5"> Ajánlat száma: 1234</h6> 
         </div>
         <div class="dataHeader">
           <h6 class="printData">Ajánlatkérő: Sibalin Milán</h6>
@@ -107,6 +100,7 @@
           </tr>
         </thead>
         <tbody>
+        <th colspan="7">Lámpatestek</th>
           <tr>
             <td>BÉ-L01</td>
             <td>Váró,mosdó</td>
@@ -140,28 +134,22 @@
             <td>43 943 Ft</td>
             <td>87 885 Ft</td>
           </tr>
+          <tr> <th colspan="8">Lámpatestek összesen:</th> <th>353 168 Ft</th> </tr> 
           <tr>
-            <td colspan="6">Szállítási költség (becsült összeg):</td>
-            <td>1</td>
-            <td>alk.</td>
-            <td>90 000 Ft</td>
-            <td>90 000 Ft</td>
+         
+            <th colspan="8">Öszesen nettó:</th>
+            <th>846 535 Ft</th>
           </tr>
           <tr>
-            <th colspan="8" rowspan="2">
+            <th colspan="8">Öszesen bruttó:</th>
+            <th>1 075 099 Ft</th>
+          </tr>
+             <th colspan="9" rowspan="2">
               Megjegyzés: szállítási határidő terméktől függően 6-8 hét is
               lehet, mely a gyártó felé adott rendeléstől számítandó! Becsatolt
               fotón a termék minden esetben a beárazott szímnebn és
               felszereltségben látható!
             </th>
-            <th>Öszesen nettó:</th>
-            <th>846 535 Ft</th>
-          </tr>
-          <tr>
-            <th>Öszesen bruttó:</th>
-            <th>1 075 099 Ft</th>
-          </tr>
-          
         </tbody>
       </table>
     </div>
@@ -294,7 +282,7 @@ export default {
 
 #printButton1 {
   position: relative;
-  left: 22.3vw;
+  left: 40.3vw;
   top: -1vh;
   background-color: #9ec520;
   border: 0;
@@ -353,6 +341,12 @@ export default {
 .printTitle3 {
   position: relative;
   left: 6.5vw;
+  font-size: 13px;
+}
+
+.printTitle5 {
+  position: relative;
+  left: 8.7vw;
   font-size: 13px;
 }
 

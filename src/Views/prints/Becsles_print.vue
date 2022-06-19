@@ -16,6 +16,7 @@
           <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
+          <h6 class="printTitle4">Becslés száma: 1234</h6>
         </div>
         <div class="dataHeader">
           <h6 class="printData">Megbízó: Sibalin Milán</h6>
@@ -29,8 +30,7 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
-      <br/>
-      <br/>
+      
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
@@ -75,7 +75,10 @@
             <td>35 480 Ft</td>
             <td>177 398 Ft</td>
           </tr>
-
+    <tr>
+            <th colspan="5">Összesen:</th>
+            <th>709 592 Ft</th>
+          </tr>
               <tr>
             <th colspan="5">ÁFA:</th>
             <th>230 831 Ft</th>
@@ -131,7 +134,7 @@
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButton"
+        id="printButtonBecsles"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -158,7 +161,7 @@
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButton"
+        id="printButtonBecsles"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -384,9 +387,9 @@ export default {
   top: 1vh;
 }
 
-#printButton {
+#printButtonBecsles {
   position: relative;
-  left: 2vw;
+  left: 62vw;
   top: 4vh;
   background-color: #9ec520;
   border: 0;
@@ -405,7 +408,7 @@ export default {
 }
 
 .logoHeader {
-  width: 27.3vw;
+  width: 29vw;
   border: 1px solid #e0e4e7;
   height: 19vh;
   left: 2vw;
@@ -445,6 +448,12 @@ export default {
 .printTitle3 {
   position: relative;
   left: 6.5vw;
+  font-size: 13px;
+}
+
+.printTitle4 {
+  position: relative;
+  left: 8.5vw;
   font-size: 13px;
 }
 

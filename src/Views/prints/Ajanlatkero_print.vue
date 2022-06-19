@@ -10,6 +10,15 @@
           <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
           <br />
           <h6 class="companyData">Adószám: 23520451-2-08</h6>
+          <br/>
+          
+          <h6 class="companyData">E-mail: email@email.com</h6>
+          <br/>
+          <h6 class="companyData">Telefon: 06201345670</h6>
+          <br/>
+          <h6 class="companyData">Kapcsolattartó: Nagy József</h6>
+
+
         </div>
         <div class="titleHeader">
           <h1 class="printTitleAk">Ajánlatkérés</h1>
@@ -29,8 +38,7 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
-      <br/>
-       <br/>
+
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
@@ -63,12 +71,16 @@
             <td>2</td>
             <td>db</td>
           </tr>
+          <tr>
+          <td>Megjegyés:</td>
+         <td colspan="4">  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></td> 
+          </tr>
         </tbody>
       </table>
     </div>
 
    <div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButtonBecsles" aria-haspopup="true" aria-expanded="false">
     <i class="fas fa-print"></i> Nyomtatás
   </button>
   <div class="dropdown-menu">
@@ -81,7 +93,7 @@
 
 
  <div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButton" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="printButtonBecsles" aria-haspopup="true" aria-expanded="false">
     <i class="fas fa-cog"></i> Törzs szerkesztése
   </button>
   <div class="dropdown-menu">
@@ -194,6 +206,7 @@ export default {
   left: 2vw;
   top: 4vh;
   font-size: 14px;
+
 }
 
 .printData {

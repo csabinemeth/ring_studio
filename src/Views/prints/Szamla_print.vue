@@ -2,6 +2,33 @@
   <div class="printPage">
   
     <div id="paper" class="printPaper">
+
+    <div class="btn-group dropdown">
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        id="printButtonSzamla"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="fas fa-print"></i> Nyomtatás
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás fedlappal</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás összesítővel</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a
+        >
+      </div>
+    </div>
       <div class="printHeader">
         <div class="logoHeaderSzamla">
           <div class="ringLogo"></div>
@@ -19,68 +46,82 @@
           <h6 class="printTitleSzamla2">Projekt kód: 123456</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
+       
+          <h6 class="printBank">Bankszámlaszám: 11773377-00000000 </h6>
         </div>
         <div class="dataHeaderSzamla">
           <h6 class="printData">Vevő: Sibalin Milán</h6>
           <br />
         </div>
       </div>
-      <br/>
-      <br/>
+    
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
-            <th scope="col">Terméknév</th>
+            <th scope="col">Megnevezés</th>
             <th scope="col">Mennyiség</th>
-            <th scope="col">Mennyiségi egység</th>
-            <th scope="col">Nettó egységár</th>
-            <th scope="col">Nettó összár</th>
+            <th scope="col">Egységár</th>
+            <th scope="col">ÁFA</th>
+            <th scope="col">ÁFA érték</th>
+            <th scope="col">Bruttó ár</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             
             <td>Falikar</td>
-            <td>5</td>
-            <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+            <td class="mennyisegi-egyseg">5 db</td>
+            <td class="right">30 000 Ft</td>
+            <td class="right">27%</td>
+            <td class="right">8100 Ft</td>
+            <td class="right">38 100 Ft</td>
           </tr>
           <tr>
           
             <td>Falikar</td>
-            <td>5</td>
-            <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+            <td class="mennyisegi-egyseg">5 db</td>
+            <td class="right">30 000 Ft</td>
+            <td class="right">27%</td>
+            <td class="right">8100 Ft</td>
+            <td class="right">38 100 Ft</td>
           </tr>
           <tr>
         
             <td>Falikar</td>
-            <td>5</td>
-            <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+            <td class="mennyisegi-egyseg">5 db</td>
+            <td class="right">30 000 Ft</td>
+            <td class="right">27%</td>
+            <td class="right">8100 Ft</td>
+           <td class="right">38 100 Ft</td>
           </tr>
           <tr>
           
             <td>Falikar</td>
-            <td>5</td>
-            <td>db</td>
-            <td>30 000 Ft</td>
-            <td>120 000 Ft</td>
+            <td class="mennyisegi-egyseg">5 db</td>
+            <td class="right">30 000 Ft</td>
+            <td class="right">27%</td>
+            <td class="right">8100 Ft</td>
+            <td class="right">38 100 Ft</td>
           </tr>
           <tr>
-          <th colspan="4">Kedvezmény:</th>
-          <th>- 50 000 Ft</th>
+          <th colspan="5">Kedvezmény:</th>
+          <th class="right">- 50 000 Ft</th>
+          </tr>
+          <tr>
+          <th colspan="5">Nettó  összesen:</th>
+          <th class="right">120 000 Ft</th>
+          </tr>
+            <tr>
+          <th colspan="5">Nettó előleg:</th>
+          <th class="right">0 Ft</th>
           </tr>
            <tr>
-          <th colspan="4">ÁFA:</th>
-          <th>98 313 Ft</th>
+          <th colspan="5">ÁFA:</th>
+          <th class="right">32 400 Ft</th>
           </tr>
            <tr>
-          <th colspan="4">Bruttó:</th>
-          <th>578 313 Ft</th>
+          <th colspan="5">Bruttó összesen:</th>
+          <th class="right">152 400 Ft</th>
           </tr>
           <tr>
             <td colspan="7" class="printComment">
@@ -124,145 +165,7 @@
       </table>
     </div>
 
-    <div class="btn-group dropup">
-      <button
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        id="printButton"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fas fa-print"></i> Nyomtatás
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás fedlappal</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás összesítővel</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a
-        >
-      </div>
-    </div>
-
-    <div class="btn-group dropup">
-      <button
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        id="printButton"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fas fa-cog"></i> Törzs szerkesztése
-      </button>
-      <div class="dropdown-menu">
-        
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Terméknév</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Mennyiség</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Mennyiségi egység</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Nettó egységár</a
-        >
-         <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Nettó összár</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Műszaki tartalom</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Divíziók</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Kategória</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Termékfajta</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Kép</a
-        >
-       
-        
-      </div>
-    </div>
+   
   </div>
 </template>
 
@@ -383,10 +286,10 @@ export default {
   top: 1vh;
 }
 
-#printButton {
-  position: relative;
-  left: 2vw;
-  top: 4vh;
+#printButtonSzamla {
+    position: relative;
+  left: 75vw;
+  top: -3vh;
   background-color: #9ec520;
   border: 0;
   margin-right: 10px;
@@ -451,5 +354,11 @@ export default {
   font-size: 13px;
   position: relative;
   left: 9vw;
+}
+
+.printBank {
+  font-size: 13px;
+  position: relative;
+  left: 6vw;
 }
 </style>

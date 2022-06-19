@@ -49,27 +49,28 @@
   <tbody>
     <tr>
       <td>Lámpatestek, fényforrások</td>
-      <td>846 535 Ft</td>
+      <td class="right">846 535 Ft</td>
     </tr>
     <tr>
       <td>Burkolatok</td>
-      <td>1 022 923 Ft</td>
+      <td class="right">1 022 923 Ft</td>
     </tr>
     <tr>
       <th>Kedvezmény:</th>
-      <th>100 000 Ft</th>
+      <th class="right">100 000 Ft</th>
+    </tr>
+    
+    <tr>
+      <th>Összesen nettó:</th>
+      <th class="right">1 869 458 Ft</th>
     </tr>
     <tr>
       <th>ÁFA:</th>
-      <th>27%</th>
-    </tr>
-    <tr>
-      <th>Összesen:</th>
-      <th>1 869 458 Ft</th>
+      <th class="right">382 901</th>
     </tr>
      <tr>
       <th>Összes bruttó:</th>
-      <th>2 252 359 Ft</th>
+      <th class="right">2 252 359 Ft</th>
     </tr>
      <tr>
       <td colspan="3" id="sumComment">Ajánlatunk a kiadástól számított max. 30 napig érvényes, azt követően az árakat újra egyeztetni szükséges!</td>
@@ -124,6 +125,10 @@ export default {
 .printPaper{
   position: relative;
   top: 1vh;
+}
+
+.right{
+  text-align: right;
 }
 
 .sumTitle{
