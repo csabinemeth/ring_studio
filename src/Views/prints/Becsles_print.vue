@@ -2,139 +2,13 @@
   <div class="printPage">
     
     <div id="paper" class="printPaper">
-      <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Ajánlatadó: Ring Studio Kft.</h6>
-          <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
-        </div>
-        <div class="titleHeader">
-          <h2 class="printTitleBe">Becsült Költségvetés</h2>
-          <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
-          <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
-          <h6 class="printDate">Dátum: 2022.01.21</h6>
-          <h6 class="printTitle4">Becslés száma: 1234</h6>
-        </div>
-        <div class="dataHeader">
-          <h6 class="printData">Megbízó: Sibalin Milán</h6>
-          <br />
-          <h6 class="printData">Szervezet: Sibalin Kft.</h6>
-          <br />
-          <h6 class="printData">Címe: 9082, Nyúl Fő út 3</h6>
-          <br />
-          <h6 class="printData">Telefon: +36204321123</h6>
-          <br />
-          <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
-        </div>
-      </div>
-      
-      <table class="table table-bordered" id="printTable">
-        <thead>
-          <tr class="headerRow">
-            <th scope="col">Terméknév</th>
-            <th scope="col">Műszaki tartalom</th>
-            <th scope="col">Mennyiség</th>
-            <th scope="col">Mennyiség egység</th>
-            <th scope="col">Becsült nettó egységár</th>
-            <th scope="col">Becsült nettó összár</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td>db</td>
-            <td>35 480 Ft</td>
-            <td>177 398 Ft</td>
-          </tr>
-          <tr>
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td>db</td>
-            <td>35 480 Ft</td>
-            <td>177 398 Ft</td>
-          </tr>
-          <tr>
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td>db</td>
-            <td>35 480 Ft</td>
-            <td>177 398 Ft</td>
-          </tr>
-          <tr>
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td>db</td>
-            <td>35 480 Ft</td>
-            <td>177 398 Ft</td>
-          </tr>
-    <tr>
-            <th colspan="5">Összesen:</th>
-            <th>709 592 Ft</th>
-          </tr>
-              <tr>
-            <th colspan="5">ÁFA:</th>
-            <th>230 831 Ft</th>
-          </tr>
-              <tr>
-            <th colspan="5">Becsült bruttó összár:</th>
-            <th>854 930 Ft</th>
-          </tr>
-          <tr>
-            <td colspan="10" class="printComment">
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva. A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
-              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
-              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
-              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
-              készleteket figyelembe véve eltérő lehet a korábban vásárolt
-              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
-              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
-              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
-              esetére érvényes.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
-    <div class="btn-group dropup">
+    <div class="btn-group dropdown">
       <button
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButtonBecsles"
+        id="printButtonRS"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -156,18 +30,19 @@
       </div>
     </div>
 
-    <div class="btn-group dropup">
+    <div class="btn-group dropdown">
       <button
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButtonBecsles"
+        id="printButtonRS"
         aria-haspopup="true"
         aria-expanded="false"
       >
         <i class="fas fa-cog"></i> Törzs szerkesztése
       </button>
       <div class="dropdown-menu">
+        
         <a class="dropdown-item" href="#"
           ><input
             class="form-check-input"
@@ -216,9 +91,9 @@
             id="flexCheckChecked"
             checked
           />
-          Becsült nettó egységár</a
+          Nettó egységár</a
         >
-        <a class="dropdown-item" href="#"
+         <a class="dropdown-item" href="#"
           ><input
             class="form-check-input"
             type="checkbox"
@@ -226,17 +101,7 @@
             id="flexCheckChecked"
             checked
           />
-          Becsült nettó összár</a
-        >
-
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-          Divíziók</a
+          Nettó összár</a
         >
         <a class="dropdown-item" href="#"
           ><input
@@ -245,7 +110,7 @@
             value=""
             id="flexCheckChecked"
           />
-          Kategória</a
+            Divíziók</a
         >
         <a class="dropdown-item" href="#"
           ><input
@@ -254,7 +119,7 @@
             value=""
             id="flexCheckChecked"
           />
-          Termékfajta</a
+            Kategória</a
         >
         <a class="dropdown-item" href="#"
           ><input
@@ -263,10 +128,164 @@
             value=""
             id="flexCheckChecked"
           />
-          Kép</a
+            Termékfajta</a
         >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Kép</a
+        >
+       
+        
       </div>
     </div>
+     <br/>
+     <br/>
+      <div class="printHeader">
+        <div class="logoHeaderBecsles">
+          <div class="ringLogoBecsles"></div>
+          <br/>
+        <h6 class="companyDataBecsles
+          ">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
+          <br/>
+           <h6 class="companyDataBecsles">Adószám: 23520451-2-08</h6>
+           <br/>
+          <h6 class="companyDataBecsles
+          ">Telefon: 06203456789</h6>
+          <br/>
+          <h6 class="companyDataBecsles
+          ">E-mail: ring@studio.hu</h6>
+          <br />
+          <h6 class="companyDataBecsles
+          ">Kapcsolattartó: Nagy Géza</h6>
+          
+       
+       
+         
+        </div>
+        <div class="titleHeaderBecsles">
+          <h2 class="printTitleBe">Becsült Költségvetés</h2>
+          <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
+          <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
+          <h6 class="printDate">Dátum: 2022.01.21</h6>
+          <h6 class="printTitle4">Becslés száma: 1234</h6>
+        </div>
+        <div class="dataHeaderBecsles">
+          <h6 class="printData">Megbízó: Sibalin Milán</h6>
+          <br />
+          <h6 class="printData">Szervezet: Sibalin Kft.</h6>
+          <br />
+          <h6 class="printData">Címe: 9082, Nyúl Fő út 3</h6>
+          <br />
+          <h6 class="printData">Telefon: +36204321123</h6>
+          <br />
+          <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
+        </div>
+      </div>
+      
+      <table class="table table-bordered" id="printTable">
+        <thead>
+          <tr class="headerRow">
+            <th scope="col">Terméknév</th>
+            <th scope="col">Műszaki tartalom</th>
+            <th scope="col">Mennyiség</th>
+            <th scope="col">Mennyiség egység</th>
+            <th scope="col">Becsült nettó egységár</th>
+            <th scope="col">Becsült nettó összár</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td class="mennyisegi-egyseg">5</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">35 480 Ft</td>
+            <td class="right">177 398 Ft</td>
+          </tr>
+          <tr>
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td class="mennyisegi-egyseg">5</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">35 480 Ft</td>
+            <td class="right">177 398 Ft</td>
+          </tr>
+          <tr>
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td class="mennyisegi-egyseg">5</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">35 480 Ft</td>
+            <td class="right">177 398 Ft</td>
+          </tr>
+          <tr>
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td class="mennyisegi-egyseg">5</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">35 480 Ft</td>
+            <td class="right">177 398 Ft</td>
+          </tr>
+    <tr>
+            <th colspan="5">Összesen:</th>
+            <th class="right">709 592 Ft</th>
+          </tr>
+              <tr>
+            <th colspan="5">ÁFA:</th>
+            <th class="right">230 831 Ft</th>
+          </tr>
+              <tr>
+            <th colspan="5">Becsült bruttó összár:</th>
+            <th class="right">854 930 Ft</th>
+          </tr>
+          <tr>
+            <td colspan="10" class="printComment">
+              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
+              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
+              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
+              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
+              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
+              készleteket figyelembe véve eltérő lehet a korábban vásárolt
+              tétellel összehasonlítva. A termékeknél feltüntetett egységárak
+              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
+              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
+              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
+              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
+              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
+              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
+              készleteket figyelembe véve eltérő lehet a korábban vásárolt
+              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
+              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
+              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
+              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
+              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
+              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
+              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
+              készleteket figyelembe véve eltérő lehet a korábban vásárolt
+              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
+              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
+              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
+              esetére érvényes. Amennyiben nem a teljes mennyiség kerül
+              megrendelésre, vagy termékek kiváltása szükséges abban az esetben
+              az árak változhatnak. Pót rendelés esetén az ajánlatban szereplő
+              árakat nem tudjuk garantálni, illetve a szállítási határidő gyári
+              készleteket figyelembe véve eltérő lehet a korábban vásárolt
+              tétellel összehasonlítva.A termékeknél feltüntetett egységárak
+              tájékoztató jellegűek, szállítási költséget nem tartalmaznak.
+              Ajánlatunk a teljes ajánlati mennyiség 30 napon belüli rendelése
+              esetére érvényes.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    
   </div>
 </template>
 
@@ -379,7 +398,7 @@ export default {
   font-size: 12px;
 }
 
-.companyData {
+.companyDataBecsles {
   position: relative;
   float: left;
   left: 5px;
@@ -400,35 +419,39 @@ export default {
   display: flex;
 }
 
-.ringLogo {
+.ringLogoBecsles {
   background-image: url("../../assets/logo.png");
   background-size: cover;
   width: 110px;
   height: 50px;
+  position: relative;
+  top: 1vh;
+  left:2%;
+
 }
 
-.logoHeader {
+.logoHeaderBecsles {
   width: 29vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.titleHeader {
+.titleHeaderBecsles {
   width: 27.4vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.dataHeader {
-  width: 27.3vw;
+.dataHeaderBecsles {
+  width: 25.6vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;

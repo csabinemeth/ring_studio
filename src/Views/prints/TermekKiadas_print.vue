@@ -143,21 +143,34 @@
       </div>
     </div>
       <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Eladó: Ring Studio Kft.</h6>
+       <div class="logoHeaderBecsles">
+          <div class="ringLogoBecsles"></div>
+          <br/>
+        <h6 class="companyDataBecsles
+          ">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
+          <br/>
+           <h6 class="companyDataBecsles">Adószám: 23520451-2-08</h6>
+           <br/>
+          <h6 class="companyDataBecsles
+          ">Telefon: 06203456789</h6>
+          <br/>
+          <h6 class="companyDataBecsles
+          ">E-mail: ring@studio.hu</h6>
           <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
+          <h6 class="companyDataBecsles
+          ">Kapcsolattartó: Nagy Géza</h6>
+          
+       
+       
+         
         </div>
-        <div class="titleHeader">
+        <div class="titleHeaderTK">
           <h2 class="printTitleTb">Szállítólevél</h2>
           <h6 class="printTitleTb2">Szállító száma: 123456</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
         </div>
-        <div class="dataHeader">
+        <div class="dataHeaderTK">
           <h6 class="printData">Vevő: Sibalin Milán</h6>
           <br />
           <h6 class="printData">Szervezet: Sibalin Kft.</h6>
@@ -410,19 +423,19 @@ export default {
   top: 4vh;
 }
 
-.titleHeader {
+.titleHeaderTK {
   width: 27.4vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.dataHeader {
-  width: 27.3vw;
+.dataHeaderTK {
+  width: 25.6vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;

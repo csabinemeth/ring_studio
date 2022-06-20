@@ -2,88 +2,12 @@
   <div class="printPage">
   
     <div id="paper" class="printPaper">
-      <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Megrendelő: Ring Studio Kft.</h6>
-          <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
-        </div>
-        <div class="titleHeader">
-          <h2 class="printTitleTb">Bevételezés</h2>
-          <h6 class="printTitleTb2">Bevételezés száma: 123456</h6>
-          <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
-          <h6 class="printDate">Dátum: 2022.01.21</h6>
-        </div>
-        <div class="dataHeader">
-          <h6 class="printData">Szállító: Sibalin Milán</h6>
-          <br />
-          <h6 class="printData">Szervezet: Sibalin Kft.</h6>
-          <br />
-          <h6 class="printData">Címe: 9082, Nyúl Fő út 3</h6>
-          <br />
-          <h6 class="printData">Telefon: +36204321123</h6>
-          <br />
-          <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
-        </div>
-      </div>
-
-      <table class="table table-bordered" id="printTable">
-        <thead>
-          <tr class="headerRow">
-            <th scope="col">Terméknév</th>
-            <th scope="col">Műszaki tartalom</th>
-            <th scope="col">Mennyiség</th>
-            <th scope="col">Mennyiségi egység</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td class="mennyisegi-egyseg">db</td>
-
-          </tr>
-          <tr>
-          
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td class="mennyisegi-egyseg">db</td>
-
-          </tr>
-          <tr>
-        
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td class="mennyisegi-egyseg">db</td>
-
-          </tr>
-          <tr>
-          
-            <td>Falikar</td>
-            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td class="mennyisegi-egyseg">db</td>
-
-          </tr>
-         
-          
-        </tbody>
-      </table>
-    </div>
-
-    <div class="btn-group dropup">
+     <div class="btn-group dropdown">
       <button
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButton"
+        id="printButtonRS"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -105,12 +29,12 @@
       </div>
     </div>
 
-    <div class="btn-group dropup">
+    <div class="btn-group dropdown">
       <button
         type="button"
         class="btn btn-secondary dropdown-toggle"
         data-toggle="dropdown"
-        id="printButton"
+        id="printButtonRS"
         aria-haspopup="true"
         aria-expanded="false"
       >
@@ -205,24 +129,6 @@
           />
             Termékfajta</a
         >
-         <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Nettó egységár</a
-        >
-         <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Nettó összár</a
-        >
         <a class="dropdown-item" href="#"
           ><input
             class="form-check-input"
@@ -236,6 +142,98 @@
         
       </div>
     </div>
+    <br/>
+    <br/>
+      <div class="printHeader">
+        <div class="logoHeaderBecsles">
+          <div class="ringLogoBecsles"></div>
+          <br/>
+        <h6 class="companyDataBecsles
+          ">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
+          <br/>
+           <h6 class="companyDataBecsles">Adószám: 23520451-2-08</h6>
+           <br/>
+          <h6 class="companyDataBecsles
+          ">Telefon: 06203456789</h6>
+          <br/>
+          <h6 class="companyDataBecsles
+          ">E-mail: ring@studio.hu</h6>
+          <br />
+          <h6 class="companyDataBecsles
+          ">Kapcsolattartó: Nagy Géza</h6>
+          
+       
+       
+         
+        </div>
+        <div class="titleHeaderTB">
+          <h2 class="printTitleTb">Bevételezés</h2>
+          <h6 class="printTitleTb2">Bevételezés száma: 123456</h6>
+          <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
+          <h6 class="printDate">Dátum: 2022.01.21</h6>
+        </div>
+        <div class="dataHeaderTB">
+          <h6 class="printData">Szállító: Sibalin Milán</h6>
+          <br />
+          <h6 class="printData">Szervezet: Sibalin Kft.</h6>
+          <br />
+          <h6 class="printData">Címe: 9082, Nyúl Fő út 3</h6>
+          <br />
+          <h6 class="printData">Telefon: +36204321123</h6>
+          <br />
+          <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
+        </div>
+      </div>
+
+      <table class="table table-bordered" id="printTable">
+        <thead>
+          <tr class="headerRow">
+            <th scope="col">Terméknév</th>
+            <th scope="col">Műszaki tartalom</th>
+            <th scope="col">Mennyiség</th>
+            <th scope="col">Mennyiségi egység</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td class="mennyisegi-egyseg">db</td>
+
+          </tr>
+          <tr>
+          
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td class="mennyisegi-egyseg">db</td>
+
+          </tr>
+          <tr>
+        
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td class="mennyisegi-egyseg">db</td>
+
+          </tr>
+          <tr>
+          
+            <td>Falikar</td>
+            <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
+            <td>5</td>
+            <td class="mennyisegi-egyseg">db</td>
+
+          </tr>
+         
+          
+        </tbody>
+      </table>
+    </div>
+
+    
   </div>
 </template>
 
@@ -385,19 +383,19 @@ export default {
   top: 4vh;
 }
 
-.titleHeader {
+.titleHeaderTB {
   width: 27.4vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.dataHeader {
-  width: 27.3vw;
+.dataHeaderTB {
+  width: 25.6vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;

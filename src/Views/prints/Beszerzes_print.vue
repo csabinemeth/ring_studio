@@ -2,23 +2,178 @@
   <div class="printPage">
     
     <div id="paper" class="printPaper">
-      <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Megrendelő: Ring Studio Kft.</h6>
+    <div class="btn-group dropdown">
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        id="printButtonRS"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="fas fa-print"></i> Nyomtatás
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás fedlappal</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás összesítővel</a
+        >
+        <a class="dropdown-item" href="#"
+          ><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a
+        >
+      </div>
+    </div>
+
+    <div class="btn-group dropdown">
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-toggle="dropdown"
+        id="printButtonRS"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="fas fa-cog"></i> Törzs szerkesztése
+      </button>
+      <div class="dropdown-menu">
+        
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Terméknév</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Műszaki tartalom</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Mennyiség</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Mennyiségi egység</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Nettó egységár</a
+        >
+         <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          Nettó összár</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Divíziók</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Kategória</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Termékfajta</a
+        >
+        <a class="dropdown-item" href="#"
+          ><input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+            Kép</a
+        >
+       
+        
+      </div>
+    </div>
+     <br/>
+     <br/>
+        <div class="printHeader">
+       <div class="logoHeaderBecsles">
+          <div class="ringLogoBecsles"></div>
+          <br/>
+        <h6 class="companyDataBecsles
+          ">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
+          <br/>
+           <h6 class="companyDataBecsles">Adószám: 23520451-2-08</h6>
+           <br/>
+          <h6 class="companyDataBecsles
+          ">Telefon: 06203456789</h6>
+          <br/>
+          <h6 class="companyDataBecsles
+          ">E-mail: ring@studio.hu</h6>
           <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
+          <h6 class="companyDataBecsles
+          ">Kapcsolattartó: Nagy Géza</h6>
+          
+       
+       
+         
         </div>
-        <div class="titleHeader">
+        <div class="titleHeaderBsz">
           <h2 class="printTitleBesz">Megrendelés</h2>
           <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
           <h6 class="printTitleMS">Megrendelés száma: 1235</h6>
         </div>
-        <div class="dataHeader">
+        <div class="dataHeaderBsz">
           <h6 class="printData">Szállító: Sibalin Milán</h6>
           <br />
           <h6 class="printData">Szervezet: Sibalin Kft.</h6>
@@ -46,28 +201,28 @@
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
+            <td class="mennyisegi-egyseg">5</td>
             <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
+            <td class="mennyisegi-egyseg">5</td>
             <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
+            <td class="mennyisegi-egyseg">5</td>
             <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
             <td>1267547</td>
             <td>Falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
+            <td class="mennyisegi-egyseg">5</td>
             <td class="mennyisegi-egyseg">db</td>
           </tr>
           <tr>
@@ -112,127 +267,7 @@
       </table>
     </div>
 
-    <div class="btn-group dropup">
-      <button
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        id="printButton"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fas fa-print"></i> Nyomtatás
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás fedlappal</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás összesítővel</a
-        >
-        <a class="dropdown-item" href="#"
-          ><i class="fas fa-print"></i> Nyomtatás fedlappal és összesítővel</a
-        >
-      </div>
-    </div>
-
-    <div class="btn-group dropup">
-      <button
-        type="button"
-        class="btn btn-secondary dropdown-toggle"
-        data-toggle="dropdown"
-        id="printButton"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fas fa-cog"></i> Törzs szerkesztése
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Cikkszám</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Terméknév</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Műszaki tartalom</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Mennyiségi</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked
-          />
-          Mennyiségi egység</a
-        >
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-          Nettó egységár</a
-        >
-         <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-          Nettó összár</a
-        >
-
-        <a class="dropdown-item" href="#"
-          ><input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-          />
-            Kép</a
-        >
-       
-        
-      </div>
-    </div>
+   
   </div>
 </template>
 
@@ -386,19 +421,19 @@ export default {
   top: 4vh;
 }
 
-.titleHeader {
+.titleHeaderBsz {
   width: 27.4vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.dataHeader {
-  width: 27.3vw;
+.dataHeaderBsz {
+  width: 25.6vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;

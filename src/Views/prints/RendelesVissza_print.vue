@@ -146,21 +146,34 @@
     <br/>
     <br/>
       <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Szállító: Ring Studio Kft.</h6>
+        <div class="logoHeaderRF">
+          <div class="ringLogoBecsles"></div>
+          <br/>
+        <h6 class="companyDataBecsles
+          ">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
+          <br/>
+           <h6 class="companyDataBecsles">Adószám: 23520451-2-08</h6>
+           <br/>
+          <h6 class="companyDataBecsles
+          ">Telefon: 06203456789</h6>
+          <br/>
+          <h6 class="companyDataBecsles
+          ">E-mail: ring@studio.hu</h6>
           <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
+          <h6 class="companyDataBecsles
+          ">Kapcsolattartó: Nagy Géza</h6>
+          
+       
+       
+         
         </div>
-        <div class="titleHeader">
+        <div class="titleHeaderRV">
           <h2 class="printTitleRv">Rendelés visszaigaziolás</h2>
           <h6 class="printTitle2">Rendelés visszaigaziolási szám: 13</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
         </div>
-        <div class="dataHeader">
+        <div class="dataHeaderRV">
           <h6 class="printData">Vevő: Sibalin Milán</h6>
           <br />
           <h6 class="printData">Szervezet: Sibalin Kft.</h6>
@@ -172,8 +185,7 @@
           <h6 class="printData">E-mail: sibalin.milan@gmail.com</h6>
         </div>
       </div>
-      <br/>
-      <br/>
+
       <table class="table table-bordered" id="printTable">
         <thead>
           <tr class="headerRow">
@@ -421,28 +433,28 @@ export default {
   height: 50px;
 }
 
-.logoHeader {
+.logoHeaderRF {
   width: 27.3vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 24vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.titleHeader {
+.titleHeaderRV {
   width: 27.4vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 24vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.dataHeader {
+.dataHeaderRV {
   width: 27.3vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 24vh;
   left: 2vw;
   position: relative;
   top: 4vh;

@@ -58,22 +58,35 @@
 </div>
     <div id="paper" class="printPaper">
       <div class="printHeader">
-        <div class="logoHeader">
-          <div class="ringLogo"></div>
-          <h6 class="companyData">Ajánlatadó: Ring Studio Kft.</h6>
+        <div class="logoHeaderBecsles">
+          <div class="ringLogoBecsles"></div>
+          <br/>
+        <h6 class="companyDataBecsles
+          ">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
+          <br/>
+           <h6 class="companyDataBecsles">Adószám: 23520451-2-08</h6>
+           <br/>
+          <h6 class="companyDataBecsles
+          ">Telefon: 06203456789</h6>
+          <br/>
+          <h6 class="companyDataBecsles
+          ">E-mail: ring@studio.hu</h6>
           <br />
-          <h6 class="companyData">Cím: 9025 Győr, Bercsényi liget 26/b</h6>
-          <br />
-          <h6 class="companyData">Adószám: 23520451-2-08</h6>
+          <h6 class="companyDataBecsles
+          ">Kapcsolattartó: Nagy Géza</h6>
+          
+       
+       
+         
         </div>
-        <div class="titleHeader">
+        <div class="titleHeaderAj">
           <h1 class="printTitle">Ajánlat</h1>
           <h6 class="printTitle2">Tárgy: Lámpatestek, fényforrások</h6>
           <h6 class="printTitle3">Projekt megnevezése: P-20-14</h6>
           <h6 class="printDate">Dátum: 2022.01.21</h6>
           <h6 class="printTitle5"> Ajánlat száma: 1234</h6> 
         </div>
-        <div class="dataHeader">
+        <div class="dataHeaderAj">
           <h6 class="printData">Ajánlatkérő: Sibalin Milán</h6>
           <br />
           <h6 class="printData">Szervezet: Sibalin Kft.</h6>
@@ -107,10 +120,10 @@
             <td>Falikar</td>
             <td>falikar</td>
             <td>Lámpatest mérete: 31x26,7x31 cm, Arany színnel</td>
-            <td>5</td>
-            <td>db</td>
-            <td>35 480 Ft</td>
-            <td>177 398 Ft</td>
+            <td class="mennyisegi-egyseg">5</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">35 480 Ft</td>
+            <td class="right">177 398 Ft</td>
           </tr>
           <tr>
             <td>BÉ-L02</td>
@@ -118,10 +131,10 @@
             <td>függesztett lámpa</td>
             <td>függesztett lámpa</td>
             <td>Lámpatest arany színnel 1</td>
-            <td>2</td>
-            <td>db</td>
-            <td>43 943 Ft</td>
-            <td>87 885 Ft</td>
+            <td class="mennyisegi-egyseg">2</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">43 943 Ft</td>
+            <td class="right">87 885 Ft</td>
           </tr>
           <tr>
             <td>BÉ-L02</td>
@@ -129,20 +142,20 @@
             <td>függesztett lámpa</td>
             <td>függesztett lámpa</td>
             <td>Lámpatest arany színnel 1</td>
-            <td>2</td>
-            <td>db</td>
-            <td>43 943 Ft</td>
-            <td>87 885 Ft</td>
+            <td class="mennyisegi-egyseg">2</td>
+            <td class="mennyisegi-egyseg">db</td>
+            <td class="right">43 943 Ft</td>
+            <td class="right">87 885 Ft</td>
           </tr>
-          <tr> <th colspan="8">Lámpatestek összesen:</th> <th>353 168 Ft</th> </tr> 
+          <tr> <th colspan="8">Lámpatestek összesen:</th> <th class="right">353 168 Ft</th> </tr> 
           <tr>
          
             <th colspan="8">Öszesen nettó:</th>
-            <th>846 535 Ft</th>
+            <th class="right">846 535 Ft</th>
           </tr>
           <tr>
             <th colspan="8">Öszesen bruttó:</th>
-            <th>1 075 099 Ft</th>
+            <th class="right">1 075 099 Ft</th>
           </tr>
              <th colspan="9" rowspan="2">
               Megjegyzés: szállítási határidő terméktől függően 6-8 hét is
@@ -309,19 +322,19 @@ export default {
   top: 4vh;
 }
 
-.titleHeader {
+.titleHeaderAj {
   width: 27.4vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
 }
 
-.dataHeader {
-  width: 27.3vw;
+.dataHeaderAj {
+  width: 25.6vw;
   border: 1px solid #e0e4e7;
-  height: 19vh;
+  height: 27vh;
   left: 2vw;
   position: relative;
   top: 4vh;
